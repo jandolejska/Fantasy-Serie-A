@@ -1,0 +1,30 @@
+{
+    "formation": "5-3-2",
+
+    "starting11": [
+        {"name":"Carnesecchi","role":"P"},
+
+        {"name":"Bellanova","role":"D"},
+        {"name":"Cambiaso","role":"D"},
+        {"name":"Solet","role":"D"},
+        {"name":"Valeri","role":"D"},
+        {"name":"Comuzzo","role":"D"},
+
+        {"name":"McTominay","role":"C"},
+        {"name":"Barella","role":"C"},
+        {"name":"Sohm","role":"C"},
+
+        {"name":"Thuram","role":"A"},
+        {"name":"Dzeko","role":"A"}
+    ],
+
+    "bench": [
+        {"name":"x","role":"P"},
+        {"name":"Gila","role":"D"},
+        {"name":"Delprato","role":"D"},
+        {"name":"Prati","role":"C"},
+        {"name":"Odgaard","role":"C"},
+        {"name":"Davis K.","role":"A"},
+        {"name":"Castro S.","role":"A"}
+    ]
+}

@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/match.css') }}"
+>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <a
+        href="{{ url_for('round_page', round_number=round_number) }}"
+        class="btn btn-outline-light mb-4"
+    >
+        ← Zpět na {{ round_number }}. kolo
+    </a>
+
+    <div class="card shadow-lg border-0 mb-4">
+
+        <div class="card-body text-center py-4">
+
+            <div class="text-uppercase text-secondary fw-bold mb-4">
+
+                {{ round_number }}. KOLO
+
+            </div>
+
+            <div class="row align-items-center text-center">
+
+                <!-- DOMÁCÍ -->
+
+                <div class="col-5">
+
+                    <h3 class="match-team-name fw-bold mb-2 text-truncate">
+
+                        {{ display_name(match.home) }}
+
+                    </h3>
+
+                    <div class="text-secondary">
+
+                        {{ match.home_score }}
+
+                    </div>
+
+                    <div class="text-secondary">
+
+                        fantasy bodů
+
+                    </div>
+
+                </div>
+
+                <!-- SKÓRE -->
+
+                <div class="col-2">
+
+                    <h1 class="display-5 fw-bold mb-0 text-nowrap">
+
+                        {{ match.home_goals }} : {{ match.away_goals }}
+
+                    </h1>
+
+                </div>
+
+                <!-- HOSTÉ -->
+
+                <div class="col-5">
+
+                    <h3 class="match-team-name fw-bold mb-2 text-truncate">
+
+                        {{ display_name(match.away) }}
+
+                    </h3>
+
+                    <div class="text-secondary">
+
+                        {{ match.away_score }}
+
+                    </div>
+
+                    <div class="text-secondary">
+
+                        fantasy bodů
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+
+        <div class="card-header fw-bold">
+
+            📊 Rozpis fantasy bodů
+
+        </div>
+
+        <div class="card-body">
+
+            {% include "partials/_score_breakdown.html" %}
+
+        </div>
+
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+
+        <div class="card-header fw-bold">
+
+            📋 Základní sestavy
+
+        </div>
+
+        <div class="card-body">
+
+            {% include "partials/_starting_lineups.html" %}
+
+        </div>
+
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+
+        <div class="card-header fw-bold">
+
+            🪑 Lavička
+
+        </div>
+
+        <div class="card-body">
+
+            {% include "partials/_bench.html" %}
+
+        </div>
+
+    </div>
+
+    <div class="card mb-5 shadow-sm">
+
+        <div class="card-header fw-bold">
+
+            🔄 Střídání
+
+        </div>
+
+        <div class="card-body">
+
+            {% include "partials/_substitutions.html" %}
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

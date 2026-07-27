@@ -1,0 +1,508 @@
+{
+    "name": "Johnny",
+    "coach": "Gilardino",
+    "squad": [
+        {
+            "name": "Israel",
+            "role": "P",
+            "buy_price": 9,
+            "team": "Torino",
+            "qa": 1,
+            "qi": 9,
+            "id": 7179,
+            "active": true,
+            "team_info": {
+                "id": "torino",
+                "short": "TOR",
+                "logo": "torino.png"
+            },
+            "fixture": {
+                "opponent": "Milan",
+                "home": true,
+                "short": "MIL",
+                "logo": "milan.png"
+            }
+        },
+        {
+            "name": "Falcone",
+            "role": "P",
+            "buy_price": 6,
+            "team": "Lecce",
+            "qa": 15,
+            "qi": 6,
+            "id": 2134,
+            "active": true,
+            "team_info": {
+                "id": "lecce",
+                "short": "LEC",
+                "logo": "lecce.png"
+            },
+            "fixture": {
+                "opponent": "Venezia FC",
+                "home": false,
+                "short": "VEN",
+                "logo": "venezia.png"
+            }
+        },
+        {
+            "name": "Furlanetto",
+            "role": "P",
+            "buy_price": 1,
+            "team": "Lazio",
+            "qa": 3,
+            "qi": 1,
+            "id": 6417,
+            "active": true,
+            "team_info": {
+                "id": "lazio",
+                "short": "LAZ",
+                "logo": "lazio.png"
+            },
+            "fixture": {
+                "opponent": "Bologna",
+                "home": false,
+                "short": "BOL",
+                "logo": "bologna.png"
+            }
+        },
+        {
+            "name": "Akanji",
+            "role": "D",
+            "buy_price": 13,
+            "team": "Inter",
+            "qa": 13,
+            "qi": 9,
+            "id": 4159,
+            "active": true,
+            "team_info": {
+                "id": "inter",
+                "short": "INT",
+                "logo": "inter.png"
+            },
+            "fixture": {
+                "opponent": "Monza",
+                "home": true,
+                "short": "MON",
+                "logo": "monza.png"
+            }
+        },
+        {
+            "name": "Baschirotto",
+            "role": "D",
+            "buy_price": 8,
+            "team": "Cremonese",
+            "qa": 9,
+            "qi": 8,
+            "id": 5835,
+            "active": true,
+            "team_info": {
+                "id": "cremonese",
+                "short": "CRE",
+                "logo": "cremonese.png"
+            },
+            "fixture": null
+        },
+        {
+            "name": "Vasquez",
+            "role": "D",
+            "buy_price": 9,
+            "team": "Genoa",
+            "qa": 11,
+            "qi": 9,
+            "id": 5514,
+            "active": true,
+            "team_info": {
+                "id": "genoa",
+                "short": "GEN",
+                "logo": "genoa.png"
+            },
+            "fixture": {
+                "opponent": "Napoli",
+                "home": true,
+                "short": "NAP",
+                "logo": "napoli.png"
+            }
+        },
+        {
+            "name": "Kalulu",
+            "role": "D",
+            "buy_price": 9,
+            "team": "Juventus",
+            "qa": 14,
+            "qi": 9,
+            "id": 4976,
+            "active": true,
+            "team_info": {
+                "id": "juventus",
+                "short": "JUV",
+                "logo": "juventus.png"
+            },
+            "fixture": {
+                "opponent": "Frosinone",
+                "home": false,
+                "short": "FRO",
+                "logo": "frosinone.png"
+            }
+        },
+        {
+            "name": "Estupinan",
+            "role": "D",
+            "buy_price": 11,
+            "team": "Milan",
+            "qa": 2,
+            "qi": 11,
+            "id": 5273,
+            "active": true,
+            "team_info": {
+                "id": "milan",
+                "short": "MIL",
+                "logo": "milan.png"
+            },
+            "fixture": {
+                "opponent": "Torino",
+                "home": false,
+                "short": "TOR",
+                "logo": "torino.png"
+            }
+        },
+        {
+            "name": "Cuadrado",
+            "role": "D",
+            "buy_price": 7,
+            "team": "Pisa",
+            "qa": 5,
+            "qi": 7,
+            "id": 697,
+            "active": true,
+            "team_info": {
+                "id": "pisa",
+                "short": "PIS",
+                "logo": "pisa.png"
+            },
+            "fixture": null
+        },
+        {
+            "name": "Wesley",
+            "role": "D",
+            "buy_price": 14,
+            "team": "Roma",
+            "qa": 14,
+            "qi": 14,
+            "id": 7181,
+            "active": true,
+            "team_info": {
+                "id": "roma",
+                "short": "ROM",
+                "logo": "roma.png"
+            },
+            "fixture": {
+                "opponent": "Fiorentina",
+                "home": true,
+                "short": "FIO",
+                "logo": "fiorentina.png"
+            }
+        },
+        {
+            "name": "Palma",
+            "role": "D",
+            "buy_price": 1,
+            "team": "Udinese",
+            "qa": 2,
+            "qi": 1,
+            "id": 6925,
+            "active": false,
+            "team_info": {
+                "id": "udinese",
+                "short": "UDI",
+                "logo": "udinese.png"
+            },
+            "fixture": {
+                "opponent": "Como 1907",
+                "home": true,
+                "short": "COM",
+                "logo": "como.png"
+            }
+        },
+        {
+            "name": "Paz N.",
+            "role": "C",
+            "buy_price": 20,
+            "team": "Como",
+            "qa": 26,
+            "qi": 20,
+            "id": 6875,
+            "active": true,
+            "team_info": {
+                "id": "como",
+                "short": "COM",
+                "logo": "como.png"
+            },
+            "fixture": null
+        },
+        {
+            "name": "Stanciu",
+            "role": "C",
+            "buy_price": 8,
+            "team": "Genoa",
+            "qa": 1,
+            "qi": 8,
+            "id": 7135,
+            "active": false,
+            "team_info": {
+                "id": "genoa",
+                "short": "GEN",
+                "logo": "genoa.png"
+            },
+            "fixture": {
+                "opponent": "Napoli",
+                "home": true,
+                "short": "NAP",
+                "logo": "napoli.png"
+            }
+        },
+        {
+            "name": "Thuram K.",
+            "role": "C",
+            "buy_price": 16,
+            "team": "Juventus",
+            "qa": 14,
+            "qi": 16,
+            "id": 5562,
+            "active": true,
+            "team_info": {
+                "id": "juventus",
+                "short": "JUV",
+                "logo": "juventus.png"
+            },
+            "fixture": {
+                "opponent": "Frosinone",
+                "home": false,
+                "short": "FRO",
+                "logo": "frosinone.png"
+            }
+        },
+        {
+            "name": "Cristante",
+            "role": "C",
+            "buy_price": 9,
+            "team": "Roma",
+            "qa": 13,
+            "qi": 9,
+            "id": 779,
+            "active": true,
+            "team_info": {
+                "id": "roma",
+                "short": "ROM",
+                "logo": "roma.png"
+            },
+            "fixture": {
+                "opponent": "Fiorentina",
+                "home": true,
+                "short": "FIO",
+                "logo": "fiorentina.png"
+            }
+        },
+        {
+            "name": "Modric",
+            "role": "C",
+            "buy_price": 12,
+            "team": "Milan",
+            "qa": 18,
+            "qi": 12,
+            "id": 2606,
+            "active": true,
+            "team_info": {
+                "id": "milan",
+                "short": "MIL",
+                "logo": "milan.png"
+            },
+            "fixture": {
+                "opponent": "Torino",
+                "home": false,
+                "short": "TOR",
+                "logo": "torino.png"
+            }
+        },
+        {
+            "name": "Zambo Anguissa",
+            "role": "C",
+            "buy_price": 15,
+            "team": "Napoli",
+            "qa": 15,
+            "qi": 15,
+            "id": 4220,
+            "active": true,
+            "team_info": {
+                "id": "napoli",
+                "short": "NAP",
+                "logo": "napoli.png"
+            },
+            "fixture": {
+                "opponent": "Genoa",
+                "home": false,
+                "short": "GEN",
+                "logo": "genoa.png"
+            }
+        },
+        {
+            "name": "Tramoni M.",
+            "role": "C",
+            "buy_price": 6,
+            "team": "Pisa",
+            "qa": 6,
+            "qi": 12,
+            "id": 5318,
+            "active": true,
+            "team_info": {
+                "id": "pisa",
+                "short": "PIS",
+                "logo": "pisa.png"
+            },
+            "fixture": null
+        },
+        {
+            "name": "Atta",
+            "role": "C",
+            "buy_price": 20,
+            "team": "Udinese",
+            "qa": 20,
+            "qi": 6,
+            "id": 6908,
+            "active": true,
+            "team_info": {
+                "id": "udinese",
+                "short": "UDI",
+                "logo": "udinese.png"
+            },
+            "fixture": {
+                "opponent": "Como 1907",
+                "home": true,
+                "short": "COM",
+                "logo": "como.png"
+            }
+        },
+        {
+            "name": "Durosinmi",
+            "role": "A",
+            "buy_price": 10,
+            "team": "Pisa",
+            "qa": 10,
+            "qi": 15,
+            "id": 7316,
+            "active": true,
+            "team_info": {
+                "id": "pisa",
+                "short": "PIS",
+                "logo": "pisa.png"
+            },
+            "fixture": null
+        },
+        {
+            "name": "Immobile",
+            "role": "A",
+            "buy_price": 19,
+            "team": "Bologna",
+            "qa": 4,
+            "qi": 19,
+            "id": 785,
+            "active": false,
+            "team_info": {
+                "id": "bologna",
+                "short": "BOL",
+                "logo": "bologna.png"
+            },
+            "fixture": {
+                "opponent": "Lazio",
+                "home": true,
+                "short": "LAZ",
+                "logo": "lazio.png"
+            }
+        },
+        {
+            "name": "Piccoli",
+            "role": "A",
+            "buy_price": 9,
+            "id": 4359,
+            "team": "Fiorentina",
+            "qa": 9,
+            "qi": 17,
+            "active": true,
+            "team_info": {
+                "id": "fiorentina",
+                "short": "FIO",
+                "logo": "fiorentina.png"
+            },
+            "fixture": {
+                "opponent": "Roma",
+                "home": false,
+                "short": "ROM",
+                "logo": "roma.png"
+            }
+        },
+        {
+            "name": "Nkunku",
+            "role": "A",
+            "buy_price": 18,
+            "team": "Milan",
+            "qa": 18,
+            "qi": 20,
+            "id": 4728,
+            "active": true,
+            "team_info": {
+                "id": "milan",
+                "short": "MIL",
+                "logo": "milan.png"
+            },
+            "fixture": {
+                "opponent": "Torino",
+                "home": false,
+                "short": "TOR",
+                "logo": "torino.png"
+            }
+        },
+        {
+            "name": "Lukaku",
+            "role": "A",
+            "buy_price": 31,
+            "team": "Napoli",
+            "qa": 15,
+            "qi": 31,
+            "id": 2531,
+            "active": true,
+            "team_info": {
+                "id": "napoli",
+                "short": "NAP",
+                "logo": "napoli.png"
+            },
+            "fixture": {
+                "opponent": "Genoa",
+                "home": false,
+                "short": "GEN",
+                "logo": "genoa.png"
+            }
+        },
+        {
+            "name": "Laurientè",
+            "role": "A",
+            "buy_price": 15,
+            "team": "Sassuolo",
+            "qa": 21,
+            "qi": 15,
+            "id": 6060,
+            "active": true,
+            "team_info": {
+                "id": "sassuolo",
+                "short": "SAS",
+                "logo": "sassuolo.png"
+            },
+            "fixture": {
+                "opponent": "Atalanta",
+                "home": false,
+                "short": "ATA",
+                "logo": "atalanta.png"
+            }
+        }
+    ],
+    "transfers_left": 0,
+    "budget": 37
+}

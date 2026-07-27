@@ -1,0 +1,30 @@
+{
+    "formation": "5-3-2",
+
+    "starting11": [
+        {"name": "Sommer", "role": "P"},
+
+        {"name": "Dumfries", "role": "D"},
+        {"name": "Kossounou", "role": "D"},
+        {"name": "N'Dicka", "role": "D"},
+        {"name": "Tavares N.", "role": "D"},
+        {"name": "Dodò", "role": "D"},
+
+        {"name": "Conceicao", "role": "C"},
+        {"name": "Rovella", "role": "C"},
+        {"name": "Fagioli", "role": "C"},
+
+        {"name": "Martinez L.", "role": "A"},
+        {"name": "Scamacca", "role": "A"}
+    ],
+
+    "bench": [
+        {"name": "Suzuki", "role": "P"},
+        {"name": "Mina", "role": "D"},
+        {"name": "Pezzella Giu.", "role": "D"},
+        {"name": "Vlasic", "role": "C"},
+        {"name": "Perrone", "role": "C"},
+        {"name": "Pinamonti", "role": "A"},
+        {"name": "Adams C.", "role": "A"}
+    ]
+}

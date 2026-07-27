@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="fw-bold mb-4">
+    👥 Moje soupiska
+</h2>
+
+<!-- ========================= -->
+<!-- BRANKÁŘI -->
+<!-- ========================= -->
+
+<h3 class="mb-3">
+
+🧤 Brankáři
+
+</h3>
+
+<div class="row">
+
+{% for player in goalkeepers %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+
+<!-- ========================= -->
+<!-- OBRÁNCI -->
+<!-- ========================= -->
+
+<h3 class="mt-5 mb-3">
+
+🛡️ Obránci
+
+</h3>
+
+<div class="row">
+
+{% for player in defenders %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+
+<!-- ========================= -->
+<!-- ZÁLOŽNÍCI -->
+<!-- ========================= -->
+
+<h3 class="mt-5 mb-3">
+
+🎯 Záložníci
+
+</h3>
+
+<div class="row">
+
+{% for player in midfielders %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+
+<!-- ========================= -->
+<!-- ÚTOČNÍCI -->
+<!-- ========================= -->
+
+<h3 class="mt-5 mb-3">
+
+⚽ Útočníci
+
+</h3>
+
+<div class="row">
+
+{% for player in forwards %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

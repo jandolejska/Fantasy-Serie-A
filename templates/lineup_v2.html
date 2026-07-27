@@ -1,0 +1,901 @@
+{% extends "base.html" %}
+
+{% from "macros/player_button.html" import player_button %}
+
+{% block content %}
+
+<div class="container">
+
+<div id="saveAlert"></div>
+
+    <h2 class="mb-4">
+        ⚽ Sestava
+    </h2>
+
+    <!-- Formace -->
+
+    <div class="card mb-4">
+
+        <div class="card-body">
+
+            <label class="form-label text-light fw-semibold">
+                Formace
+            </label>
+
+            <select
+                id="formationSelect"
+                class="form-select"
+                onchange="changeFormation(this.value)"
+            >
+
+                <option>3-4-3</option>
+                <option>3-5-2</option>
+                <option>4-3-3</option>
+                <option selected>4-4-2</option>
+                <option>4-5-1</option>
+                <option>5-3-2</option>
+                <option>5-4-1</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <!-- Hřiště -->
+
+    <div class="card mb-4">
+
+        <div class="card-header">
+            🟢 Základní sestava
+        </div>
+
+        <div class="card-body">
+
+            <!-- Útočníci -->
+            <div
+                id="forwardsContainer"
+                class="d-flex justify-content-center gap-2 mb-4">
+            </div>
+
+            <!-- Záložníci -->
+            <div
+                id="midfieldersContainer"
+                class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+            </div>
+
+            <!-- Obránci -->
+            <div
+                id="defendersContainer"
+                class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+            </div>
+
+            <!-- Brankář -->
+            <div
+                id="goalkeeperContainer"
+                class="d-flex justify-content-center">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Lavička -->
+
+    <div class="card mb-4">
+
+        <div class="card-header">
+            🪑 Lavička
+        </div>
+
+        <div class="card-body">
+
+            <div id="benchContainer" class="d-flex flex-wrap gap-2">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Mimo nominaci -->
+
+    <div class="card mb-4">
+
+        <div class="card-header">
+            🚫 Mimo nominaci
+        </div>
+
+        <div class="card-body">
+
+            <div id="outContainer" class="d-flex flex-wrap gap-2">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="d-grid mb-5">
+
+        <button
+            class="btn btn-success btn-lg"
+            onclick="saveLineup()"
+        >
+            💾 Uložit sestavu
+        </button>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="playerModal" tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content bg-dark text-light">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Vybraný hráč
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Vyber hráče</h6>
+
+                <div id="playerList">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const squad = {{ squad|tojson }};
+
+console.log(squad);
+
+const playersById = Object.fromEntries(
+    squad.map(player => [player.id, player])
+);
+
+const lineupData = {{ lineup|tojson }};
+
+let currentLineup = structuredClone(lineupData);
+
+</script>
+
+<script>
+
+let selectedButton = null;
+let selectedSlot = null;
+
+function selectPlayer(button) {
+
+    console.log(button.dataset.slot);
+
+    selectedButton = button;
+
+    const slot = button.dataset.slot;
+
+    if (slot === "GK") {
+        selectedSlot = {
+            section: "goalkeeper",
+            index: 0
+        };
+    }
+    else if (slot.startsWith("DEF")) {
+        selectedSlot = {
+            section: "defenders",
+            index: Number(slot.replace("DEF", ""))
+        };
+    }
+    else if (slot.startsWith("MID")) {
+        selectedSlot = {
+            section: "midfielders",
+            index: Number(slot.replace("MID", ""))
+        };
+    }
+    else if (slot.startsWith("FWD")) {
+        selectedSlot = {
+            section: "forwards",
+            index: Number(slot.replace("FWD", ""))
+        };
+    }
+
+    else if (slot.startsWith("BENCH")) {
+        selectedSlot = {
+            section: "bench",
+            index: Number(slot.replace("BENCH", ""))
+        };
+    }
+
+    let players;
+
+    if (selectedSlot.section === "bench") {
+
+        // Na lavičku lze vybrat kohokoliv mimo aktuální sestavu
+        players = getPlayersNotInStarting();
+
+    } else {
+
+        let role;
+
+        switch (selectedSlot.section) {
+
+            case "goalkeeper":
+                role = "P";
+                break;
+
+            case "defenders":
+                role = "D";
+                break;
+
+            case "midfielders":
+                role = "C";
+                break;
+
+            case "forwards":
+                role = "A";
+                break;
+
+        }
+
+players = squad.filter(
+    player => player.role === role
+);
+
+    }
+
+    const list = document.getElementById("playerList");
+
+    list.innerHTML = "";
+
+    if (
+        selectedSlot.section === "bench" &&
+        currentLineup.bench[selectedSlot.index]
+    ) {
+
+        list.innerHTML += `
+            <button
+                class="btn btn-outline-danger w-100 mb-3"
+                onclick="removeBenchPlayer()"
+            >
+                ❌ Odebrat z lavičky
+            </button>
+
+            <hr>
+        `;
+
+    }
+
+    players.forEach(player => {
+
+        const fixture = player.fixture
+            ? `${player.fixture.home ? "🏠" : "✈️"} ${player.fixture.short}`
+            : "";
+
+        list.innerHTML += `
+            <button
+                class="btn btn-outline-light w-100 mb-2 d-flex justify-content-between align-items-center modal-position-${player.role}"
+                onclick="choosePlayer(${player.id})"
+            >
+                <span>${player.name}</span>
+                <span class="text-secondary">${fixture}</span>
+            </button>
+        `;
+
+    });
+
+    const modal = new bootstrap.Modal(
+        document.getElementById("playerModal")
+    );
+
+    modal.show();
+
+}
+
+function findPlayer(playerId) {
+
+    const sections = [
+        "goalkeeper",
+        "defenders",
+        "midfielders",
+        "forwards",
+        "bench"
+    ];
+
+    for (const section of sections) {
+
+        const index = currentLineup[section].findIndex(
+            p => p && p.id === playerId
+        );
+
+        if (index !== -1) {
+
+            return {
+                section,
+                index
+            };
+
+        }
+
+    }
+
+    return null;
+
+}
+
+function getPlayersOut() {
+
+    const usedIds = new Set();
+
+    const sections = [
+        "goalkeeper",
+        "defenders",
+        "midfielders",
+        "forwards",
+        "bench"
+    ];
+
+    sections.forEach(section => {
+
+        currentLineup[section].forEach(player => {
+
+            if (player) {
+                usedIds.add(player.id);
+            }
+
+        });
+
+    });
+
+    return squad.filter(
+        player => !usedIds.has(player.id)
+    );
+
+}
+
+function getPlayersNotInStarting() {
+
+    const usedIds = new Set();
+
+    const sections = [
+        "goalkeeper",
+        "defenders",
+        "midfielders",
+        "forwards"
+    ];
+
+    sections.forEach(section => {
+
+        currentLineup[section].forEach(player => {
+
+            if (player) {
+                usedIds.add(player.id);
+            }
+
+        });
+
+    });
+
+    return squad.filter(
+        player => !usedIds.has(player.id)
+    );
+
+}
+
+function swapPlayer(player) {
+
+    const currentPosition = findPlayer(player.id);
+
+    const oldPlayer =
+        currentLineup[selectedSlot.section][selectedSlot.index];
+
+    console.log("selectedSlot:", selectedSlot);
+    console.log("oldPlayer:", oldPlayer);
+    console.log("newPlayer:", player);
+    console.log("currentPosition:", currentPosition);
+
+    if (currentPosition) {
+
+        currentLineup[currentPosition.section][currentPosition.index] = oldPlayer;
+
+    }
+
+    currentLineup[selectedSlot.section][selectedSlot.index] = player;
+
+    renderPitch();
+
+}
+
+function choosePlayer(playerId) {
+
+    const player = squad.find(p => p.id === playerId);
+
+    console.log(player);
+
+    console.log(selectedSlot);
+
+    swapPlayer(player);
+
+    renderPitch();
+
+    console.log(currentLineup);
+
+    bootstrap.Modal.getInstance(
+        document.getElementById("playerModal")
+    ).hide();
+
+}
+
+function renderDefenders() {
+
+    const formation = parseFormation(currentLineup.formation);
+
+    renderLine(
+        "defendersContainer",
+        currentLineup.defenders,
+        "DEF",
+        formation.defenders
+    );
+
+}
+
+function renderMidfielders() {
+
+    const formation = parseFormation(currentLineup.formation);
+
+    renderLine(
+        "midfieldersContainer",
+        currentLineup.midfielders,
+        "MID",
+        formation.midfielders
+    );
+
+}
+
+function renderForwards() {
+
+    const formation = parseFormation(currentLineup.formation);
+
+    renderLine(
+        "forwardsContainer",
+        currentLineup.forwards,
+        "FWD",
+        formation.forwards
+    );
+
+}
+
+function renderBench() {
+
+    renderLine(
+        "benchContainer",
+        currentLineup.bench,
+        "BENCH",
+        7,
+        "secondary"
+    );
+
+}
+
+function renderGoalkeeper() {
+
+    const container = document.getElementById("goalkeeperContainer");
+
+    container.innerHTML = "";
+
+    container.appendChild(
+        createPlayerButton(
+            currentLineup.goalkeeper[0],
+            "GK"
+        )
+    );
+
+}
+
+function renderLine(containerId, players, prefix, count, style = "light") {
+
+    const container = document.getElementById(containerId);
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    players.slice(0, count).forEach((player, index) => {
+
+        container.appendChild(
+            createPlayerButton(
+                player,
+                `${prefix}${index}`,
+                style
+            )
+        );
+
+    });
+
+}
+
+function createPlayerButton(player, slot, style = "light") {
+
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.dataset.slot = slot;
+    let roleClass = "";
+
+    if (player) {
+
+        roleClass = `position-${player.role}`;
+
+    }
+
+    button.className =
+        `btn btn-outline-${style} player-button pitch-player ${roleClass}`;
+
+    if (player) {
+
+        button.dataset.player = player.id;
+
+        let fixture = "";
+
+        if (player.fixture) {
+
+            const icon = player.fixture.home ? "🏠" : "✈️";
+
+            fixture = `${icon} ${player.fixture.short}`;
+
+        }
+
+        button.innerHTML = `
+            <div class="player-name">
+                ${player.name}
+            </div>
+
+            <div class="fixture-line">
+                ${fixture}
+            </div>
+        `;
+
+    } else {
+
+        button.innerHTML = "➕<br>Vybrat";
+        button.dataset.player = "";
+
+    }
+
+    button.onclick = () => selectPlayer(button);
+
+    return button;
+
+}
+
+function createOutPlayerButton(player) {
+
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.className = "btn btn-outline-warning player-button pitch-player";
+
+    let fixture = "";
+
+    if (player.fixture) {
+
+        const icon = player.fixture.home ? "🏠" : "✈️";
+
+        fixture = `${icon} ${player.fixture.short}`;
+
+    }
+
+    button.innerHTML = `
+        <div class="player-name">
+            ${player.name}
+        </div>
+
+        <div class="fixture-line">
+            ${fixture}
+        </div>
+    `;
+
+    return button;
+
+}
+
+function renderOut() {
+
+    const container = document.getElementById("outContainer");
+
+    container.innerHTML = "";
+
+    const players = getPlayersOut();
+
+    players.forEach(player => {
+
+        container.appendChild(
+            createOutPlayerButton(player)
+        );
+
+    });
+
+}
+
+function renderPitch() {
+
+    renderGoalkeeper();
+    renderDefenders();
+    renderMidfielders();
+    renderForwards();
+    renderBench();
+    renderOut();
+
+    document.getElementById("formationSelect").value =
+    currentLineup.formation;
+
+}
+
+function removeBenchPlayer() {
+
+    currentLineup.bench[selectedSlot.index] = null;
+
+    renderPitch();
+
+    bootstrap.Modal.getInstance(
+        document.getElementById("playerModal")
+    ).hide();
+
+}
+
+function validateLineup() {
+
+    console.log("=== VALIDACE ===");
+    console.log(currentLineup);
+
+    const sections = [
+        "goalkeeper",
+        "defenders",
+        "midfielders",
+        "forwards"
+    ];
+
+    for (const section of sections) {
+
+        console.log(section, currentLineup[section]);
+
+        if (currentLineup[section].some(player => player === null)) {
+
+            console.log("CHYBA V SEKCI:", section);
+
+            return {
+                valid: false,
+                message: "Doplň všechny hráče základní sestavy."
+            };
+
+        }
+
+    }
+
+
+    const allPlayers = [
+        ...currentLineup.goalkeeper,
+        ...currentLineup.defenders,
+        ...currentLineup.midfielders,
+        ...currentLineup.forwards,
+        ...currentLineup.bench
+    ].filter(player => player !== null);
+
+    const ids = allPlayers.map(player => player.id);
+
+    if (new Set(ids).size !== ids.length) {
+
+        return {
+            valid: false,
+            message: "Stejný hráč je v sestavě vícekrát."
+        };
+
+    }
+
+    return {
+        valid: true
+    };
+
+}
+
+function saveLineup() {
+
+    console.log(currentLineup);
+
+    const validation = validateLineup();
+
+    if (!validation.valid) {
+
+        showAlert(
+            validation.message,
+            "danger"
+        );
+
+        return;
+
+    }
+
+    const starting = [];
+
+    currentLineup.goalkeeper.forEach(player => {
+        if (player) starting.push(player.name);
+    });
+
+    currentLineup.defenders.forEach(player => {
+        if (player) starting.push(player.name);
+    });
+
+    currentLineup.midfielders.forEach(player => {
+        if (player) starting.push(player.name);
+    });
+
+    currentLineup.forwards.forEach(player => {
+        if (player) starting.push(player.name);
+    });
+
+    const bench = currentLineup.bench
+        .filter(player => player)
+        .map(player => player.name);
+
+    const lineup = {
+        formation: currentLineup.formation,
+        starting: starting,
+        bench: bench
+    };
+
+    fetch("/lineup", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(lineup)
+})
+.then(response => response.json())
+.then(data => {
+
+    showAlert(
+        data.message,
+        data.success ? "success" : "danger"
+    );
+
+    if (data.success) {
+
+        console.log("Sestava uložena.");
+
+    }
+
+})
+.catch(error => {
+
+    console.error(error);
+    showAlert(
+        "Nepodařilo se uložit sestavu.",
+        "danger"
+    );
+
+});
+
+}
+
+function showAlert(message, type = "success") {
+
+    const container = document.getElementById("saveAlert");
+
+    container.innerHTML = `
+        <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+            ${message}
+        </div>
+    `;
+
+    container.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    setTimeout(() => {
+        container.innerHTML = "";
+    }, 3000);
+
+}
+
+function parseFormation(formation) {
+
+    const [defenders, midfielders, forwards] =
+        formation.split("-").map(Number);
+
+    return {
+        defenders,
+        midfielders,
+        forwards
+    };
+
+}
+
+function adjustLine(line, oldCount, newCount) {
+
+    if (newCount < oldCount) {
+
+        while (line.length > newCount) {
+
+            const player = line.pop();
+
+            if (player) {
+
+                const emptyBenchSlot =
+                    currentLineup.bench.findIndex(p => p === null);
+
+                if (emptyBenchSlot !== -1) {
+                    currentLineup.bench[emptyBenchSlot] = player;
+                }
+
+            }
+
+        }
+
+    }
+
+    if (newCount > oldCount) {
+
+        while (line.length < newCount) {
+            line.push(null);
+        }
+
+    }
+
+    // DŮLEŽITÉ
+    line.length = newCount;
+
+}
+
+function changeFormation(newFormation) {
+
+    const oldFormation = parseFormation(currentLineup.formation);
+    const nextFormation = parseFormation(newFormation);
+
+    currentLineup.formation = newFormation;
+    document.getElementById("formationSelect").value = newFormation;
+
+    adjustLine(
+        currentLineup.defenders,
+        oldFormation.defenders,
+        nextFormation.defenders
+    );
+
+    adjustLine(
+        currentLineup.midfielders,
+        oldFormation.midfielders,
+        nextFormation.midfielders
+    );
+
+    adjustLine(
+        currentLineup.forwards,
+        oldFormation.forwards,
+        nextFormation.forwards
+    );
+
+    renderPitch();
+
+}
+
+renderPitch();
+
+</script>
+
+{% endblock %}

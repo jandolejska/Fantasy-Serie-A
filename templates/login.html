@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-5">
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <h2 class="mb-4 text-center">
+                    Přihlášení
+                </h2>
+
+                {% if error %}
+
+                <div class="alert alert-danger">
+                    {{ error }}
+                </div>
+
+                {% endif %}
+
+                <form method="post">
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Přihlašovací jméno
+                        </label>
+
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            class="form-control"
+                            autocomplete="username"
+                            required
+                        >
+
+                        <div class="form-text">
+                            Manažeři zadávají pouze své přihlašovací jméno.
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="mb-4"
+                        id="password-group"
+                        style="display:none;"
+                    >
+
+                        <label class="form-label">
+                            Heslo administrátora
+                        </label>
+
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="form-control"
+                            autocomplete="current-password"
+                        >
+
+                    </div>
+
+                    <button
+                        class="btn btn-success w-100"
+                        type="submit"
+                    >
+                        Přihlásit
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const username = document.getElementById("username");
+const passwordGroup = document.getElementById("password-group");
+const password = document.getElementById("password");
+
+function updateLoginForm() {
+
+    if (username.value.trim().toLowerCase() === "admin") {
+
+        passwordGroup.style.display = "block";
+        password.required = true;
+
+    } else {
+
+        passwordGroup.style.display = "none";
+        password.required = false;
+        password.value = "";
+
+    }
+
+}
+
+username.addEventListener("input", updateLoginForm);
+
+updateLoginForm();
+
+</script>
+
+{% endblock %}

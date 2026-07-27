@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <h2 class="mb-3">
+        ⚽ Sestava
+    </h2>
+
+    <form method="POST">
+
+    {% if locked %}
+
+    <div class="alert alert-danger mb-4">
+
+        🔒 Sestava je uzamčena.
+        Uzávěrka kola již proběhla.
+
+    </div>
+
+    {% endif %}
+
+        <!-- Formace -->
+
+        <div class="card mb-4">
+
+            <div class="card-body">
+
+                <label class="form-label">
+
+                    Formace
+
+                </label>
+
+                <select
+                    class="form-select"
+                    name="formation"
+                    {% if locked %}disabled{% endif %}
+                >
+
+                    {% for f in [
+                        "3-4-3",
+                        "3-5-2",
+                        "4-3-3",
+                        "4-4-2",
+                        "4-5-1",
+                        "5-3-2",
+                        "5-4-1"
+                    ] %}
+
+                    <option
+                        value="{{ f }}"
+                        {% if f == lineup.formation %}
+                        selected
+                        {% endif %}
+                    >
+
+                        {{ f }}
+
+                    </option>
+
+                    {% endfor %}
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-body">
+
+                <h4 class="mb-4">
+
+                    Hráči
+
+                </h4>
+
+                {% set ns = namespace(bench=1) %}
+
+                {% for player in squad %}
+
+                <div class="row align-items-center mb-3">
+
+                    <div class="col-7">
+
+                        <strong>
+
+                            {{ player.name }}
+
+                        </strong>
+
+                        <br>
+
+                        <small class="text-secondary">
+
+                            {{ player.buy_price }} M
+
+                        </small>
+
+                    </div>
+
+                    <div class="col-5">
+
+                        <select
+                            class="form-select"
+                            name="{{ player.name }}"
+                            {% if locked %}disabled{% endif %}
+                        >
+
+                            {% if player.name in lineup.bench | map(attribute="name") | list %}
+
+                                {% set current = "bench" ~ ns.bench %}
+                                {% set ns.bench = ns.bench + 1 %}
+
+                            {% elif player.name in lineup.goalkeeper | map(attribute="name") | list
+                                  or player.name in lineup.defenders | map(attribute="name") | list
+                                  or player.name in lineup.midfielders | map(attribute="name") | list
+                                  or player.name in lineup.forwards | map(attribute="name") | list %}
+
+                                {% set current = "starting" %}
+
+                            {% else %}
+
+                                {% set current = "out" %}
+
+                            {% endif %}
+
+                            <option
+                                value="starting"
+                                {% if current == "starting" %}
+                                selected
+                                {% endif %}
+                            >
+
+                                🟢 Základ
+
+                            </option>
+
+                            {% for i in range(1,8) %}
+
+                            <option
+                                value="bench{{ i }}"
+                                {% if current == "bench" ~ i %}
+                                selected
+                                {% endif %}
+                            >
+
+                                🪑 Lavička {{ i }}
+
+                            </option>
+
+                            {% endfor %}
+
+                            <option
+                                value="out"
+                                {% if current == "out" %}
+                                selected
+                                {% endif %} 
+                            >
+
+                                ⚪ Mimo sestavu
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+        <div class="d-grid mt-4 mb-5">
+
+            <button
+                class="btn btn-success btn-lg"
+                {% if locked %}disabled{% endif %}
+            >
+
+                💾 Uložit sestavu
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock %}

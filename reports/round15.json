@@ -1,0 +1,19 @@
+{
+    "round": 15,
+    "headline": "Johnny se po 15. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "15. kolo nabídlo 3 zápasy, ve kterých padlo celkem 2 branek.",
+            "Průměr 0.67 gólu na utkání ukázal, že tentokrát dominovaly především obrany."
+        ],
+        "Nejlepší individuální výkon předvedl Scamacca (Atalanta) se známkou 7.5.",
+        "Ocenění pro manažera kola získává Johnny, který dosáhl na 69.5 bodů.",
+        "Do čela tabulky se dostal Johnny, který vystřídal Paulie.",
+        "Kuba čeká na vítězství už 5 kol."
+    ],
+    "player": {
+        "name": "Scamacca",
+        "team": "Atalanta",
+        "grade": 7.5
+    }
+}

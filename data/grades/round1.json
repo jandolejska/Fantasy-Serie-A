@@ -1,0 +1,2004 @@
+[
+    {
+        "id": "4431",
+        "team": "Atalanta",
+        "role": "P",
+        "name": "Carnesecchi",
+        "grade": "6,5"
+    },
+    {
+        "id": "787",
+        "team": "Atalanta",
+        "role": "D",
+        "name": "Djimsiti",
+        "grade": "5,5"
+    },
+    {
+        "id": "4887",
+        "team": "Atalanta",
+        "role": "D",
+        "name": "Bellanova",
+        "grade": "5,5"
+    },
+    {
+        "id": "5526",
+        "team": "Atalanta",
+        "role": "D",
+        "name": "Scalvini",
+        "grade": "5,5"
+    },
+    {
+        "id": "6046",
+        "team": "Atalanta",
+        "role": "D",
+        "name": "Hien",
+        "grade": "5"
+    },
+    {
+        "id": "22",
+        "team": "Atalanta",
+        "role": "C",
+        "name": "De Roon",
+        "grade": "6"
+    },
+    {
+        "id": "2077",
+        "team": "Atalanta",
+        "role": "C",
+        "name": "Pasalic",
+        "grade": "6"
+    },
+    {
+        "id": "4896",
+        "team": "Atalanta",
+        "role": "C",
+        "name": "Maldini",
+        "grade": "5,5"
+    },
+    {
+        "id": "5422",
+        "team": "Atalanta",
+        "role": "C",
+        "name": "Zalewski",
+        "grade": "6,5"
+    },
+    {
+        "id": "5792",
+        "team": "Atalanta",
+        "role": "C",
+        "name": "Ederson D.S.",
+        "grade": "6"
+    },
+    {
+        "id": "2137",
+        "team": "Atalanta",
+        "role": "A",
+        "name": "Scamacca",
+        "grade": "7"
+    },
+    {
+        "id": "5918",
+        "team": "Atalanta",
+        "role": "A",
+        "name": "Sulemana K.",
+        "grade": "6"
+    },
+    {
+        "id": "5995",
+        "team": "Atalanta",
+        "role": "A",
+        "name": "De Ketelaere",
+        "grade": "5,5"
+    },
+    {
+        "id": "6435",
+        "team": "Atalanta",
+        "role": "A",
+        "name": "Krstovic",
+        "grade": "5,5"
+    },
+    {
+        "id": "133",
+        "team": "Bologna",
+        "role": "P",
+        "name": "Skorupski",
+        "grade": "6"
+    },
+    {
+        "id": "487",
+        "team": "Bologna",
+        "role": "D",
+        "name": "De Silvestri",
+        "grade": "5,5"
+    },
+    {
+        "id": "2653",
+        "team": "Bologna",
+        "role": "D",
+        "name": "Lykogiannis",
+        "grade": "5"
+    },
+    {
+        "id": "4433",
+        "team": "Bologna",
+        "role": "D",
+        "name": "Zortea",
+        "grade": "5,5"
+    },
+    {
+        "id": "5498",
+        "team": "Bologna",
+        "role": "D",
+        "name": "Casale",
+        "grade": "5,5"
+    },
+    {
+        "id": "6042",
+        "team": "Bologna",
+        "role": "D",
+        "name": "Lucumì",
+        "grade": "4,5"
+    },
+    {
+        "id": "7068",
+        "team": "Bologna",
+        "role": "D",
+        "name": "Vitik",
+        "grade": "5,5"
+    },
+    {
+        "id": "184",
+        "team": "Bologna",
+        "role": "C",
+        "name": "Bernardeschi",
+        "grade": "6"
+    },
+    {
+        "id": "788",
+        "team": "Bologna",
+        "role": "C",
+        "name": "Freuler",
+        "grade": "6"
+    },
+    {
+        "id": "2167",
+        "team": "Bologna",
+        "role": "C",
+        "name": "Orsolini",
+        "grade": "6"
+    },
+    {
+        "id": "2765",
+        "team": "Bologna",
+        "role": "C",
+        "name": "Odgaard",
+        "grade": "5"
+    },
+    {
+        "id": "5298",
+        "team": "Bologna",
+        "role": "C",
+        "name": "Pobega",
+        "grade": "5"
+    },
+    {
+        "id": "6206",
+        "team": "Bologna",
+        "role": "C",
+        "name": "Fabbian",
+        "grade": "6"
+    },
+    {
+        "id": "785",
+        "team": "Bologna",
+        "role": "A",
+        "name": "Immobile",
+        "grade": "6"
+    },
+    {
+        "id": "4436",
+        "team": "Bologna",
+        "role": "A",
+        "name": "Cambiaghi",
+        "grade": "5,5"
+    },
+    {
+        "id": "6572",
+        "team": "Bologna",
+        "role": "A",
+        "name": "Castro S.",
+        "grade": "6,5"
+    },
+    {
+        "id": "4360",
+        "team": "Cagliari",
+        "role": "P",
+        "name": "Caprile",
+        "grade": "6"
+    },
+    {
+        "id": "393",
+        "team": "Cagliari",
+        "role": "D",
+        "name": "Luperto",
+        "grade": "7"
+    },
+    {
+        "id": "4210",
+        "team": "Cagliari",
+        "role": "D",
+        "name": "Mina",
+        "grade": "6"
+    },
+    {
+        "id": "4461",
+        "team": "Cagliari",
+        "role": "D",
+        "name": "Zappa",
+        "grade": "6"
+    },
+    {
+        "id": "5701",
+        "team": "Cagliari",
+        "role": "D",
+        "name": "Obert",
+        "grade": "6"
+    },
+    {
+        "id": "7125",
+        "team": "Cagliari",
+        "role": "D",
+        "name": "Idrissi R.",
+        "grade": "6"
+    },
+    {
+        "id": "1871",
+        "team": "Cagliari",
+        "role": "C",
+        "name": "Deiola",
+        "grade": "6"
+    },
+    {
+        "id": "1976",
+        "team": "Cagliari",
+        "role": "C",
+        "name": "Mazzitelli",
+        "grade": "6"
+    },
+    {
+        "id": "4364",
+        "team": "Cagliari",
+        "role": "C",
+        "name": "Gaetano",
+        "grade": "6,5"
+    },
+    {
+        "id": "4870",
+        "team": "Cagliari",
+        "role": "C",
+        "name": "Adopo",
+        "grade": "6"
+    },
+    {
+        "id": "6252",
+        "team": "Cagliari",
+        "role": "C",
+        "name": "Folorunsho",
+        "grade": "6"
+    },
+    {
+        "id": "6424",
+        "team": "Cagliari",
+        "role": "C",
+        "name": "Prati",
+        "grade": "6"
+    },
+    {
+        "id": "4463",
+        "team": "Cagliari",
+        "role": "A",
+        "name": "Esposito Se.",
+        "grade": "6"
+    },
+    {
+        "id": "5297",
+        "team": "Cagliari",
+        "role": "A",
+        "name": "Luvumbo",
+        "grade": "6"
+    },
+    {
+        "id": "6243",
+        "team": "Cagliari",
+        "role": "A",
+        "name": "Borrelli",
+        "grade": "6"
+    },
+    {
+        "id": "6966",
+        "team": "Como",
+        "role": "P",
+        "name": "Butez",
+        "grade": "6"
+    },
+    {
+        "id": "4994",
+        "team": "Como",
+        "role": "D",
+        "name": "Vojvoda",
+        "grade": "7"
+    },
+    {
+        "id": "6867",
+        "team": "Como",
+        "role": "D",
+        "name": "Valle",
+        "grade": "6,5"
+    },
+    {
+        "id": "6869",
+        "team": "Como",
+        "role": "D",
+        "name": "Ramon",
+        "grade": "7"
+    },
+    {
+        "id": "6893",
+        "team": "Como",
+        "role": "D",
+        "name": "Kempf",
+        "grade": "6"
+    },
+    {
+        "id": "6896",
+        "team": "Como",
+        "role": "D",
+        "name": "Van Der Brempt",
+        "grade": "6"
+    },
+    {
+        "id": "7014",
+        "team": "Como",
+        "role": "D",
+        "name": "Smolcic I.",
+        "grade": "6"
+    },
+    {
+        "id": "4284",
+        "team": "Como",
+        "role": "C",
+        "name": "Sergi Roberto",
+        "grade": "6"
+    },
+    {
+        "id": "5036",
+        "team": "Como",
+        "role": "C",
+        "name": "Caqueret",
+        "grade": "6"
+    },
+    {
+        "id": "5559",
+        "team": "Como",
+        "role": "C",
+        "name": "Da Cunha",
+        "grade": "7"
+    },
+    {
+        "id": "6151",
+        "team": "Como",
+        "role": "C",
+        "name": "Perrone",
+        "grade": "6,5"
+    },
+    {
+        "id": "6875",
+        "team": "Como",
+        "role": "C",
+        "name": "Paz N.",
+        "grade": "8"
+    },
+    {
+        "id": "313",
+        "team": "Como",
+        "role": "A",
+        "name": "Morata",
+        "grade": "6"
+    },
+    {
+        "id": "7017",
+        "team": "Como",
+        "role": "A",
+        "name": "Douvikas",
+        "grade": "7,5"
+    },
+    {
+        "id": "7129",
+        "team": "Como",
+        "role": "A",
+        "name": "Rodriguez Je.",
+        "grade": "7"
+    },
+    {
+        "id": "761",
+        "team": "Cremonese",
+        "role": "P",
+        "name": "Audero",
+        "grade": "6,5"
+    },
+    {
+        "id": "612",
+        "team": "Cremonese",
+        "role": "D",
+        "name": "Bianchetti",
+        "grade": "6,5"
+    },
+    {
+        "id": "770",
+        "team": "Cremonese",
+        "role": "D",
+        "name": "Pezzella Giu.",
+        "grade": "6,5"
+    },
+    {
+        "id": "5812",
+        "team": "Cremonese",
+        "role": "D",
+        "name": "Terracciano F.",
+        "grade": "6,5"
+    },
+    {
+        "id": "5835",
+        "team": "Cremonese",
+        "role": "D",
+        "name": "Baschirotto",
+        "grade": "8"
+    },
+    {
+        "id": "27",
+        "team": "Cremonese",
+        "role": "C",
+        "name": "Grassi",
+        "grade": "6"
+    },
+    {
+        "id": "5992",
+        "team": "Cremonese",
+        "role": "C",
+        "name": "Bondo",
+        "grade": "6"
+    },
+    {
+        "id": "5998",
+        "team": "Cremonese",
+        "role": "C",
+        "name": "Zerbin",
+        "grade": "7"
+    },
+    {
+        "id": "6481",
+        "team": "Cremonese",
+        "role": "C",
+        "name": "Payero",
+        "grade": "6"
+    },
+    {
+        "id": "7132",
+        "team": "Cremonese",
+        "role": "C",
+        "name": "Collocolo",
+        "grade": "6,5"
+    },
+    {
+        "id": "7133",
+        "team": "Cremonese",
+        "role": "C",
+        "name": "Vandeputte",
+        "grade": "5,5"
+    },
+    {
+        "id": "479",
+        "team": "Cremonese",
+        "role": "A",
+        "name": "Sanabria",
+        "grade": "6"
+    },
+    {
+        "id": "505",
+        "team": "Cremonese",
+        "role": "A",
+        "name": "Bonazzoli",
+        "grade": "7,5"
+    },
+    {
+        "id": "5515",
+        "team": "Cremonese",
+        "role": "A",
+        "name": "Okereke",
+        "grade": "6"
+    },
+    {
+        "id": "2521",
+        "team": "Fiorentina",
+        "role": "P",
+        "name": "De Gea",
+        "grade": "5,5"
+    },
+    {
+        "id": "2160",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Gosens",
+        "grade": "6"
+    },
+    {
+        "id": "4378",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Ranieri L.",
+        "grade": "6"
+    },
+    {
+        "id": "4904",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Marì",
+        "grade": "5"
+    },
+    {
+        "id": "5449",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Parisi",
+        "grade": "6"
+    },
+    {
+        "id": "5603",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Pongracic",
+        "grade": "6"
+    },
+    {
+        "id": "5718",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Viti",
+        "grade": "6"
+    },
+    {
+        "id": "5885",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Dodò",
+        "grade": "6,5"
+    },
+    {
+        "id": "6495",
+        "team": "Fiorentina",
+        "role": "D",
+        "name": "Comuzzo",
+        "grade": "6"
+    },
+    {
+        "id": "1933",
+        "team": "Fiorentina",
+        "role": "C",
+        "name": "Mandragora",
+        "grade": "7"
+    },
+    {
+        "id": "4465",
+        "team": "Fiorentina",
+        "role": "C",
+        "name": "Fagioli",
+        "grade": "6"
+    },
+    {
+        "id": "5319",
+        "team": "Fiorentina",
+        "role": "C",
+        "name": "Sohm",
+        "grade": "5,5"
+    },
+    {
+        "id": "5800",
+        "team": "Fiorentina",
+        "role": "C",
+        "name": "Gudmundsson A.",
+        "grade": "6"
+    },
+    {
+        "id": "6010",
+        "team": "Fiorentina",
+        "role": "C",
+        "name": "Fazzini",
+        "grade": "6"
+    },
+    {
+        "id": "6294",
+        "team": "Fiorentina",
+        "role": "C",
+        "name": "Ndour",
+        "grade": "5"
+    },
+    {
+        "id": "2097",
+        "team": "Fiorentina",
+        "role": "A",
+        "name": "Kean",
+        "grade": "5"
+    },
+    {
+        "id": "188",
+        "team": "Genoa",
+        "role": "P",
+        "name": "Leali",
+        "grade": "6"
+    },
+    {
+        "id": "2593",
+        "team": "Genoa",
+        "role": "D",
+        "name": "Martin",
+        "grade": "6"
+    },
+    {
+        "id": "5514",
+        "team": "Genoa",
+        "role": "D",
+        "name": "Vasquez",
+        "grade": "6,5"
+    },
+    {
+        "id": "6660",
+        "team": "Genoa",
+        "role": "D",
+        "name": "Marcandalli",
+        "grade": "6,5"
+    },
+    {
+        "id": "6814",
+        "team": "Genoa",
+        "role": "D",
+        "name": "Norton-Cuffy",
+        "grade": "5,5"
+    },
+    {
+        "id": "4970",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Messias",
+        "grade": "6"
+    },
+    {
+        "id": "5791",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Frendrup",
+        "grade": "6"
+    },
+    {
+        "id": "6020",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Ellertsson",
+        "grade": "6"
+    },
+    {
+        "id": "6106",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Carboni V.",
+        "grade": "6"
+    },
+    {
+        "id": "6722",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Gronbaek",
+        "grade": "6"
+    },
+    {
+        "id": "6917",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Masini",
+        "grade": "6"
+    },
+    {
+        "id": "7135",
+        "team": "Genoa",
+        "role": "C",
+        "name": "Stanciu",
+        "grade": "6"
+    },
+    {
+        "id": "4923",
+        "team": "Genoa",
+        "role": "A",
+        "name": "Colombo",
+        "grade": "5"
+    },
+    {
+        "id": "6822",
+        "team": "Genoa",
+        "role": "A",
+        "name": "Ekhator",
+        "grade": "5,5"
+    },
+    {
+        "id": "2428",
+        "team": "Inter",
+        "role": "P",
+        "name": "Sommer",
+        "grade": "6"
+    },
+    {
+        "id": "254",
+        "team": "Inter",
+        "role": "D",
+        "name": "Dimarco",
+        "grade": "6,5"
+    },
+    {
+        "id": "513",
+        "team": "Inter",
+        "role": "D",
+        "name": "Acerbi",
+        "grade": "6,5"
+    },
+    {
+        "id": "2120",
+        "team": "Inter",
+        "role": "D",
+        "name": "Bastoni",
+        "grade": "7,5"
+    },
+    {
+        "id": "4177",
+        "team": "Inter",
+        "role": "D",
+        "name": "Pavard",
+        "grade": "6,5"
+    },
+    {
+        "id": "5513",
+        "team": "Inter",
+        "role": "D",
+        "name": "Dumfries",
+        "grade": "6,5"
+    },
+    {
+        "id": "5877",
+        "team": "Inter",
+        "role": "D",
+        "name": "Carlos Augusto",
+        "grade": "6"
+    },
+    {
+        "id": "152",
+        "team": "Inter",
+        "role": "C",
+        "name": "Zielinski",
+        "grade": "6"
+    },
+    {
+        "id": "1870",
+        "team": "Inter",
+        "role": "C",
+        "name": "Barella",
+        "grade": "6,5"
+    },
+    {
+        "id": "2529",
+        "team": "Inter",
+        "role": "C",
+        "name": "Mkhitaryan",
+        "grade": "6,5"
+    },
+    {
+        "id": "6274",
+        "team": "Inter",
+        "role": "C",
+        "name": "Diouf",
+        "grade": "6"
+    },
+    {
+        "id": "7070",
+        "team": "Inter",
+        "role": "C",
+        "name": "Sucic P.",
+        "grade": "7,5"
+    },
+    {
+        "id": "2764",
+        "team": "Inter",
+        "role": "A",
+        "name": "Martinez L.",
+        "grade": "7,5"
+    },
+    {
+        "id": "4871",
+        "team": "Inter",
+        "role": "A",
+        "name": "Thuram",
+        "grade": "8"
+    },
+    {
+        "id": "6669",
+        "team": "Inter",
+        "role": "A",
+        "name": "Bonny",
+        "grade": "7"
+    },
+    {
+        "id": "5876",
+        "team": "Juventus",
+        "role": "P",
+        "name": "Di Gregorio",
+        "grade": "6"
+    },
+    {
+        "id": "2788",
+        "team": "Juventus",
+        "role": "D",
+        "name": "Bremer",
+        "grade": "7"
+    },
+    {
+        "id": "4976",
+        "team": "Juventus",
+        "role": "D",
+        "name": "Kalulu",
+        "grade": "6"
+    },
+    {
+        "id": "5520",
+        "team": "Juventus",
+        "role": "D",
+        "name": "Cambiaso",
+        "grade": "4,5"
+    },
+    {
+        "id": "5831",
+        "team": "Juventus",
+        "role": "D",
+        "name": "Gatti",
+        "grade": "6"
+    },
+    {
+        "id": "6766",
+        "team": "Juventus",
+        "role": "D",
+        "name": "Kelly L.",
+        "grade": "6"
+    },
+    {
+        "id": "7175",
+        "team": "Juventus",
+        "role": "D",
+        "name": "Joao Mario",
+        "grade": "6"
+    },
+    {
+        "id": "827",
+        "team": "Juventus",
+        "role": "C",
+        "name": "Locatelli",
+        "grade": "6"
+    },
+    {
+        "id": "5562",
+        "team": "Juventus",
+        "role": "C",
+        "name": "Thuram K.",
+        "grade": "6,5"
+    },
+    {
+        "id": "5685",
+        "team": "Juventus",
+        "role": "C",
+        "name": "Koopmeiners",
+        "grade": "6"
+    },
+    {
+        "id": "6884",
+        "team": "Juventus",
+        "role": "C",
+        "name": "Conceicao",
+        "grade": "6,5"
+    },
+    {
+        "id": "2841",
+        "team": "Juventus",
+        "role": "A",
+        "name": "Vlahovic",
+        "grade": "7"
+    },
+    {
+        "id": "5544",
+        "team": "Juventus",
+        "role": "A",
+        "name": "David",
+        "grade": "7"
+    },
+    {
+        "id": "6434",
+        "team": "Juventus",
+        "role": "A",
+        "name": "Yildiz",
+        "grade": "7,5"
+    },
+    {
+        "id": "2814",
+        "team": "Lazio",
+        "role": "P",
+        "name": "Provedel",
+        "grade": "5,5"
+    },
+    {
+        "id": "2188",
+        "team": "Lazio",
+        "role": "D",
+        "name": "Marusic",
+        "grade": "5,5"
+    },
+    {
+        "id": "2263",
+        "team": "Lazio",
+        "role": "D",
+        "name": "Lazzari",
+        "grade": "5"
+    },
+    {
+        "id": "2728",
+        "team": "Lazio",
+        "role": "D",
+        "name": "Pellegrini Lu.",
+        "grade": "5,5"
+    },
+    {
+        "id": "5620",
+        "team": "Lazio",
+        "role": "D",
+        "name": "Tavares N.",
+        "grade": "5"
+    },
+    {
+        "id": "5833",
+        "team": "Lazio",
+        "role": "D",
+        "name": "Gila",
+        "grade": "5"
+    },
+    {
+        "id": "7012",
+        "team": "Lazio",
+        "role": "D",
+        "name": "Provstgaard",
+        "grade": "5,5"
+    },
+    {
+        "id": "333",
+        "team": "Lazio",
+        "role": "C",
+        "name": "Cataldi",
+        "grade": "5"
+    },
+    {
+        "id": "632",
+        "team": "Lazio",
+        "role": "C",
+        "name": "Zaccagni",
+        "grade": "5"
+    },
+    {
+        "id": "4186",
+        "team": "Lazio",
+        "role": "C",
+        "name": "Guendouzi",
+        "grade": "5"
+    },
+    {
+        "id": "4459",
+        "team": "Lazio",
+        "role": "C",
+        "name": "Rovella",
+        "grade": "6"
+    },
+    {
+        "id": "6629",
+        "team": "Lazio",
+        "role": "C",
+        "name": "Dele-Bashiru",
+        "grade": "5"
+    },
+    {
+        "id": "2489",
+        "team": "Lazio",
+        "role": "A",
+        "name": "Pedro",
+        "grade": "5,5"
+    },
+    {
+        "id": "5500",
+        "team": "Lazio",
+        "role": "A",
+        "name": "Cancellieri",
+        "grade": "5,5"
+    },
+    {
+        "id": "5672",
+        "team": "Lazio",
+        "role": "A",
+        "name": "Dia",
+        "grade": "5,5"
+    },
+    {
+        "id": "6226",
+        "team": "Lazio",
+        "role": "A",
+        "name": "Castellanos",
+        "grade": "5,5"
+    },
+    {
+        "id": "2134",
+        "team": "Lecce",
+        "role": "P",
+        "name": "Falcone",
+        "grade": "7"
+    },
+    {
+        "id": "4502",
+        "team": "Lecce",
+        "role": "D",
+        "name": "Gallo",
+        "grade": "6"
+    },
+    {
+        "id": "6632",
+        "team": "Lecce",
+        "role": "D",
+        "name": "Gaspar K.",
+        "grade": "6,5"
+    },
+    {
+        "id": "6989",
+        "team": "Lecce",
+        "role": "D",
+        "name": "Tiago Gabriel",
+        "grade": "6,5"
+    },
+    {
+        "id": "6990",
+        "team": "Lecce",
+        "role": "D",
+        "name": "Veiga D.",
+        "grade": "6"
+    },
+    {
+        "id": "7136",
+        "team": "Lecce",
+        "role": "D",
+        "name": "Kouassi",
+        "grade": "6"
+    },
+    {
+        "id": "2839",
+        "team": "Lecce",
+        "role": "C",
+        "name": "Sottil",
+        "grade": "5,5"
+    },
+    {
+        "id": "5504",
+        "team": "Lecce",
+        "role": "C",
+        "name": "Coulibaly L.",
+        "grade": "6"
+    },
+    {
+        "id": "6015",
+        "team": "Lecce",
+        "role": "C",
+        "name": "Berisha M.",
+        "grade": "5,5"
+    },
+    {
+        "id": "6394",
+        "team": "Lecce",
+        "role": "C",
+        "name": "Ramadani",
+        "grade": "6"
+    },
+    {
+        "id": "6410",
+        "team": "Lecce",
+        "role": "C",
+        "name": "Kaba",
+        "grade": "6"
+    },
+    {
+        "id": "6634",
+        "team": "Lecce",
+        "role": "C",
+        "name": "Tete Morente",
+        "grade": "5,5"
+    },
+    {
+        "id": "6001",
+        "team": "Lecce",
+        "role": "A",
+        "name": "Banda",
+        "grade": "5,5"
+    },
+    {
+        "id": "6519",
+        "team": "Lecce",
+        "role": "A",
+        "name": "Camarda",
+        "grade": "5"
+    },
+    {
+        "id": "4312",
+        "team": "Milan",
+        "role": "P",
+        "name": "Maignan",
+        "grade": "6"
+    },
+    {
+        "id": "4401",
+        "team": "Milan",
+        "role": "D",
+        "name": "Gabbia",
+        "grade": "5,5"
+    },
+    {
+        "id": "4751",
+        "team": "Milan",
+        "role": "D",
+        "name": "Tomori",
+        "grade": "5,5"
+    },
+    {
+        "id": "5022",
+        "team": "Milan",
+        "role": "D",
+        "name": "Pavlovic",
+        "grade": "6,5"
+    },
+    {
+        "id": "5273",
+        "team": "Milan",
+        "role": "D",
+        "name": "Estupinan",
+        "grade": "6"
+    },
+    {
+        "id": "6531",
+        "team": "Milan",
+        "role": "D",
+        "name": "Jimenez A.",
+        "grade": "5,5"
+    },
+    {
+        "id": "2423",
+        "team": "Milan",
+        "role": "C",
+        "name": "Pulisic",
+        "grade": "5,5"
+    },
+    {
+        "id": "2606",
+        "team": "Milan",
+        "role": "C",
+        "name": "Modric",
+        "grade": "6,5"
+    },
+    {
+        "id": "4199",
+        "team": "Milan",
+        "role": "C",
+        "name": "Loftus-Cheek",
+        "grade": "5"
+    },
+    {
+        "id": "4686",
+        "team": "Milan",
+        "role": "C",
+        "name": "Fofana Y.",
+        "grade": "5"
+    },
+    {
+        "id": "4856",
+        "team": "Milan",
+        "role": "C",
+        "name": "Chukwueze",
+        "grade": "5,5"
+    },
+    {
+        "id": "4892",
+        "team": "Milan",
+        "role": "C",
+        "name": "Saelemaekers",
+        "grade": "6"
+    },
+    {
+        "id": "7203",
+        "team": "Milan",
+        "role": "C",
+        "name": "Jashari",
+        "grade": "5,5"
+    },
+    {
+        "id": "7008",
+        "team": "Milan",
+        "role": "A",
+        "name": "Gimenez",
+        "grade": "5"
+    },
+    {
+        "id": "572",
+        "team": "Napoli",
+        "role": "P",
+        "name": "Meret",
+        "grade": "6"
+    },
+    {
+        "id": "256",
+        "team": "Napoli",
+        "role": "D",
+        "name": "Juan Jesus",
+        "grade": "6,5"
+    },
+    {
+        "id": "2816",
+        "team": "Napoli",
+        "role": "D",
+        "name": "Di Lorenzo",
+        "grade": "6"
+    },
+    {
+        "id": "4409",
+        "team": "Napoli",
+        "role": "D",
+        "name": "Rrahmani",
+        "grade": "6,5"
+    },
+    {
+        "id": "5840",
+        "team": "Napoli",
+        "role": "D",
+        "name": "Olivera",
+        "grade": "6"
+    },
+    {
+        "id": "536",
+        "team": "Napoli",
+        "role": "C",
+        "name": "Politano",
+        "grade": "7"
+    },
+    {
+        "id": "2517",
+        "team": "Napoli",
+        "role": "C",
+        "name": "De Bruyne",
+        "grade": "7"
+    },
+    {
+        "id": "4220",
+        "team": "Napoli",
+        "role": "C",
+        "name": "Zambo Anguissa",
+        "grade": "6,5"
+    },
+    {
+        "id": "4287",
+        "team": "Napoli",
+        "role": "C",
+        "name": "Lobotka",
+        "grade": "6,5"
+    },
+    {
+        "id": "4777",
+        "team": "Napoli",
+        "role": "C",
+        "name": "McTominay",
+        "grade": "7,5"
+    },
+    {
+        "id": "6831",
+        "team": "Napoli",
+        "role": "C",
+        "name": "Neres",
+        "grade": "6"
+    },
+    {
+        "id": "6215",
+        "team": "Napoli",
+        "role": "A",
+        "name": "Lucca",
+        "grade": "5,5"
+    },
+    {
+        "id": "6641",
+        "team": "Parma",
+        "role": "P",
+        "name": "Suzuki",
+        "grade": "6,5"
+    },
+    {
+        "id": "5307",
+        "team": "Parma",
+        "role": "D",
+        "name": "Valenti",
+        "grade": "5,5"
+    },
+    {
+        "id": "5862",
+        "team": "Parma",
+        "role": "D",
+        "name": "Valeri",
+        "grade": "5,5"
+    },
+    {
+        "id": "6663",
+        "team": "Parma",
+        "role": "D",
+        "name": "Circati",
+        "grade": "5"
+    },
+    {
+        "id": "6664",
+        "team": "Parma",
+        "role": "D",
+        "name": "Delprato",
+        "grade": "6"
+    },
+    {
+        "id": "6965",
+        "team": "Parma",
+        "role": "D",
+        "name": "Lovik",
+        "grade": "5,5"
+    },
+    {
+        "id": "6666",
+        "team": "Parma",
+        "role": "C",
+        "name": "Bernabè",
+        "grade": "6"
+    },
+    {
+        "id": "6898",
+        "team": "Parma",
+        "role": "C",
+        "name": "Keita M.",
+        "grade": "5,5"
+    },
+    {
+        "id": "7138",
+        "team": "Parma",
+        "role": "C",
+        "name": "Ordonez C.",
+        "grade": "5,5"
+    },
+    {
+        "id": "7209",
+        "team": "Parma",
+        "role": "C",
+        "name": "Sorensen O.",
+        "grade": "6"
+    },
+    {
+        "id": "6207",
+        "team": "Parma",
+        "role": "A",
+        "name": "Almqvist",
+        "grade": "6"
+    },
+    {
+        "id": "7023",
+        "team": "Parma",
+        "role": "A",
+        "name": "Pellegrino M.",
+        "grade": "5,5"
+    },
+    {
+        "id": "2861",
+        "team": "Pisa",
+        "role": "P",
+        "name": "Semper",
+        "grade": "6,5"
+    },
+    {
+        "id": "697",
+        "team": "Pisa",
+        "role": "D",
+        "name": "Cuadrado",
+        "grade": "6"
+    },
+    {
+        "id": "2273",
+        "team": "Pisa",
+        "role": "D",
+        "name": "Caracciolo A.",
+        "grade": "6,5"
+    },
+    {
+        "id": "2745",
+        "team": "Pisa",
+        "role": "D",
+        "name": "Calabresi",
+        "grade": "6"
+    },
+    {
+        "id": "7139",
+        "team": "Pisa",
+        "role": "D",
+        "name": "Canestrelli",
+        "grade": "6,5"
+    },
+    {
+        "id": "7143",
+        "team": "Pisa",
+        "role": "D",
+        "name": "Angori",
+        "grade": "7"
+    },
+    {
+        "id": "7196",
+        "team": "Pisa",
+        "role": "D",
+        "name": "Denoon",
+        "grade": "5,5"
+    },
+    {
+        "id": "5318",
+        "team": "Pisa",
+        "role": "C",
+        "name": "Tramoni M.",
+        "grade": "6"
+    },
+    {
+        "id": "5784",
+        "team": "Pisa",
+        "role": "C",
+        "name": "Aebischer",
+        "grade": "5,5"
+    },
+    {
+        "id": "6593",
+        "team": "Pisa",
+        "role": "C",
+        "name": "Akinsanmiro",
+        "grade": "6"
+    },
+    {
+        "id": "7145",
+        "team": "Pisa",
+        "role": "C",
+        "name": "Piccinini G.",
+        "grade": "6"
+    },
+    {
+        "id": "7146",
+        "team": "Pisa",
+        "role": "C",
+        "name": "Tourè I.",
+        "grade": "7"
+    },
+    {
+        "id": "7149",
+        "team": "Pisa",
+        "role": "C",
+        "name": "Marin M.",
+        "grade": "6"
+    },
+    {
+        "id": "5336",
+        "team": "Pisa",
+        "role": "A",
+        "name": "Nzola",
+        "grade": "6"
+    },
+    {
+        "id": "5455",
+        "team": "Pisa",
+        "role": "A",
+        "name": "Moreo",
+        "grade": "6,5"
+    },
+    {
+        "id": "6836",
+        "team": "Pisa",
+        "role": "A",
+        "name": "Meister",
+        "grade": "6"
+    },
+    {
+        "id": "5841",
+        "team": "Roma",
+        "role": "P",
+        "name": "Svilar",
+        "grade": "6"
+    },
+    {
+        "id": "2296",
+        "team": "Roma",
+        "role": "D",
+        "name": "Mancini",
+        "grade": "6,5"
+    },
+    {
+        "id": "4317",
+        "team": "Roma",
+        "role": "D",
+        "name": "N'Dicka",
+        "grade": "6,5"
+    },
+    {
+        "id": "4772",
+        "team": "Roma",
+        "role": "D",
+        "name": "Angelino",
+        "grade": "6"
+    },
+    {
+        "id": "4807",
+        "team": "Roma",
+        "role": "D",
+        "name": "Hermoso",
+        "grade": "6,5"
+    },
+    {
+        "id": "7181",
+        "team": "Roma",
+        "role": "D",
+        "name": "Wesley",
+        "grade": "7"
+    },
+    {
+        "id": "779",
+        "team": "Roma",
+        "role": "C",
+        "name": "Cristante",
+        "grade": "6,5"
+    },
+    {
+        "id": "795",
+        "team": "Roma",
+        "role": "C",
+        "name": "El Shaarawy",
+        "grade": "6"
+    },
+    {
+        "id": "5589",
+        "team": "Roma",
+        "role": "C",
+        "name": "Konè M.",
+        "grade": "6,5"
+    },
+    {
+        "id": "6271",
+        "team": "Roma",
+        "role": "C",
+        "name": "El Aynaoui",
+        "grade": "6"
+    },
+    {
+        "id": "309",
+        "team": "Roma",
+        "role": "A",
+        "name": "Dybala",
+        "grade": "6"
+    },
+    {
+        "id": "5734",
+        "team": "Roma",
+        "role": "A",
+        "name": "Soulè",
+        "grade": "5,5"
+    },
+    {
+        "id": "6365",
+        "team": "Roma",
+        "role": "A",
+        "name": "Ferguson E.",
+        "grade": "6,5"
+    },
+    {
+        "id": "6675",
+        "team": "Roma",
+        "role": "A",
+        "name": "Dovbyk",
+        "grade": "5,5"
+    },
+    {
+        "id": "4867",
+        "team": "Sassuolo",
+        "role": "P",
+        "name": "Turati",
+        "grade": "5,5"
+    },
+    {
+        "id": "2279",
+        "team": "Sassuolo",
+        "role": "D",
+        "name": "Romagna",
+        "grade": "5"
+    },
+    {
+        "id": "4374",
+        "team": "Sassuolo",
+        "role": "D",
+        "name": "Walukiewicz",
+        "grade": "5,5"
+    },
+    {
+        "id": "5851",
+        "team": "Sassuolo",
+        "role": "D",
+        "name": "Doig",
+        "grade": "6"
+    },
+    {
+        "id": "7155",
+        "team": "Sassuolo",
+        "role": "D",
+        "name": "Muharemovic",
+        "grade": "5,5"
+    },
+    {
+        "id": "6219",
+        "team": "Sassuolo",
+        "role": "C",
+        "name": "Boloca",
+        "grade": "6"
+    },
+    {
+        "id": "6246",
+        "team": "Sassuolo",
+        "role": "C",
+        "name": "Lipani",
+        "grade": "5,5"
+    },
+    {
+        "id": "6717",
+        "team": "Sassuolo",
+        "role": "C",
+        "name": "Konè I.",
+        "grade": "4,5"
+    },
+    {
+        "id": "6815",
+        "team": "Sassuolo",
+        "role": "C",
+        "name": "Fadera",
+        "grade": "6"
+    },
+    {
+        "id": "531",
+        "team": "Sassuolo",
+        "role": "A",
+        "name": "Berardi",
+        "grade": "5,5"
+    },
+    {
+        "id": "2038",
+        "team": "Sassuolo",
+        "role": "A",
+        "name": "Pinamonti",
+        "grade": "5,5"
+    },
+    {
+        "id": "6060",
+        "team": "Sassuolo",
+        "role": "A",
+        "name": "Laurientè",
+        "grade": "5,5"
+    },
+    {
+        "id": "7179",
+        "team": "Torino",
+        "role": "P",
+        "name": "Israel",
+        "grade": "5"
+    },
+    {
+        "id": "49",
+        "team": "Torino",
+        "role": "D",
+        "name": "Masina",
+        "grade": "4,5"
+    },
+    {
+        "id": "252",
+        "team": "Torino",
+        "role": "D",
+        "name": "Biraghi",
+        "grade": "4,5"
+    },
+    {
+        "id": "4385",
+        "team": "Torino",
+        "role": "D",
+        "name": "Lazaro",
+        "grade": "5"
+    },
+    {
+        "id": "6642",
+        "team": "Torino",
+        "role": "D",
+        "name": "Coco",
+        "grade": "4,5"
+    },
+    {
+        "id": "4890",
+        "team": "Torino",
+        "role": "C",
+        "name": "Tameze",
+        "grade": "5"
+    },
+    {
+        "id": "5687",
+        "team": "Torino",
+        "role": "C",
+        "name": "Vlasic",
+        "grade": "5"
+    },
+    {
+        "id": "5888",
+        "team": "Torino",
+        "role": "C",
+        "name": "Casadei",
+        "grade": "5"
+    },
+    {
+        "id": "6005",
+        "team": "Torino",
+        "role": "C",
+        "name": "Ilkhan",
+        "grade": "5,5"
+    },
+    {
+        "id": "6170",
+        "team": "Torino",
+        "role": "C",
+        "name": "Gineitis",
+        "grade": "4"
+    },
+    {
+        "id": "2061",
+        "team": "Torino",
+        "role": "A",
+        "name": "Simeone",
+        "grade": "5"
+    },
+    {
+        "id": "6145",
+        "team": "Torino",
+        "role": "A",
+        "name": "Ngonge",
+        "grade": "5"
+    },
+    {
+        "id": "6646",
+        "team": "Torino",
+        "role": "A",
+        "name": "Adams C.",
+        "grade": "5,5"
+    },
+    {
+        "id": "7183",
+        "team": "Torino",
+        "role": "A",
+        "name": "Aboukhlal",
+        "grade": "5,5"
+    },
+    {
+        "id": "6842",
+        "team": "Udinese",
+        "role": "P",
+        "name": "Sava",
+        "grade": "6"
+    },
+    {
+        "id": "5555",
+        "team": "Udinese",
+        "role": "D",
+        "name": "Kamara H.",
+        "grade": "6"
+    },
+    {
+        "id": "5820",
+        "team": "Udinese",
+        "role": "D",
+        "name": "Bertola",
+        "grade": "6"
+    },
+    {
+        "id": "6047",
+        "team": "Udinese",
+        "role": "D",
+        "name": "Ehizibue",
+        "grade": "5,5"
+    },
+    {
+        "id": "6211",
+        "team": "Udinese",
+        "role": "D",
+        "name": "Zemura",
+        "grade": "5,5"
+    },
+    {
+        "id": "6485",
+        "team": "Udinese",
+        "role": "D",
+        "name": "Kristensen T.",
+        "grade": "7"
+    },
+    {
+        "id": "6956",
+        "team": "Udinese",
+        "role": "D",
+        "name": "Solet",
+        "grade": "6"
+    },
+    {
+        "id": "5850",
+        "team": "Udinese",
+        "role": "C",
+        "name": "Lovric",
+        "grade": "6"
+    },
+    {
+        "id": "6212",
+        "team": "Udinese",
+        "role": "C",
+        "name": "Zarraga",
+        "grade": "6"
+    },
+    {
+        "id": "6680",
+        "team": "Udinese",
+        "role": "C",
+        "name": "Karlstrom",
+        "grade": "6"
+    },
+    {
+        "id": "6908",
+        "team": "Udinese",
+        "role": "C",
+        "name": "Atta",
+        "grade": "6"
+    },
+    {
+        "id": "7198",
+        "team": "Udinese",
+        "role": "C",
+        "name": "Piotrowski",
+        "grade": "6"
+    },
+    {
+        "id": "5637",
+        "team": "Udinese",
+        "role": "A",
+        "name": "Davis K.",
+        "grade": "5,5"
+    },
+    {
+        "id": "6653",
+        "team": "Udinese",
+        "role": "A",
+        "name": "Bravo",
+        "grade": "6"
+    },
+    {
+        "id": "7161",
+        "team": "Udinese",
+        "role": "A",
+        "name": "Bayo V.",
+        "grade": "6"
+    },
+    {
+        "id": "4957",
+        "team": "Verona",
+        "role": "P",
+        "name": "Montipò",
+        "grade": "6"
+    },
+    {
+        "id": "5532",
+        "team": "Verona",
+        "role": "D",
+        "name": "Bradaric",
+        "grade": "5,5"
+    },
+    {
+        "id": "6639",
+        "team": "Verona",
+        "role": "D",
+        "name": "Frese",
+        "grade": "5,5"
+    },
+    {
+        "id": "6894",
+        "team": "Verona",
+        "role": "D",
+        "name": "Unai Nunez",
+        "grade": "6"
+    },
+    {
+        "id": "7018",
+        "team": "Verona",
+        "role": "D",
+        "name": "Nelsson",
+        "grade": "5,5"
+    },
+    {
+        "id": "7220",
+        "team": "Verona",
+        "role": "D",
+        "name": "Belghali",
+        "grade": "6"
+    },
+    {
+        "id": "7222",
+        "team": "Verona",
+        "role": "D",
+        "name": "Cham",
+        "grade": "6"
+    },
+    {
+        "id": "5540",
+        "team": "Verona",
+        "role": "C",
+        "name": "Niasse",
+        "grade": "5,5"
+    },
+    {
+        "id": "5688",
+        "team": "Verona",
+        "role": "C",
+        "name": "Harroui",
+        "grade": "6"
+    },
+    {
+        "id": "6458",
+        "team": "Verona",
+        "role": "C",
+        "name": "Serdar",
+        "grade": "6,5"
+    },
+    {
+        "id": "7028",
+        "team": "Verona",
+        "role": "C",
+        "name": "Bernede",
+        "grade": "6"
+    },
+    {
+        "id": "6159",
+        "team": "Verona",
+        "role": "A",
+        "name": "Sarr A.",
+        "grade": "5,5"
+    },
+    {
+        "id": "6630",
+        "team": "Verona",
+        "role": "A",
+        "name": "Mosquera",
+        "grade": "6"
+    },
+    {
+        "id": "7162",
+        "team": "Verona",
+        "role": "A",
+        "name": "Giovane",
+        "grade": "7"
+    }
+]

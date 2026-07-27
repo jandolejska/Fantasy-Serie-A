@@ -1,0 +1,583 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="text-center mb-4">
+
+    <h2>
+
+        👋 Ahoj {{ display_name(manager.name) }}
+
+    </h2>
+
+    <p class="text-secondary">
+
+        Vítej zpět ve Fantasy Serie A
+
+    </p>
+
+</div>
+
+
+<!-- GAMEWEEK -->
+
+<div class="card mb-4">
+
+    <div class="card-body text-center">
+
+        <h3>
+
+            🏆 {{ dashboard.current_round }}. kolo
+
+        </h3>
+
+        <hr>
+
+        <p>
+
+            <strong>Uzávěrka:</strong><br>
+
+            {{ dashboard.deadline }}
+
+        </p>
+
+        {% if dashboard.locked %}
+
+            <div class="alert alert-danger mb-0">
+
+                🔒 Sestava je uzamčena
+
+            </div>
+
+        {% else %}
+
+            <div class="alert alert-success mb-0">
+
+                🟢 Sestava je otevřená
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+
+{% if report %}
+
+<div class="card mt-4">
+
+    <div class="card-body">
+
+        <h4>
+            📰 Souhrn posledního kola
+        </h4>
+
+        <hr>
+
+        <p class="mb-2 text-light">
+            {{ report.headline }}
+        </p>
+
+        {% for line in report.sections[0] %}
+
+        <p class="mb-2">
+            {{ line }}
+        </p>
+
+        {% endfor %}
+
+        <div class="mt-3 mb-0 text-light">
+
+            ⭐ <strong>Hráčem kola byl
+            {{ report.player.name }}</strong>
+            ({{ report.player.team }})
+            se známkou
+            <strong>{{ report.player.grade }}</strong>.
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endif %}
+
+{% if dashboard.news %}
+
+<div class="card mt-4">
+
+    <div class="card-body text-light">
+
+        <h4>
+            📰 Novinky od posledního kola
+        </h4>
+
+        <hr>
+
+        {% for item in dashboard.news %}
+
+            {% if item.type == "normal" %}
+
+                <div class="mb-3">
+
+                    🔄 <strong>{{ display_name(item.manager) }}</strong> provedl přestup.
+
+                    <div class="ms-4 mt-2 text-light">
+
+                        {% set sold_team = dashboard.teams.get(item.sold.team) %}
+                        {% set bought_team = dashboard.teams.get(item.bought.team) %}
+
+                        <span class="badge bg-danger me-2">OUT</span>
+
+                        {{ item.sold.name }}
+
+                        {% if sold_team %}
+                            <img
+                                src="{{ url_for('static', filename='img/teams/' ~ sold_team.logo) }}"
+                                alt="{{ item.sold.team }}"
+                                width="22"
+                                height="22"
+                                class="ms-2"
+                            >
+                        {% endif %}
+
+                        <br>
+
+                        <span class="badge bg-success me-2">IN</span>
+
+                        {{ item.bought.name }}
+
+                        {% if bought_team %}
+                            <img
+                                src="{{ url_for('static', filename='img/teams/' ~ bought_team.logo) }}"
+                                alt="{{ item.bought.team }}"
+                                width="22"
+                                height="22"
+                                class="ms-2"
+                            >
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            {% elif item.type == "free" %}
+
+                <div class="mb-3">
+
+                    🆓 <strong>{{ display_name(item.manager) }}</strong> využil volný přestup.
+
+                    <div class="ms-4 mt-2 text-light">
+
+                        {% set sold_team = dashboard.teams.get(item.sold.team) %}
+                        {% set bought_team = dashboard.teams.get(item.bought.team) %}
+
+                        <span class="badge bg-danger me-2">OUT</span>
+
+                        {{ item.sold.name }}
+
+                        {% if sold_team %}
+                            <img
+                                src="{{ url_for('static', filename='img/teams/' ~ sold_team.logo) }}"
+                                alt="{{ item.sold.team }}"
+                                width="22"
+                                height="22"
+                                class="ms-2"
+                            >
+                        {% endif %}
+
+                        <br>
+
+                        <span class="badge bg-success me-2">IN</span>
+
+                        {{ item.bought.name }}
+
+                        {% if bought_team %}
+                            <img
+                                src="{{ url_for('static', filename='img/teams/' ~ bought_team.logo) }}"
+                                alt="{{ item.bought.team }}"
+                                width="22"
+                                height="22"
+                                class="ms-2"
+                            >
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+            {% elif item.type == "coach" %}
+
+                {% set old_team = dashboard.teams.get(item.old_team) %}
+                {% set new_team = dashboard.teams.get(item.new_team) %}
+
+                <div class="mb-3">
+
+                    🎩 <strong>{{ display_name(item.manager) }}</strong> změnil trenéra.
+
+                    <div class="ms-4 mt-2 text-light">
+
+                        <div class="mb-1">
+
+                            <span class="badge bg-danger me-2">OUT</span>
+
+                            {{ item.old }}
+
+                            {% if old_team %}
+                                <img
+                                    src="{{ url_for('static', filename='img/teams/' ~ old_team.logo) }}"
+                                    alt="{{ item.old_team }}"
+                                    width="22"
+                                    height="22"
+                                    class="ms-2"
+                                >
+                            {% endif %}
+
+                        </div>
+
+                        <div>
+
+                            <span class="badge bg-success me-2">IN</span>
+
+                            {{ item.new }}
+
+                            {% if new_team %}
+                                <img
+                                    src="{{ url_for('static', filename='img/teams/' ~ new_team.logo) }}"
+                                    alt="{{ item.new_team }}"
+                                    width="22"
+                                    height="22"
+                                    class="ms-2"
+                                >
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {% endif %}
+
+            {% if not loop.last %}
+                <hr>
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endif %}
+
+<!-- TABULKA -->
+
+<div class="card mt-4">
+
+    <div class="card-body">
+
+        <h4>
+
+            🏆 Tabulka
+
+        </h4>
+
+        <hr>
+
+        {% if dashboard.table %}
+
+        <table class="table table-dark table-striped table-hover align-middle text-center">
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+
+                    <th class="text-start">Manažer</th>
+
+                    <th>Z</th>
+
+                    <th>V</th>
+
+                    <th>R</th>
+
+                    <th>P</th>
+
+                    <th>Skóre</th>
+
+                    <th>Body</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for team in dashboard.table %}
+
+                <tr
+
+                    {% if team.manager == manager.name %}
+
+                        class="table-success"
+
+                    {% endif %}
+
+                >
+
+                    <td>
+
+                        {% if loop.index == 1 %}
+
+                            🥇
+
+                        {% elif loop.index == 2 %}
+
+                            🥈
+
+                        {% elif loop.index == 3 %}
+
+                            🥉
+
+                        {% else %}
+
+                            {{ loop.index }}
+
+                        {% endif %}
+
+                    </td>
+
+                    <td class="text-start">
+
+                        <strong>
+
+                            <a
+                                href="{{ url_for('manager', slug=team.manager|lower) }}"
+                                class="manager-link"
+                            >
+                                {{ display_name(team.manager) }}
+                            </a>
+
+                        </strong>
+
+                    </td>
+
+                    <td>{{ team.played }}</td>
+
+                    <td>{{ team.wins }}</td>
+
+                    <td>{{ team.draws }}</td>
+
+                    <td>{{ team.losses }}</td>
+
+                    <td>
+
+                        {{ team.gf }}:{{ team.ga }}
+
+                    </td>
+
+                    <td>
+
+                        {{ team.points }}
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+
+            </tbody>
+
+        </table>
+
+        {% else %}
+
+        <p class="text-secondary">
+
+            Tabulka zatím není k dispozici.
+
+        </p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+
+<!-- POSLEDNÍ VÝSLEDKY -->
+
+<div class="card mt-4">
+
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h4 class="mb-0">
+                📅 Poslední výsledky
+            </h4>
+
+            <span class="badge bg-success fs-5 px-4 py-1 rounded-pill">
+                {{ dashboard.completed_rounds }}. KOLO
+            </span>
+
+        </div>
+
+        {% if dashboard.last_results %}
+
+            {% for match in dashboard.last_results %}
+
+            <a
+                href="{{ url_for(
+                    'match_page',
+                    round_number=dashboard.completed_rounds,
+                    home_slug=match.home_slug,
+                    away_slug=match.away_slug
+                ) }}"
+                class="row align-items-center py-2 text-decoration-none text-reset rounded dashboard-match-link"
+            >
+
+                <div class="col-4 text-end pe-4">
+
+                    <strong class="fs-6">
+
+                        {{ display_name(match.home) }}
+
+                    </strong>
+
+                </div>
+
+                <div class="col-4 text-center">
+
+                    <span class="badge bg-success rounded-pill fs-6 px-3 py-2">
+
+                        {{ match.home_goals }}
+                        :
+                        {{ match.away_goals }}
+
+                    </span>
+
+                </div>
+
+                <div class="col-4 text-start ps-4">
+
+                    <strong class="fs-6">
+
+                        {{ display_name(match.away) }}
+
+                    </strong>
+
+                </div>
+
+            </a>
+
+            {% if not loop.last %}
+
+                <hr class="my-2 opacity-25">
+
+            {% endif %}
+
+            {% endfor %}
+
+        {% else %}
+
+            <p class="text-secondary mb-0">
+
+                Zatím nebylo odehráno žádné kolo.
+
+            </p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+<!-- DALŠÍ KOLO -->
+
+<div class="card mt-4 mb-5">
+
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h4 class="mb-0">
+
+                ⚽ Další kolo
+
+            </h4>
+
+            <span class="badge bg-success fs-5 px-4 py-1 rounded-pill">
+
+                {{ dashboard.completed_rounds + 1 }}. KOLO
+
+            </span>
+
+        </div>
+
+        {% if dashboard.next_round %}
+
+            {% for match in dashboard.next_round %}
+
+            <div class="row align-items-center py-2">
+
+                <div class="col-5 text-end pe-3">
+
+                    <strong class="fs-6">
+
+                        {{ display_name(match.home) }}
+
+                    </strong>
+
+                </div>
+
+                <div class="col-2 text-center">
+
+                    <span class="badge bg-secondary rounded-pill px-2 py-1">
+
+                        VS
+
+                    </span>
+
+                </div>
+
+                <div class="col-5 text-start ps-3">
+
+                    <strong class="fs-6">
+
+                        {{ display_name(match.away) }}
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+            {% if not loop.last %}
+
+                <hr class="my-1 opacity-25">
+
+            {% endif %}
+
+            {% endfor %}
+
+        {% else %}
+
+            <p class="text-secondary mb-0">
+
+                Rozpis dalšího kola zatím není k dispozici.
+
+            </p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

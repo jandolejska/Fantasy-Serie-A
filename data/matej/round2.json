@@ -1,0 +1,30 @@
+{
+    "formation": "3-4-3",
+
+    "starting11": [
+        {"name": "Maignan", "role": "P"},
+        
+        {"name": "Zappacosta", "role": "D"},
+        {"name": "Vojvoda", "role": "D"},
+        {"name": "Dimarco", "role": "D"},
+
+        {"name": "Konè M.", "role": "C"},
+        {"name": "De Bruyne", "role": "C"},
+        {"name": "Ederson D.S.", "role": "C"},
+        {"name": "Baturina", "role": "C"},
+
+        {"name": "Yildiz", "role": "A"},
+        {"name": "Gimenez", "role": "A"},
+        {"name": "De Ketelaere", "role": "A"}
+    ],
+
+    "bench": [
+        {"name": "Terracciano", "role": "P"},
+        {"name": "Vitik", "role": "D"},
+        {"name": "Rrahmani", "role": "D"},
+        {"name": "Sottil", "role": "C"},
+        {"name": "Jashari", "role": "C"},
+        {"name": "Berardi", "role": "A"},
+        {"name": "Sarr A.", "role": "A"}
+    ]
+}

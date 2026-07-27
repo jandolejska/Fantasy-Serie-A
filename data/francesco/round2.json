@@ -1,0 +1,30 @@
+{
+    "formation": "4-3-3",
+
+    "starting11": [
+        {"name": "Svilar", "role": "P"},
+
+        {"name": "Bremer", "role": "D"},
+        {"name": "Buongiorno", "role": "D"},
+        {"name": "Di Lorenzo", "role": "D"},
+        {"name": "Hien", "role": "D"},
+
+        {"name": "Zaccagni", "role": "C"},
+        {"name": "Gudmundsson A.", "role": "C"},
+        {"name": "Saelemakers", "role": "C"},
+
+        {"name": "Kean", "role": "A"},
+        {"name": "David", "role": "A"},
+        {"name": "Lucca", "role": "A"}
+    ],
+
+    "bench": [
+        {"name": "Vasquez D.", "role": "P"},
+        {"name": "Lykogiannis", "role": "D"},
+        {"name": "Martin", "role": "D"},
+        {"name": "Carboni V.", "role": "C"},
+        {"name": "Casadei", "role": "C"},
+        {"name": "Soulè", "role": "A"},
+        {"name": "Lang", "role": "A"}
+    ]
+}

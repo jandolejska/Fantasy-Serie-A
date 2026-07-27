@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<div class="text-center py-5 mb-5">
+
+    <h1 class="display-3 fw-bold">
+
+        ⚽ Fantasy Serie A
+
+    </h1>
+
+    <p class="lead text-secondary">
+
+        Soukromá fantasy liga
+
+    </p>
+
+    <h4 class="text-success">
+
+        Sezóna 2025 / 2026
+
+    </h4>
+
+</div>
+
+
+<!-- SUMMARY -->
+
+<div class="row mb-5">
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card text-center h-100">
+
+            <div class="card-body">
+
+                <h1>
+
+                    👥
+
+                </h1>
+
+                <h5>
+
+                    Manažeři
+
+                </h5>
+
+                <h2 class="text-success">
+
+                    {{ summary.managers }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card text-center h-100">
+
+            <div class="card-body">
+
+                <h1>
+
+                    ⚽
+
+                </h1>
+
+                <h5>
+
+                    Hráčů
+
+                </h5>
+
+                <h2 class="text-success">
+
+                    {{ summary.players }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card text-center h-100">
+
+            <div class="card-body">
+
+                <h1>
+
+                    🔄
+
+                </h1>
+
+                <h5>
+
+                    Přestupy
+
+                </h5>
+
+                <h2 class="text-success">
+
+                    {{ summary.transfers }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- PLACEHOLDERS -->
+
+<div class="row mb-5">
+
+    <div class="col-lg-6 mb-4">
+
+        <div class="card h-100">
+
+            <div class="card-body">
+
+                <h4>
+
+                    🏆 Tabulka
+
+                </h4>
+
+                <hr>
+
+                <p class="text-secondary">
+
+                    Zobrazí se po vytvoření modulu tabulky ligy.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-lg-6 mb-4">
+
+        <div class="card h-100">
+
+            <div class="card-body">
+
+                <h4>
+
+                    📅 Poslední výsledky
+
+                </h4>
+
+                <hr>
+
+                <p class="text-secondary">
+
+                    Zobrazí se po vytvoření modulu výsledků.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- MANAGERS -->
+
+<h2 class="mb-4">
+
+    👤 Manažeři
+
+</h2>
+
+
+<div class="row">
+
+{% for manager in managers %}
+
+<div class="col-xl-4 col-lg-6 mb-4">
+
+<div class="card h-100">
+
+<div class="card-body">
+
+<h3>
+
+{{ manager.name }}
+
+</h3>
+
+<hr>
+
+<p>
+
+👔
+
+<strong>Trenér:</strong>
+
+{{ manager.coach }}
+
+</p>
+
+<p>
+
+💰
+
+<strong>Budget:</strong>
+
+{{ manager.budget }}
+
+</p>
+
+<p>
+
+🔄
+
+<strong>Přestupy:</strong>
+
+{{ manager.transfers_left }}
+
+</p>
+
+<a
+
+href="/manager/{{ manager.slug }}"
+
+class="btn btn-success w-100"
+
+>
+
+Otevřít tým
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

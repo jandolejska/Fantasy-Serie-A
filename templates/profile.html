@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="text-center mb-5">
+
+    <h2>
+
+        👤 {{ display_name(session.username|capitalize) }}
+
+    </h2>
+
+    <p class="text-secondary">
+
+        Fantasy Serie A
+
+    </p>
+
+</div>
+
+
+{% if manager %}
+
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <div class="row text-center">
+
+            <div class="col-4">
+
+                <h6 class="text-secondary">
+
+                    Trenér
+
+                </h6>
+
+                <h5>
+
+                    {{ manager.coach }}
+
+                </h5>
+
+            </div>
+
+            <div class="col-4">
+
+                <h6 class="text-secondary">
+
+                    Budget
+
+                </h6>
+
+                <h5 class="text-success">
+
+                    {{ manager.budget }}
+
+                </h5>
+
+            </div>
+
+            <div class="col-4">
+
+                <h6 class="text-secondary">
+
+                    Přestupy
+
+                </h6>
+
+                <h5>
+
+                    {{ manager.transfers_left }}
+
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endif %}
+
+
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <h5>
+
+            Sezóna
+
+        </h5>
+
+        <p class="mb-0">
+
+            2025 / 2026
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="card mb-5">
+
+    <div class="card-body">
+
+        <h5>
+
+            Verze aplikace
+
+        </h5>
+
+        <p class="mb-0">
+
+            v1.0
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="d-grid">
+
+    <a
+        href="/logout"
+        class="btn btn-danger btn-lg"
+    >
+
+        🚪 Odhlásit
+
+    </a>
+
+</div>
+
+{% endblock %}

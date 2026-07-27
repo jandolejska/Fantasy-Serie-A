@@ -1,0 +1,20 @@
+[
+    {
+        "date": "12.07.2026 14:09",
+        "type": "TRANSFER",
+        "out": "Dia",
+        "in": "Vardy",
+        "sell_price": 20,
+        "buy_price": 16,
+        "difference": -4
+    },
+    {
+        "date": "12.07.2026 14:09",
+        "type": "TRANSFER",
+        "out": "Dia",
+        "in": "Vardy",
+        "sell_price": 20,
+        "buy_price": 16,
+        "difference": -4
+    }
+]

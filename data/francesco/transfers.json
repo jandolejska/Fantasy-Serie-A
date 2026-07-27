@@ -1,0 +1,12 @@
+[
+    {
+        "date": "12.07.2026 19:19",
+        "type": "TRANSFER",
+        "out": "David",
+        "in": "Hojlund",
+        "sell_price": 27,
+        "buy_price": 27,
+        "difference": 0,
+        "transfers_left": 3
+    }
+]

@@ -1,0 +1,231 @@
+/* ===========================
+   Match Center
+=========================== */
+
+.lineups-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.lineups-table th{
+
+    padding:15px;
+
+    border-bottom:2px solid rgba(255,255,255,.15);
+
+    font-size:18px;
+
+    font-weight:700;
+
+    text-align:center;
+
+}
+
+.lineups-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    vertical-align:middle;
+
+}
+
+.lineups-table td:first-child{
+
+    text-align:right;
+
+    padding-right:20px;
+
+    width:35%;
+
+}
+
+.lineups-table td:last-child{
+
+    text-align:left;
+
+    padding-left:20px;
+
+    width:35%;
+
+}
+
+.grade{
+
+    width:70px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+}
+
+.coach-name{
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Střídání
+=========================== */
+
+.replaced-player{
+
+    color:#adb5bd;
+
+    font-size:.95rem;
+
+    line-height:1;
+
+    margin-bottom:2px;
+
+}
+
+.replacement{
+
+    color:#20c997;
+
+    font-weight:600;
+
+    padding-left:0;
+
+    margin-top:0;
+
+    line-height:1.1;
+
+}
+
+/* ===========================
+   Responsivita
+=========================== */
+
+@media (max-width:768px){
+
+    .lineups-table th{
+
+        font-size:16px;
+
+        padding:10px;
+
+    }
+
+    .lineups-table td{
+
+        padding:8px;
+
+        font-size:14px;
+
+    }
+
+    .grade{
+
+        width:55px;
+
+        font-size:14px;
+
+    }
+
+}
+
+.match-header-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.team.home{
+
+    text-align:left;
+
+}
+
+.team.away{
+
+    text-align:right;
+
+}
+
+.match-score{
+
+    white-space:nowrap;
+
+    text-align:center;
+
+}
+
+.match-score h1{
+
+    margin:0;
+
+}
+
+.team h3{
+
+    margin:0;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.match-score h1{
+
+    margin:0;
+
+    font-size:3.5rem;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+@media (max-width:768px){
+
+    .team h3{
+
+        font-size:2rem;
+
+    }
+
+    .match-score h1{
+
+        font-size:3rem;
+
+    }
+
+}
+
+/* ===========================
+   Hlavička zápasu
+=========================== */
+
+.match-team-name{
+
+    font-size:2rem;
+
+}
+
+@media (max-width:768px){
+
+    .match-team-name{
+
+        font-size:1.65rem;
+
+    }
+
+}

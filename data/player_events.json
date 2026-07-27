@@ -1,0 +1,24 @@
+[
+    {
+        "player_id": 6435,
+        "season": 1,
+        "round": 1,
+        "date": "27.07.2026 17:18",
+        "event": "transfer",
+        "transfer_type": "normal",
+        "from_manager": "Matěj",
+        "to_manager": "Matěj"
+    },
+    {
+        "id": 1,
+        "type": "transfer",
+        "player_id": 1926,
+        "replaced_player_id": 7383,
+        "season": 1,
+        "round": 1,
+        "date": "2026-07-27T18:45:21.770866",
+        "from_manager": null,
+        "to_manager": "Matěj",
+        "transfer_type": "normal"
+    }
+]

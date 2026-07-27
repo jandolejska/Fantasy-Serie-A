@@ -1,0 +1,108 @@
+<table class="table table-dark table-hover align-middle mb-0 lineups-table">
+
+    <thead>
+
+        <tr>
+
+            <th class="text-end fs-5">
+
+                 {{ display_name(match.home) }}
+
+            </th>
+
+            <th class="grade">
+
+                ⭐
+
+            </th>
+
+            <th class="grade">
+
+                ⭐
+
+            </th>
+
+            <th class="text-start fs-5">
+
+                 {{ display_name(match.away) }}
+
+            </th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {% set max_bench = [
+            match.home_team.bench|length,
+            match.away_team.bench|length
+        ] | max %}
+
+        {% for i in range(max_bench) %}
+
+        <tr>
+
+            <!-- DOMÁCÍ -->
+
+            <td class="text-end">
+
+                {% if i < match.home_team.bench|length %}
+
+                    {{ match.home_team.bench[i].name }}
+
+                {% endif %}
+
+            </td>
+
+            <!-- DOMÁCÍ ZNÁMKA -->
+
+            <td class="grade">
+
+                {% if i < match.home_team.bench|length %}
+
+                    <span class="badge bg-secondary">
+
+                        {{ match.home_team.bench[i].grade or "-" }}
+
+                    </span>
+
+                {% endif %}
+
+            </td>
+
+            <!-- HOSTUJÍCÍ ZNÁMKA -->
+
+            <td class="grade">
+
+                {% if i < match.away_team.bench|length %}
+
+                    <span class="badge bg-secondary">
+
+                        {{ match.away_team.bench[i].grade or "-" }}
+
+                    </span>
+
+                {% endif %}
+
+            </td>
+
+            <!-- HOSTÉ -->
+
+            <td class="text-start">
+
+                {% if i < match.away_team.bench|length %}
+
+                    {{ match.away_team.bench[i].name }}
+
+                {% endif %}
+
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>

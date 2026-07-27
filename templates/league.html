@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/league.css') }}"
+>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-5">
+
+    <h2>
+        🏆 Liga
+    </h2>
+
+    <p class="text-secondary">
+        Sezóna {{ season }}
+    </p>
+
+</div>
+
+
+<!-- =========================
+     TABULKA
+========================== -->
+
+<div class="card mt-4 mb-4">
+
+    <div class="card-body">
+
+        <h4>
+            🏆 Tabulka
+        </h4>
+
+        <hr>
+
+        {% if table %}
+
+        <div class="table-responsive">
+
+            <table class="table table-dark table-striped table-hover align-middle text-center mb-0">
+
+                <thead>
+
+                    <tr>
+                        <th>#</th>
+                        <th class="text-start">Manažer</th>
+                        <th>Z</th>
+                        <th>V</th>
+                        <th>R</th>
+                        <th>P</th>
+                        <th>Skóre</th>
+                        <th>Body</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for team in table %}
+
+                    <tr>
+
+                        <td>
+
+                            {% if loop.index == 1 %}
+                                🥇
+                            {% elif loop.index == 2 %}
+                                🥈
+                            {% elif loop.index == 3 %}
+                                🥉
+                            {% else %}
+                                {{ loop.index }}
+                            {% endif %}
+
+                        </td>
+
+                        <td class="text-start">
+
+                            <strong>
+
+                                <a
+                                    href="{{ url_for('manager', slug=team.manager|lower) }}"
+                                    class="manager-link"
+                                >
+                                    {{ display_name(team.manager) }}
+                                </a>
+
+                            </strong>
+
+                        </td>
+
+                        <td>{{ team.played }}</td>
+                        <td>{{ team.wins }}</td>
+                        <td>{{ team.draws }}</td>
+                        <td>{{ team.losses }}</td>
+                        <td>{{ team.gf }}:{{ team.ga }}</td>
+                        <td>{{ team.points }}</td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        {% else %}
+
+        <p class="text-secondary mb-0">
+
+            Tabulka zatím není k dispozici.
+
+        </p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     ROZPIS ZÁPASŮ
+========================== -->
+
+<div class="card">
+
+    <div class="card-body">
+
+        <h4>
+            📅 Rozpis zápasů
+        </h4>
+
+        <hr>
+
+        {% for round in rounds %}
+
+        <div class="round-block">
+
+            <div class="round-title">
+
+                {{ round.round }}. kolo
+
+            </div>
+
+            {% for match in round.matches %}
+
+            <a
+                href="{{ url_for(
+                    'match_page',
+                    round_number=round.round,
+                    home_slug=match.home_slug,
+                    away_slug=match.away_slug
+                ) }}"
+                class="match-link"
+            >
+
+                <div class="fixture-row">
+
+                    <div class="team-home">
+
+                        {{ display_name(match.home) }}
+
+                    </div>
+
+                    <div class="fixture-score">
+
+                        {% if match.home_goals is not none %}
+
+                            {{ match.home_goals }} : {{ match.away_goals }}
+
+                        {% else %}
+
+                            — : —
+
+                        {% endif %}
+
+                    </div>
+
+                    <div class="team-away">
+
+                        {{ display_name(match.away) }}
+
+                    </div>
+
+                </div>
+
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

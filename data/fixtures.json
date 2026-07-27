@@ -1,0 +1,648 @@
+[
+    {
+        "round": 1,
+        "matches": [
+            [
+                "Johnny",
+                "Paulie"
+            ],
+            [
+                "Goran",
+                "Kuba"
+            ],
+            [
+                "Francesco",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 2,
+        "matches": [
+            [
+                "Kuba",
+                "Johnny"
+            ],
+            [
+                "Matej",
+                "Paulie"
+            ],
+            [
+                "Francesco",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 3,
+        "matches": [
+            [
+                "Johnny",
+                "Matej"
+            ],
+            [
+                "Kuba",
+                "Francesco"
+            ],
+            [
+                "Paulie",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 4,
+        "matches": [
+            [
+                "Francesco",
+                "Johnny"
+            ],
+            [
+                "Goran",
+                "Matej"
+            ],
+            [
+                "Paulie",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 5,
+        "matches": [
+            [
+                "Johnny",
+                "Goran"
+            ],
+            [
+                "Francesco",
+                "Paulie"
+            ],
+            [
+                "Matej",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 6,
+        "matches": [
+            [
+                "Paulie",
+                "Johnny"
+            ],
+            [
+                "Kuba",
+                "Goran"
+            ],
+            [
+                "Matej",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 7,
+        "matches": [
+            [
+                "Johnny",
+                "Kuba"
+            ],
+            [
+                "Paulie",
+                "Matej"
+            ],
+            [
+                "Goran",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 8,
+        "matches": [
+            [
+                "Matej",
+                "Johnny"
+            ],
+            [
+                "Francesco",
+                "Kuba"
+            ],
+            [
+                "Goran",
+                "Paulie"
+            ]
+        ]
+    },
+    {
+        "round": 9,
+        "matches": [
+            [
+                "Johnny",
+                "Francesco"
+            ],
+            [
+                "Matej",
+                "Goran"
+            ],
+            [
+                "Kuba",
+                "Paulie"
+            ]
+        ]
+    },
+    {
+        "round": 10,
+        "matches": [
+            [
+                "Goran",
+                "Johnny"
+            ],
+            [
+                "Paulie",
+                "Francesco"
+            ],
+            [
+                "Kuba",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 11,
+        "matches": [
+            [
+                "Johnny",
+                "Paulie"
+            ],
+            [
+                "Goran",
+                "Kuba"
+            ],
+            [
+                "Francesco",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 12,
+        "matches": [
+            [
+                "Kuba",
+                "Johnny"
+            ],
+            [
+                "Matej",
+                "Paulie"
+            ],
+            [
+                "Francesco",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 13,
+        "matches": [
+            [
+                "Johnny",
+                "Matej"
+            ],
+            [
+                "Kuba",
+                "Francesco"
+            ],
+            [
+                "Paulie",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 14,
+        "matches": [
+            [
+                "Francesco",
+                "Johnny"
+            ],
+            [
+                "Goran",
+                "Matej"
+            ],
+            [
+                "Paulie",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 15,
+        "matches": [
+            [
+                "Johnny",
+                "Goran"
+            ],
+            [
+                "Francesco",
+                "Paulie"
+            ],
+            [
+                "Matej",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 16,
+        "matches": [
+            [
+                "Paulie",
+                "Johnny"
+            ],
+            [
+                "Kuba",
+                "Goran"
+            ],
+            [
+                "Matej",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 17,
+        "matches": [
+            [
+                "Johnny",
+                "Kuba"
+            ],
+            [
+                "Paulie",
+                "Matej"
+            ],
+            [
+                "Goran",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 18,
+        "matches": [
+            [
+                "Matej",
+                "Johnny"
+            ],
+            [
+                "Francesco",
+                "Kuba"
+            ],
+            [
+                "Goran",
+                "Paulie"
+            ]
+        ]
+    },
+    {
+        "round": 19,
+        "matches": [
+            [
+                "Johnny",
+                "Francesco"
+            ],
+            [
+                "Matej",
+                "Goran"
+            ],
+            [
+                "Kuba",
+                "Paulie"
+            ]
+        ]
+    },
+    {
+        "round": 20,
+        "matches": [
+            [
+                "Goran",
+                "Johnny"
+            ],
+            [
+                "Paulie",
+                "Francesco"
+            ],
+            [
+                "Kuba",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 21,
+        "matches": [
+            [
+                "Johnny",
+                "Paulie"
+            ],
+            [
+                "Goran",
+                "Kuba"
+            ],
+            [
+                "Francesco",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 22,
+        "matches": [
+            [
+                "Kuba",
+                "Johnny"
+            ],
+            [
+                "Matej",
+                "Paulie"
+            ],
+            [
+                "Francesco",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 23,
+        "matches": [
+            [
+                "Johnny",
+                "Matej"
+            ],
+            [
+                "Kuba",
+                "Francesco"
+            ],
+            [
+                "Paulie",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 24,
+        "matches": [
+            [
+                "Francesco",
+                "Johnny"
+            ],
+            [
+                "Goran",
+                "Matej"
+            ],
+            [
+                "Paulie",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 25,
+        "matches": [
+            [
+                "Johnny",
+                "Goran"
+            ],
+            [
+                "Francesco",
+                "Paulie"
+            ],
+            [
+                "Matej",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 26,
+        "matches": [
+            [
+                "Paulie",
+                "Johnny"
+            ],
+            [
+                "Kuba",
+                "Goran"
+            ],
+            [
+                "Matej",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 27,
+        "matches": [
+            [
+                "Johnny",
+                "Kuba"
+            ],
+            [
+                "Paulie",
+                "Matej"
+            ],
+            [
+                "Goran",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 28,
+        "matches": [
+            [
+                "Matej",
+                "Johnny"
+            ],
+            [
+                "Francesco",
+                "Kuba"
+            ],
+            [
+                "Goran",
+                "Paulie"
+            ]
+        ]
+    },
+    {
+        "round": 29,
+        "matches": [
+            [
+                "Johnny",
+                "Francesco"
+            ],
+            [
+                "Matej",
+                "Goran"
+            ],
+            [
+                "Kuba",
+                "Paulie"
+            ]
+        ]
+    },
+    {
+        "round": 30,
+        "matches": [
+            [
+                "Goran",
+                "Johnny"
+            ],
+            [
+                "Paulie",
+                "Francesco"
+            ],
+            [
+                "Kuba",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 31,
+        "matches": [
+            [
+                "Johnny",
+                "Paulie"
+            ],
+            [
+                "Goran",
+                "Kuba"
+            ],
+            [
+                "Francesco",
+                "Matej"
+            ]
+        ]
+    },
+    {
+        "round": 32,
+        "matches": [
+            [
+                "Kuba",
+                "Johnny"
+            ],
+            [
+                "Matej",
+                "Paulie"
+            ],
+            [
+                "Francesco",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 33,
+        "matches": [
+            [
+                "Johnny",
+                "Matej"
+            ],
+            [
+                "Kuba",
+                "Francesco"
+            ],
+            [
+                "Paulie",
+                "Goran"
+            ]
+        ]
+    },
+    {
+        "round": 34,
+        "matches": [
+            [
+                "Francesco",
+                "Johnny"
+            ],
+            [
+                "Goran",
+                "Matej"
+            ],
+            [
+                "Paulie",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 35,
+        "matches": [
+            [
+                "Johnny",
+                "Goran"
+            ],
+            [
+                "Francesco",
+                "Paulie"
+            ],
+            [
+                "Matej",
+                "Kuba"
+            ]
+        ]
+    },
+    {
+        "round": 36,
+        "matches": [
+            [
+                "Paulie",
+                "Johnny"
+            ],
+            [
+                "Kuba",
+                "Goran"
+            ],
+            [
+                "Matej",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 37,
+        "matches": [
+            [
+                "Johnny",
+                "Kuba"
+            ],
+            [
+                "Paulie",
+                "Matej"
+            ],
+            [
+                "Goran",
+                "Francesco"
+            ]
+        ]
+    },
+    {
+        "round": 38,
+        "matches": [
+            [
+                "Matej",
+                "Johnny"
+            ],
+            [
+                "Francesco",
+                "Kuba"
+            ],
+            [
+                "Goran",
+                "Paulie"
+            ]
+        ]
+    }
+]

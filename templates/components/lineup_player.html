@@ -1,0 +1,35 @@
+<div class="card bg-dark border-secondary mb-3">
+
+    <div class="card-body p-2 text-center">
+
+        <div style="font-size:1.2rem;">
+
+            {% if player.role == "P" %}
+                🧤
+            {% elif player.role == "D" %}
+                🛡️
+            {% elif player.role == "C" %}
+                🎯
+            {% elif player.role == "A" %}
+                ⚽
+            {% endif %}
+
+        </div>
+
+        <strong>
+
+            {{ player.name }}
+
+        </strong>
+
+        <br>
+
+        <small class="text-secondary">
+
+            {{ player.buy_price }} M
+
+        </small>
+
+    </div>
+
+</div>

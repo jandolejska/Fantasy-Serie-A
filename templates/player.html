@@ -1,0 +1,277 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="player-page">
+
+    <a
+        href="javascript:history.back()"
+        class="btn btn-outline-light mb-4"
+    >
+        ← Zpět
+    </a>
+
+    <div class="card shadow-sm player-header">
+
+        <div class="card-body text-center">
+
+            {% if player.team_info.logo %}
+
+            <img
+                src="{{ url_for(
+                    'static',
+                    filename='img/teams/' ~ player.team_info.logo
+                ) }}"
+                class="player-team-logo"
+                alt="{{ player.team }}"
+            >
+
+            {% endif %}
+
+            <h1 class="player-name">
+                {{ player.name }}
+            </h1>
+
+            <div class="text-secondary fs-5 mb-3">
+                {{ player.team }}
+            </div>
+
+            <span class="badge bg-primary player-role">
+
+                {% if player.role == "P" %}
+                    🧤 Brankář
+                {% elif player.role == "D" %}
+                    🛡️ Obránce
+                {% elif player.role == "C" %}
+                    🎯 Záložník
+                {% elif player.role == "A" %}
+                    ⚽ Útočník
+                {% endif %}
+
+            </span>
+
+            <br><br>
+
+            {% if owner %}
+
+                <span class="badge bg-success fs-6">
+                    <i class="bi bi-person-fill me-1"></i>
+                    {{ display_name(owner.name) }}
+                </span>
+
+            {% else %}
+
+                <span class="badge bg-secondary fs-6">
+                    Volný hráč
+                </span>
+
+            {% endif %}
+
+            <div class="player-prices">
+
+            <div class="price-card">
+
+                <div class="price-title">
+                    QA
+                </div>
+
+                <div class="price-value">
+                    {{ player.qa }}
+                </div>
+
+            </div>
+
+            <div class="price-card">
+
+                <div class="price-title">
+                    QI
+                </div>
+
+                <div class="price-value">
+                    {{ player.qi }}
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="card mt-4">
+
+        <div class="card-header">
+            📊 Známky
+        </div>
+
+        <div class="card-body">
+
+            {% if grades %}
+
+                <div class="grades-grid">
+
+                    {% for item in grades|sort(attribute="round") %}
+
+                        {% set grade = item.grade %}
+
+                        {% if grade %}
+
+                            {% set value = grade|replace(',', '.')|float %}
+
+                            {% if value >= 7 %}
+                                {% set cls = "grade-green" %}
+                            {% elif value >= 6 %}
+                                {% set cls = "grade-orange" %}
+                            {% else %}
+                                {% set cls = "grade-red" %}
+                            {% endif %}
+
+                        {% else %}
+
+                            {% set cls = "grade-none" %}
+
+                        {% endif %}
+
+                        <div class="grade-card">
+
+                            <div class="grade-round">
+                                {{ item.round }}
+                            </div>
+
+                            <div class="grade-value {{ cls }}">
+                                {{ grade if grade else "—" }}
+                            </div>
+
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            {% else %}
+
+                <div class="text-center text-secondary">
+                    Zatím nebyly odehrány žádné zápasy.
+                </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+
+    <div class="card mt-4 mb-5">
+
+        <div class="card-header">
+            📜 Historie majitelů
+        </div>
+
+        <div class="card-body text-center text-secondary">
+
+            Historie bude dostupná po odehrání první sezóny.
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="card mt-4">
+
+    <div class="card-header">
+
+        📜 Historie hráče
+
+    </div>
+
+    <div class="card-body">
+
+        {% if history %}
+
+        <div class="player-history-list">
+
+            {% for event in history %}
+
+            <div class="player-history-item">
+
+                <div class="player-history-date">
+
+                    {{ event.date_formatted }}
+
+                </div>
+
+                <div class="player-history-type">
+
+                    {% if event.type == "transfer" %}
+
+                        🔄 Přestup
+
+                    {% elif event.type == "draft" %}
+
+                        🏁 Draft
+
+                    {% else %}
+
+                        {{ event.type }}
+
+                    {% endif %}
+
+                </div>
+
+                <div class="player-history-transfer">
+
+                    {% if event.from_manager %}
+
+                        <span class="player-history-manager">
+
+                            {{ event.from_manager }}
+
+                        </span>
+
+                    {% else %}
+
+                        <span class="player-history-manager player-history-market">
+
+                            Volný trh
+
+                        </span>
+
+                    {% endif %}
+
+                    <span class="player-history-arrow">
+
+                        ➜
+
+                    </span>
+
+                    <span class="player-history-manager">
+
+                        {{ event.to_manager }}
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <div class="player-history-empty">
+
+            Zatím žádná historie.
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

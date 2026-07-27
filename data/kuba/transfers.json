@@ -1,0 +1,20 @@
+[
+    {
+        "out": "Pulisic",
+        "in": "Vlasic",
+        "sell_price": 28,
+        "buy_price": 17,
+        "difference": -11,
+        "free_transfer": false
+    },
+    {
+        "date": "12.07.2026 19:44",
+        "type": "TRANSFER",
+        "out": "Dumfries",
+        "in": "Kelly L.",
+        "sell_price": 20,
+        "buy_price": 11,
+        "difference": 9,
+        "transfers_left": 2
+    }
+]

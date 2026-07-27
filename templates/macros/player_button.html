@@ -1,0 +1,27 @@
+{% macro player_button(player, slot, style="light") %}
+
+<button
+    id="slot-{{ slot }}"
+    type="button"
+    class="btn btn-outline-{{ style }} player-button"
+    title="{{ player.name if player else '+ Vybrat' }}"
+
+    data-slot="{{ slot }}"
+    data-player="{{ player.name if player else '' }}"
+
+    onclick="selectPlayer(this)"
+>
+
+    {% if player %}
+
+        {{ player.name }}
+
+    {% else %}
+
+        + Vybrat
+
+    {% endif %}
+
+</button>
+
+{% endmacro %}

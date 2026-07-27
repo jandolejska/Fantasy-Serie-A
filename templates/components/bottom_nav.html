@@ -1,0 +1,55 @@
+<nav class="navbar fixed-bottom navbar-dark bg-dark border-top">
+
+    <div class="container-fluid d-flex justify-content-around">
+
+        <a
+            href="/"
+            class="nav-link text-center {% if active_page == 'home' %}text-success{% else %}text-light{% endif %}"
+        >
+            <div style="font-size:1.4rem;">🏠</div>
+            <small>Domů</small>
+        </a>
+
+        <a
+            href="/league"
+            class="nav-link text-center {% if active_page == 'league' %}text-success{% else %}text-light{% endif %}"
+        >
+            <div style="font-size:1.4rem;">🏆</div>
+            <small>Liga</small>
+        </a>
+
+        <a
+            href="/team"
+            class="nav-link text-center {% if active_page == 'team' %}text-success{% else %}text-light{% endif %}"
+        >
+            <div style="font-size:1.4rem;">⚽</div>
+            <small>Hráči</small>
+        </a>
+
+        <a
+            href="/lineup"
+            class="nav-link text-center {% if active_page == 'lineup' %}text-success{% else %}text-light{% endif %}"
+        >
+            <div style="font-size:1.4rem;">📋</div>
+            <small>Sestava</small>
+        </a>
+
+        <a
+            href="/transfers"
+            class="nav-link text-center {% if active_page == 'transfers' %}text-success{% else %}text-light{% endif %}"
+        >
+            <div style="font-size:1.4rem;">🔄</div>
+            <small>Přestupy</small>
+        </a>
+
+        <a
+            href="/profile"
+            class="nav-link text-center {% if active_page == 'profile' %}text-success{% else %}text-light{% endif %}"
+        >
+            <div style="font-size:1.4rem;">👤</div>
+            <small>Profil</small>
+        </a>
+
+    </div>
+
+</nav>

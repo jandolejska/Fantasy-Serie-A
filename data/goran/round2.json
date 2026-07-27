@@ -1,0 +1,30 @@
+{
+    "formation": "4-4-2",
+
+    "starting11": [
+        {"name": "De Gea", "role": "P"},
+
+        {"name": "Mancini", "role": "D"},
+        {"name": "Gosens", "role": "D"},
+        {"name": "Bastoni", "role": "D"},
+        {"name": "Van Der Brempt", "role": "D"},
+
+        {"name": "Mandragora", "role": "C"},
+        {"name": "Orsolini", "role": "C"},
+        {"name": "Pulisic", "role": "C"},
+        {"name": "Politano", "role": "C"},
+
+        {"name": "Dovbyk", "role": "A"},
+        {"name": "Castellanos", "role": "A"}
+    ],
+
+    "bench": [
+        {"name": "x", "role": "P"},
+        {"name": "Luperto", "role": "D"},
+        {"name": "Zappa", "role": "D"},
+        {"name": "Koopmeiners", "role": "C"},
+        {"name": "Da Cunha", "role": "C"},
+        {"name": "Ferguson E.", "role": "A"},
+        {"name": "Ngonge", "role": "A"}
+    ]
+}

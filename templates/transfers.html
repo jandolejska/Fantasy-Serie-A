@@ -1,0 +1,872 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="text-center mb-3">
+
+    <h2>
+
+        🔄 Přestupy
+
+    </h2>
+
+    <div class="card mb-3">
+
+        <div class="card-body text-center">
+
+            <h6 class="mb-3">
+
+                Typ přestupu
+
+            </h6>
+
+            <div class="btn-group w-100">
+
+                <a
+                    href="{{ url_for('transfers', type='normal') }}"
+                    class="btn {% if transfer_type == 'normal' %}btn-primary{% else %}btn-outline-primary{% endif %}"
+                >
+                    🔄 Klasický
+                </a>
+
+                <a
+                    href="{{ url_for('transfers', type='free') }}"
+                    class="btn {% if transfer_type == 'free' %}btn-success{% else %}btn-outline-success{% endif %}"
+                >
+                    🆓 Volný
+                </a>
+
+                <a
+                    href="{{ url_for('transfers', type='coach') }}"
+                    class="btn {% if transfer_type == 'coach' %}btn-warning{% else %}btn-outline-warning{% endif %}"
+                >
+                    🎩 Trenér
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>    
+
+    <p class="text-secondary">
+
+        {{ subtitle }}
+
+    </p>
+
+</div>
+
+
+<!-- INFO -->
+
+<div class="card mb-3">
+
+    <div class="card-body text-center py-3">
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <h6 class="text-secondary">
+
+                    Rozpočet
+
+                </h6>
+
+                <h2 class="text-success">
+
+                    {{ manager.budget }}
+
+                </h2>
+
+            </div>
+
+            <div class="col-6">
+
+                <h6 class="text-secondary">
+
+                    Přestupy
+
+                </h6>
+
+                <h2>
+
+                    {{ manager.transfers_left }}
+
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% if sold_player %}
+
+<div class="card mb-3">
+
+    <div class="card-body text-center py-3">
+
+        <h4>
+
+            🔴 Prodáváš
+
+        </h4>
+
+        <hr>
+
+        <h4 class="mb-2">
+
+            {{ sold_player }}
+
+        </h5>
+
+        <p class="mb-1">
+
+            💰 Dostaneš:
+
+            <strong class="text-success">
+
+                {{ selected_player.buy_price }} M
+
+            </strong>
+
+        </p>
+
+        <p class="mb-3">
+
+            💼 Budget po prodeji:
+
+            <strong class="text-success">
+
+                {{ budget_after_sale }} M
+
+            </strong>
+
+        </p>
+
+            <a
+
+                href="{{ url_for(
+                    'transfers',
+                    type=transfer_type
+                ) }}"
+
+                class="text-secondary text-decoration-none d-inline-block mt-2"
+
+            >
+
+                ← Zrušit výběr
+
+            </a>
+
+        </h2>
+
+    </div>
+
+</div>
+
+{% endif %}
+
+{% if selected_buy %}
+
+        <div class="card mb-3">
+
+            <div class="card-body text-center py-3">
+
+                <h4>
+
+                    🟢 Kupuješ
+
+                </h4>
+
+                <hr>
+
+                <h4 class="mb-2">
+
+                    {{ selected_buy.name }}
+
+                </h5>
+
+                <p class="mb-1">
+
+                    💰 Cena:
+
+                    <strong class="text-success">
+
+                        {{ selected_buy.qa }} M
+
+                    </strong>
+
+                </p>
+
+                <p class="mb-3">
+
+                    💼 Budget po přestupu:
+
+                    <strong class="text-success">
+
+                        {{ budget_after_transfer }} M
+
+                    </strong>
+
+                </p>
+
+                <form method="POST">
+
+                    <input
+                       type="hidden"
+                       name="transfer_type"
+                       value="{{ transfer_type }}"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="sold"
+                        value="{{ sold_player }}"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="buy"
+                        value="{{ selected_buy.name }}"
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-success mt-2"
+                    >
+
+                        ✅ Potvrdit přestup
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+{% if sold_player %}
+
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <h4>
+
+            {{ role_title }}
+
+        </h4>
+
+        <hr>
+
+<div class="card mb-3">
+
+    <div class="card-body">
+
+        <div class="row g-2 align-items-end">
+
+            <div class="col-md-5">
+
+                <label class="form-label text-light">
+
+                    🔍 Hledat
+
+                </label>
+
+                <input
+                    id="playerSearch"
+                    class="form-control"
+                    placeholder="Jméno hráče nebo klub..."
+                >
+
+            </div>
+
+            <div class="col-md-3">
+
+                <label class="form-label text-light">
+
+                    🏟 Klub
+
+                </label>
+
+                <select
+                    id="teamFilter"
+                    class="form-select"
+                >
+
+                    <option value="">
+
+                        Všechny kluby
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <label class="form-label text-light">
+
+                    ↕ Řadit
+
+                </label>
+
+                <select
+                    id="sortPlayers"
+                    class="form-select"
+                >
+
+                    <option value="name">
+
+                        Jméno A–Z
+
+                    </option>
+
+                    <option value="team">
+
+                        Klub
+
+                    </option>
+
+                    <option value="priceAsc">
+
+                        Cena ↑
+
+                    </option>
+
+                    <option value="priceDesc">
+
+                        Cena ↓
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="col-md-1 text-end">
+
+                <strong id="playerCount"></strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>        
+
+        {% if available_players %}
+
+            {% for player in available_players %}
+
+            <div
+                class="transfer-player d-flex justify-content-between align-items-center mb-3"
+
+                data-name="{{ player.name|lower }}"
+                data-team="{{ player.team|lower }}"
+                data-price="{{ player.qa }}"
+                data-qa="{{ player.qa }}"
+            >
+
+                <div>
+
+                    <strong>
+
+                        {{ player.name }}
+
+                    </strong>
+
+                    <br>
+
+                    <small class="text-secondary d-flex align-items-center gap-2">
+
+                        <img
+                            src="{{ url_for('static', filename='img/teams/' ~ player.team_info.logo) }}"
+                            width="18"
+                            height="18"
+                            alt="{{ player.team }}"
+                        >
+
+                        {{ player.team }}
+
+                    </small>
+
+                    <small class="text-secondary">
+
+                        💰 Aktuální cena {{ player.qa }} M
+
+                    </small>
+
+                </div>
+
+                {% if selected_buy and selected_buy.name == player.name %}
+
+                <span class="badge bg-success">
+
+                    ✔ Vybrán
+
+                </span>
+
+                {% else %}
+
+                <a
+
+                    href="{{ url_for(
+                        'transfers',
+                        type=transfer_type,
+                        sell=sold_player,
+                        buy=player.name
+                    ) }}"
+
+                    class="btn btn-outline-success btn-sm"
+
+                >
+
+                    ➕
+
+                </a>
+
+                {% endif %}
+
+            </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p class="text-secondary">
+
+                Žádní dostupní hráči.
+
+            </p>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endif %}
+
+
+{% if transfer_type == "coach" %}
+
+<div class="card mb-4">
+
+    <div class="card-body">
+
+        <h4>🎩 Současný trenér</h4>
+
+        <hr>
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <strong>
+
+                {{ manager.coach }}
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card mb-5">
+
+    <div class="card-body">
+
+        <h4>🎩 Dostupní trenéři</h4>
+
+        <hr>
+
+        {% for coach in coach_list %}
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+
+            <strong>
+
+                {{ coach }}
+
+            </strong>
+
+            <form method="POST" class="m-0">
+
+                <input
+                    type="hidden"
+                    name="transfer_type"
+                    value="coach"
+                >
+
+                <input
+                    type="hidden"
+                    name="coach"
+                    value="{{ coach }}"
+                >
+
+                <button
+                    type="submit"
+                    class="btn btn-outline-warning btn-sm"
+                >
+
+                    🎩 Vybrat
+
+                </button>
+
+            </form>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endif %}
+
+{% if transfer_type != "coach" %}
+
+<!-- BRANKÁŘI -->
+
+<div class="card mb-3">
+
+    <div class="card-body">
+
+        <h4>🥅 Brankáři</h4>
+
+        <hr>
+
+        {% for player in squad.goalkeeper %}
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+
+            <div>
+
+                <strong>
+
+                    {{ player.name }}
+
+                </strong>
+
+                <br>
+
+                <small class="text-secondary d-flex align-items-center gap-2">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teams/' ~ player.team_info.logo) }}"
+                        width="18"
+                        height="18"
+                        alt="{{ player.team }}"
+                    >
+
+                {{ player.team }}
+
+                </small>
+
+                <small class="text-secondary">
+
+                    💰 Koupen za {{ player.buy_price }} M
+
+                </small>
+
+            </div>
+
+            {% if sold_player == player.name %}
+
+            <span class="badge bg-danger">
+
+                ✔ Vybrán
+
+            </span>
+
+            {% else %}
+
+            <a
+
+                href="{{ url_for(
+                    'transfers',
+                    type=transfer_type,
+                    sell=player.name
+                ) }}"
+
+                class="btn btn-outline-danger btn-sm"
+
+            >
+
+                ➖
+
+            </a>
+
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+
+<!-- OBRÁNCI -->
+
+<div class="card mb-3">
+
+    <div class="card-body">
+
+        <h4>🛡 Obránci</h4>
+
+        <hr>
+
+        {% for player in squad.defenders %}
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+
+            <div>
+
+                <strong>
+
+                    {{ player.name }}
+
+                </strong>
+
+                <br>
+
+                <small class="text-secondary d-flex align-items-center gap-2">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teams/' ~ player.team_info.logo) }}"
+                        width="18"
+                        height="18"
+                        alt="{{ player.team }}"
+                    >
+
+                {{ player.team }}
+
+                </small>
+
+                <small class="text-secondary">
+
+                    💰 Koupen za {{ player.buy_price }} M
+
+                </small>
+
+            </div>
+
+            {% if sold_player == player.name %}
+
+            <span class="badge bg-danger">
+
+                ✔ Vybrán
+
+            </span>
+
+            {% else %}
+
+            <a
+
+                href="{{ url_for(
+                    'transfers',
+                    type=transfer_type,
+                    sell=player.name
+                ) }}"
+
+                class="btn btn-outline-danger btn-sm"
+
+            >
+
+                ➖
+
+            </a>
+
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+
+<!-- ZÁLOŽNÍCI -->
+
+<div class="card mb-3">
+
+    <div class="card-body">
+
+        <h4>🎯 Záložníci</h4>
+
+        <hr>
+
+        {% for player in squad.midfielders %}
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+
+            <div>
+
+                <strong>
+
+                    {{ player.name }}
+
+                </strong>
+
+                <br>
+
+                <small class="text-secondary d-flex align-items-center gap-2">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teams/' ~ player.team_info.logo) }}"
+                        width="18"
+                        height="18"
+                        alt="{{ player.team }}"
+                    >
+
+                {{ player.team }}
+
+                </small>
+
+                <small class="text-secondary">
+
+                    💰 Koupen za {{ player.buy_price }} M
+
+                </small>
+
+            </div>
+
+            {% if sold_player == player.name %}
+
+            <span class="badge bg-danger">
+
+                ✔ Vybrán
+
+            </span>
+
+            {% else %}
+
+            <a
+
+                href="{{ url_for(
+                    'transfers',
+                    type=transfer_type,
+                    sell=player.name
+                ) }}"
+
+                class="btn btn-outline-danger btn-sm"
+
+            >
+
+                ➖
+
+            </a>
+
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+
+<!-- ÚTOČNÍCI -->
+
+<div class="card mb-5">
+
+    <div class="card-body">
+
+        <h4>⚽ Útočníci</h4>
+
+        <hr>
+
+        {% for player in squad.forwards %}
+
+        <div class="d-flex justify-content-between align-items-center mb-2">
+
+            <div>
+
+                <strong>
+
+                    {{ player.name }}
+
+                </strong>
+
+                <br>
+
+                <small class="text-secondary d-flex align-items-center gap-2">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teams/' ~ player.team_info.logo) }}"
+                        width="18"
+                        height="18"
+                        alt="{{ player.team }}"
+                    >
+
+                {{ player.team }}
+
+                </small>
+
+                <small class="text-secondary">
+
+                    💰 Koupen za {{ player.buy_price }} M
+
+                </small>
+
+            </div>
+
+            {% if sold_player == player.name %}
+
+            <span class="badge bg-danger">
+
+                ✔ Vybrán
+
+            </span>
+
+            {% else %}
+
+            <a
+
+                href="{{ url_for(
+                    'transfers',
+                    type=transfer_type,
+                    sell=player.name
+                ) }}"
+
+                class="btn btn-outline-danger btn-sm"
+
+            >
+
+                ➖
+
+            </a>
+
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endif %}
+
+<script src="{{ url_for('static', filename='js/transfers.js') }}"></script>
+
+{% endblock %}

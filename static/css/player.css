@@ -1,0 +1,278 @@
+.player-page{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.player-header{
+    border:none;
+    border-radius:18px;
+}
+
+.player-team-logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.player-name{
+    font-size:2.3rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.player-role{
+    font-size:1rem;
+    padding:8px 16px;
+}
+
+.stat-card{
+    border:none;
+    border-radius:16px;
+    transition:.2s;
+    height:100%;
+}
+
+.stat-card:hover{
+    transform:translateY(-3px);
+}
+
+.stat-title{
+    font-size:.9rem;
+    text-transform:uppercase;
+    color:#8d99ae;
+    letter-spacing:1px;
+}
+
+.stat-value{
+    font-size:2rem;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.player-page .card{
+    border-radius:16px;
+}
+
+.player-page .card-header{
+    font-weight:600;
+    font-size:1.05rem;
+}
+
+.grades-container{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding-bottom:5px;
+}
+
+.grade-box{
+    min-width:55px;
+    height:55px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    color:#fff;
+    font-size:1rem;
+}
+
+.grade-red{
+    background:#dc3545;
+}
+
+.grade-orange{
+    background:#fd7e14;
+}
+
+.grade-green{
+    background:#198754;
+}
+
+.grade-none{
+    background:#6c757d;
+}
+
+.owner-history{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.owner-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 18px;
+    border-radius:12px;
+    background:rgba(255,255,255,.04);
+}
+
+.owner-name{
+    font-weight:600;
+}
+
+.owner-season{
+    color:#8d99ae;
+    font-size:.9rem;
+}
+
+@media(max-width:768px){
+
+    .player-name{
+        font-size:1.8rem;
+    }
+
+    .player-team-logo{
+        width:70px;
+        height:70px;
+    }
+
+    .stat-value{
+        font-size:1.6rem;
+    }
+
+}
+
+.player-card{
+
+    border:none;
+    border-radius:18px;
+    transition:.2s;
+
+}
+
+.player-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.player-card-logo{
+
+    width:56px;
+    height:56px;
+    object-fit:contain;
+    flex-shrink:0;
+
+}
+
+.player-card-name{
+
+    font-size:1.55rem;
+    font-weight:700;
+    line-height:1.2;
+    color:#fff;
+    margin-bottom:4px;
+    text-align:left;
+
+}
+
+.grades-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px;
+}
+
+.grade-card{
+    width:48px;
+    text-align:center;
+}
+
+.grade-round{
+    font-size:10px;
+    color:#888;
+    margin-bottom:3px;
+    font-weight:600;
+}
+
+.grade-value{
+    border-radius:8px;
+    padding:6px 0;
+    font-weight:700;
+    font-size:15px;
+}
+
+.grade-green{
+    background:#27ae60;
+    color:white;
+}
+
+.grade-orange{
+    background:#f39c12;
+    color:white;
+}
+
+.grade-red{
+    background:#e74c3c;
+    color:white;
+}
+
+.grade-none{
+    background:#dcdcdc;
+    color:#666;
+}
+
+.player-prices{
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:18px;
+
+}
+
+.price-card{
+
+    width:85px;
+    height:46px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 12px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:10px;
+
+}
+
+.price-title{
+
+    font-size:.75rem;
+
+    color:#adb5bd;
+
+    font-weight:700;
+
+}
+
+.price-value{
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin:0;
+
+}
+
+.badge.bg-success i{
+
+    color:#000;
+
+}
+
+.player-card:hover .player-card-name{
+
+    color:#fff;
+
+}

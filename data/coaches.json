@@ -1,0 +1,62 @@
+{
+    "Allegri": {
+        "team": "Milan"
+    },
+    "Baroni": {
+        "team": "Torino"
+    },
+    "Chivu": {
+        "team": "Inter"
+    },
+    "Fabregas": {
+        "team": "Como"
+    },
+    "Gasperini": {
+        "team": "Roma"
+    },
+    "Gilardino": {
+        "team": "Pisa"
+    },
+    "Italiano": {
+        "team": "Bologna"
+    },
+    "Juric": {
+        "team": "Atalanta"
+    },
+    "Kosta Runjaic": {
+        "team": "Udinese"
+    },
+    "Nicola": {
+        "team": "Cremonese"
+    },
+    "Pioli": {
+        "team": "Fiorentina"
+    },
+    "Sarri": {
+        "team": "Lazio"
+    },
+    "Tudor": {
+        "team": "Juventus"
+    },
+    "Vieira": {
+        "team": "Genoa"
+    },
+    "Zanetti": {
+        "team": "Verona"
+    },
+    "Conte": {
+        "team": "Napoli"
+    },
+    "Palladino": {
+        "team": "Parma"
+    },
+    "Vanoli": {
+        "team": "Torino"
+    },
+    "Di Francesco": {
+        "team": "Lecce"
+    },
+    "Grosso": {
+        "team": "Sassuolo"
+    }
+}

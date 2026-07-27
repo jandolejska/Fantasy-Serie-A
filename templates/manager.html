@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a
+    href="/"
+    class="btn btn-outline-light mb-4"
+>
+    ← Zpět
+</a>
+
+<div class="card mb-5">
+
+    <div class="card-body">
+
+        <h2 class="fw-bold">
+
+            👤 {{ display_name(manager.name) }}
+
+        </h2>
+
+        <hr>
+
+        <div class="row text-center">
+
+            <div class="col-md-4 mb-3">
+
+                <h6 class="text-secondary">
+
+                    Trenér
+
+                </h6>
+
+                <h5>
+
+                    {{ manager.coach }}
+
+                </h5>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <h6 class="text-secondary">
+
+                    Budget
+
+                </h6>
+
+                <h5 class="text-success">
+
+                    {{ manager.budget }}
+
+                </h5>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <h6 class="text-secondary">
+
+                    Přestupy
+
+                </h6>
+
+                <h5>
+
+                    {{ manager.transfers_left }}
+
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- BRANKÁŘI -->
+<!-- ========================= -->
+
+<h3 class="mb-3">
+
+🧤 Brankáři
+
+</h3>
+
+<div class="row">
+
+{% for player in goalkeepers %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+
+<!-- ========================= -->
+<!-- OBRÁNCI -->
+<!-- ========================= -->
+
+<h3 class="mt-5 mb-3">
+
+🛡️ Obránci
+
+</h3>
+
+<div class="row">
+
+{% for player in defenders %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+
+<!-- ========================= -->
+<!-- ZÁLOŽNÍCI -->
+<!-- ========================= -->
+
+<h3 class="mt-5 mb-3">
+
+🎯 Záložníci
+
+</h3>
+
+<div class="row">
+
+{% for player in midfielders %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+
+<!-- ========================= -->
+<!-- ÚTOČNÍCI -->
+<!-- ========================= -->
+
+<h3 class="mt-5 mb-3">
+
+⚽ Útočníci
+
+</h3>
+
+<div class="row">
+
+{% for player in forwards %}
+
+    {% include "components/player_card.html" %}
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

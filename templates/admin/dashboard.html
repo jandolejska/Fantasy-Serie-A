@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="text-center mb-3">
+
+    <h2>
+
+        ⚙️ Administrace Fantasy Serie A
+
+    </h2>
+
+    <p class="text-secondary">
+
+        Řídicí centrum soutěže
+
+    </p>
+
+</div>
+
+
+<!-- STAV KOLA -->
+
+<div class="card mb-3">
+
+    <div class="card-body">
+
+        <p>
+
+            📅 Aktuální kolo:
+            <strong>
+
+                {{ dashboard.gameweek }} / {{ dashboard.total_rounds }}
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            ✅ Odehráno:
+            <strong>
+
+                {{ dashboard.played_rounds }}
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            ⏳ Zbývá:
+            <strong>
+
+                {{ dashboard.remaining_rounds }}
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            🕒 Deadline:
+            <strong>
+
+                {{ dashboard.deadline }}
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            👥 Manažeři:
+            <strong>
+
+                {{ dashboard.managers }}
+
+            </strong>
+
+        </p>
+
+        <p>
+
+            {% if dashboard.locked %}
+
+                🔒 <strong class="text-danger">
+
+                    Uzamčené
+
+                </strong>
+
+            {% else %}
+
+                🔓 <strong class="text-success">
+
+                    Otevřené
+
+                </strong>
+
+            {% endif %}
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- DALŠÍ KROK -->
+
+<div class="card mb-3">
+
+    <div class="card-body text-center">
+
+        <h4>
+
+            🎯 Další krok
+
+        </h4>
+
+        <hr>
+
+        <h5>
+
+            {{ dashboard.next_step }}
+
+        </h5>
+
+    </div>
+
+</div>
+
+
+<!-- NOVÉ KOLO -->
+
+<div class="card mb-3">
+
+    <div class="card-body">
+
+        <h4>
+
+            📅 Otevřít nové kolo
+
+        </h4>
+
+        <hr>
+
+        <form method="POST">
+
+            <input
+                type="hidden"
+                name="action"
+                value="new_round"
+            >
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Deadline
+
+                </label>
+
+                <input
+
+                    type="datetime-local"
+
+                    name="deadline"
+
+                    class="form-control"
+
+                    required
+
+                >
+
+            </div>
+
+            <button
+                class="btn btn-success"
+                type="submit"
+            >
+
+                📅 Otevřít nové kolo
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- SESTAVY -->
+
+<div class="card mb-4">
+
+    <div class="card-body text-center">
+
+        <h4>
+
+            🔒 Sestavy
+
+        </h4>
+
+        <hr>
+
+        {% if dashboard.locked %}
+
+        <form method="POST">
+
+            <input
+                type="hidden"
+                name="action"
+                value="unlock"
+            >
+
+            <button
+                class="btn btn-success"
+                type="submit"
+            >
+
+                🔓 Odemknout sestavy
+
+            </button>
+
+        </form>
+
+        {% else %}
+
+        <form method="POST">
+
+            <input
+                type="hidden"
+                name="action"
+                value="lock"
+            >
+
+            <button
+                class="btn btn-danger"
+                type="submit"
+            >
+
+                🔒 Uzamknout sestavy
+
+            </button>
+
+        </form>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+<div class="card mb-4">
+
+    <div class="card-body text-center">
+
+        <h4>
+
+            📥 Známky
+
+        </h4>
+
+        <hr>
+
+        <form method="POST">
+
+            <input
+                type="hidden"
+                name="action"
+                value="download_grades"
+            >
+
+            <button
+                class="btn btn-primary"
+                type="submit"
+            >
+
+                📥 Stáhnout známky
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<form method="POST">
+
+    <input
+        type="hidden"
+        name="action"
+        value="play_round">
+
+    <button class="btn btn-success">
+        ⚽ Odehrát aktuální kolo
+    </button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/round.css') }}"
+>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="round-navigation">
+
+        {% if round_number > 1 %}
+        <a
+            href="{{ url_for('round_page', round_number=round_number-1) }}"
+            class="btn btn-outline-light"
+        >
+            ← Předchozí
+        </a>
+        {% else %}
+        <div></div>
+        {% endif %}
+
+        <h2 class="round-title mb-0">
+
+            {{ data.round }}. KOLO
+
+        </h2>
+
+        <a
+            href="{{ url_for('round_page', round_number=round_number+1) }}"
+            class="btn btn-outline-light"
+        >
+            Další →
+        </a>
+
+    </div>
+
+    {% for match in data.matches %}
+
+    <div class="card match-card shadow-sm mb-4">
+
+        <div class="card-body">
+
+            <div class="match-score">
+
+                <!-- DOMÁCÍ -->
+
+                <div class="team home">
+
+                    <div class="team-name">
+
+                        {{ display_name(match.home) }}
+
+                    </div>
+
+                    <div class="team-points">
+
+                        {{ match.home_score }} fantasy bodů
+
+                    </div>
+
+                </div>
+
+                <!-- SKÓRE -->
+
+                <div class="score">
+
+                    {{ match.home_goals }} : {{ match.away_goals }}
+
+                </div>
+
+                <!-- HOSTÉ -->
+
+                <div class="team away">
+
+                    <div class="team-name">
+
+                        {{ display_name(match.away) }}
+
+                    </div>
+
+                    <div class="team-points">
+
+                        {{ match.away_score }} fantasy bodů
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+
+                <a
+                    class="btn btn-outline-light"
+                    href="{{ url_for(
+                        'match_page',
+                        round_number=data.round,
+                        home_slug=match.home_slug,
+                        away_slug=match.away_slug
+                    ) }}"
+                >
+                    ⚽ Detail zápasu
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

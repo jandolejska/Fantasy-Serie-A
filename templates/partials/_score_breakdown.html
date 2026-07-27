@@ -1,0 +1,207 @@
+<table class="table table-dark table-hover align-middle mb-0">
+
+    <thead>
+
+        <tr>
+
+            <th class="text-end">
+
+                {{ display_name(match.home) }}
+
+            </th>
+
+            <th class="text-center">
+
+                Položka
+
+            </th>
+
+            <th class="text-start">
+
+                {{ display_name(match.away) }}
+
+            </th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td class="text-end fw-bold">
+
+                {{ match.home_raw_score }}
+
+            </td>
+
+            <td class="text-center fw-semibold">
+
+                ⚽ Základ
+
+            </td>
+
+            <td class="text-start fw-bold">
+
+                {{ match.away_raw_score }}
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="text-end">
+
+                🎩 {{ match.home_team.manager.coach }}
+
+                <span class="badge bg-secondary ms-2">
+
+                    {{ match.home_coach_grade }}
+
+                </span>
+
+            </td>
+
+            <td class="text-center fw-semibold">
+
+                Trenér
+
+            </td>
+
+            <td class="text-start">
+
+                <span class="badge bg-secondary me-2">
+
+                    {{ match.away_coach_grade }}
+
+                </span>
+
+                🎩 {{ match.away_team.manager.coach }}
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="text-end">
+
+                {% if match.home_bonus %}
+
+                    <span class="badge bg-success">
+
+                        +{{ match.home_bonus }}
+
+                    </span>
+
+                {% else %}
+
+                    —
+
+                {% endif %}
+
+            </td>
+
+            <td class="text-center fw-semibold">
+
+                Bonus trenéra
+
+            </td>
+
+            <td class="text-start">
+
+                {% if match.away_bonus %}
+
+                    <span class="badge bg-success">
+
+                        +{{ match.away_bonus }}
+
+                    </span>
+
+                {% else %}
+
+                    —
+
+                {% endif %}
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td class="text-end">
+
+                {% if match.home_home_bonus %}
+
+                    <span class="badge bg-primary">
+
+                        +{{ match.home_home_bonus }}
+
+                    </span>
+
+                {% else %}
+
+                    —
+
+                {% endif %}
+
+            </td>
+
+            <td class="text-center fw-semibold">
+
+                🏠 Domácí
+
+            </td>
+
+            <td class="text-start">
+
+                {% if match.away_home_bonus %}
+
+                    <span class="badge bg-primary">
+
+                        +{{ match.away_home_bonus }}
+
+                    </span>
+
+                {% else %}
+
+                    —
+
+                {% endif %}
+
+            </td>
+
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+
+        <tr class="table-success">
+
+            <th class="text-end fs-5">
+
+                {{ match.home_score }}
+
+            </th>
+
+            <th class="text-center">
+
+                Celkem
+
+            </th>
+
+            <th class="text-start fs-5">
+
+                {{ match.away_score }}
+
+            </th>
+
+        </tr>
+
+    </tfoot>
+
+</table>

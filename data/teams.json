@@ -1,0 +1,124 @@
+{
+    "Atalanta": {
+        "id": "atalanta",
+        "short": "ATA",
+        "logo": "atalanta.png"
+    },
+    "Bologna": {
+        "id": "bologna",
+        "short": "BOL",
+        "logo": "bologna.png"
+    },
+    "Cagliari": {
+        "id": "cagliari",
+        "short": "CAG",
+        "logo": "cagliari.png"
+    },
+    "Como": {
+        "id": "como",
+        "short": "COM",
+        "logo": "como.png"
+    },
+    "Como 1907": {
+        "id": "como",
+        "short": "COM",
+        "logo": "como.png",
+        "canonical": "Como"
+    },
+    "Cremonese": {
+        "id": "cremonese",
+        "short": "CRE",
+        "logo": "cremonese.png"
+    },
+    "Fiorentina": {
+        "id": "fiorentina",
+        "short": "FIO",
+        "logo": "fiorentina.png"
+    },
+    "Frosinone": {
+        "id": "frosinone",
+        "short": "FRO",
+        "logo": "frosinone.png"
+    },
+    "Genoa": {
+        "id": "genoa",
+        "short": "GEN",
+        "logo": "genoa.png"
+    },
+    "Inter": {
+        "id": "inter",
+        "short": "INT",
+        "logo": "inter.png"
+    },
+    "Juventus": {
+        "id": "juventus",
+        "short": "JUV",
+        "logo": "juventus.png"
+    },
+    "Lazio": {
+        "id": "lazio",
+        "short": "LAZ",
+        "logo": "lazio.png"
+    },
+    "Lecce": {
+        "id": "lecce",
+        "short": "LEC",
+        "logo": "lecce.png"
+    },
+    "Milan": {
+        "id": "milan",
+        "short": "MIL",
+        "logo": "milan.png"
+    },
+    "Monza": {
+        "id": "monza",
+        "short": "MON",
+        "logo": "monza.png"
+    },
+    "Napoli": {
+        "id": "napoli",
+        "short": "NAP",
+        "logo": "napoli.png"
+    },
+    "Parma": {
+        "id": "parma",
+        "short": "PAR",
+        "logo": "parma.png"
+    },
+    "Pisa": {
+        "id": "pisa",
+        "short": "PIS",
+        "logo": "pisa.png"
+    },
+    "Roma": {
+        "id": "roma",
+        "short": "ROM",
+        "logo": "roma.png"
+    },
+    "Sassuolo": {
+        "id": "sassuolo",
+        "short": "SAS",
+        "logo": "sassuolo.png"
+    },
+    "Torino": {
+        "id": "torino",
+        "short": "TOR",
+        "logo": "torino.png"
+    },
+    "Udinese": {
+        "id": "udinese",
+        "short": "UDI",
+        "logo": "udinese.png"
+    },
+    "Venezia": {
+        "id": "venezia",
+        "short": "VEN",
+        "logo": "venezia.png"
+    },
+    "Venezia FC": {
+        "id": "venezia",
+        "short": "VEN",
+        "logo": "venezia.png",
+        "canonical": "Venezia"
+    }
+}

@@ -1,0 +1,259 @@
+{
+    "name": "Paulie",
+    "coach": "Fabregas",
+    "squad": [
+        {
+            "name": "Carnesecchi",
+            "role": "P",
+            "buy_price": 14,
+            "team": "Atalanta",
+            "qa": 18,
+            "qi": 14,
+            "id": 4431,
+            "active": true
+        },
+        {
+            "name": "Rossi F.",
+            "role": "P",
+            "buy_price": 1,
+            "team": "Atalanta",
+            "qa": 1,
+            "qi": 1,
+            "id": 2297,
+            "active": true
+        },
+        {
+            "name": "Sportiello",
+            "role": "P",
+            "buy_price": 1,
+            "team": "Atalanta",
+            "qa": 1,
+            "qi": 1,
+            "id": 4,
+            "active": true
+        },
+        {
+            "name": "Bellanova",
+            "role": "D",
+            "buy_price": 13,
+            "team": "Atalanta",
+            "qa": 6,
+            "qi": 13,
+            "id": 4887,
+            "active": true
+        },
+        {
+            "name": "Cambiaso",
+            "role": "D",
+            "buy_price": 15,
+            "team": "Juventus",
+            "qa": 9,
+            "qi": 15,
+            "id": 5520,
+            "active": true
+        },
+        {
+            "name": "Solet",
+            "role": "D",
+            "buy_price": 11,
+            "team": "Udinese",
+            "qa": 14,
+            "qi": 11,
+            "id": 6956,
+            "active": true
+        },
+        {
+            "name": "Valeri",
+            "role": "D",
+            "buy_price": 10,
+            "team": "Parma",
+            "qa": 11,
+            "qi": 10,
+            "id": 5862,
+            "active": true
+        },
+        {
+            "name": "Bisseck",
+            "role": "D",
+            "buy_price": 9,
+            "team": "Inter",
+            "qa": 15,
+            "qi": 9,
+            "id": 6217,
+            "active": true
+        },
+        {
+            "name": "Comuzzo",
+            "role": "D",
+            "buy_price": 7,
+            "team": "Fiorentina",
+            "qa": 4,
+            "qi": 7,
+            "id": 6495,
+            "active": true
+        },
+        {
+            "name": "Delprato",
+            "role": "D",
+            "buy_price": 8,
+            "team": "Parma",
+            "qa": 10,
+            "qi": 8,
+            "id": 6664,
+            "active": true
+        },
+        {
+            "name": "Gila",
+            "role": "D",
+            "buy_price": 9,
+            "team": "Lazio",
+            "qa": 8,
+            "qi": 9,
+            "id": 5833,
+            "active": true
+        },
+        {
+            "name": "McTominay",
+            "role": "C",
+            "buy_price": 26,
+            "team": "Napoli",
+            "qa": 25,
+            "qi": 26,
+            "id": 4777,
+            "active": true
+        },
+        {
+            "name": "Barella",
+            "role": "C",
+            "buy_price": 14,
+            "team": "Inter",
+            "qa": 18,
+            "qi": 14,
+            "id": 1870,
+            "active": true
+        },
+        {
+            "name": "Sohm",
+            "role": "C",
+            "buy_price": 12,
+            "team": "Bologna",
+            "qa": 4,
+            "qi": 12,
+            "id": 5319,
+            "active": true
+        },
+        {
+            "name": "Samardzic",
+            "role": "C",
+            "buy_price": 12,
+            "team": "Atalanta",
+            "qa": 9,
+            "qi": 12,
+            "id": 5119,
+            "active": true
+        },
+        {
+            "name": "Odgaard",
+            "role": "C",
+            "buy_price": 16,
+            "team": "Bologna",
+            "qa": 13,
+            "qi": 16,
+            "id": 2765,
+            "active": true
+        },
+        {
+            "name": "Prati",
+            "role": "C",
+            "buy_price": 3,
+            "team": "Torino",
+            "qa": 7,
+            "qi": 3,
+            "id": 6424,
+            "active": true
+        },
+        {
+            "name": "Vecino",
+            "role": "C",
+            "buy_price": 6,
+            "team": "Lazio",
+            "qa": 6,
+            "qi": 6,
+            "id": 181,
+            "active": false
+        },
+        {
+            "name": "Thorstvedt",
+            "role": "C",
+            "buy_price": 8,
+            "team": "Sassuolo",
+            "qa": 15,
+            "qi": 8,
+            "id": 5844,
+            "active": true
+        },
+        {
+            "name": "Thuram",
+            "role": "A",
+            "buy_price": 29,
+            "team": "Inter",
+            "qa": 32,
+            "qi": 29,
+            "id": 4871,
+            "active": true
+        },
+        {
+            "name": "Vardy",
+            "role": "A",
+            "buy_price": 16,
+            "team": "Cremonese",
+            "qa": 16,
+            "qi": 15,
+            "id": 2499,
+            "active": true
+        },
+        {
+            "name": "Dzeko",
+            "role": "A",
+            "buy_price": 26,
+            "id": 647,
+            "team": "Fiorentina",
+            "qa": 3,
+            "qi": 15,
+            "active": false
+        },
+        {
+            "name": "Davis K.",
+            "role": "A",
+            "buy_price": 12,
+            "team": "Udinese",
+            "qa": 24,
+            "qi": 12,
+            "id": 5637,
+            "active": true
+        },
+        {
+            "name": "Castro S.",
+            "role": "A",
+            "buy_price": 19,
+            "team": "Bologna",
+            "qa": 17,
+            "qi": 19,
+            "id": 6572,
+            "active": true
+        },
+        {
+            "name": "Pedro",
+            "role": "A",
+            "buy_price": 13,
+            "team": "Lazio",
+            "qa": 16,
+            "qi": 13,
+            "id": 2489,
+            "active": true
+        }
+    ],
+    "transfers_left": 4,
+    "budget": 23,
+    "slug": "paulie"
+}

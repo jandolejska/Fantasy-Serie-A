@@ -1,0 +1,38 @@
+[
+    {
+        "out": "Lookman",
+        "in": "Durosinmi",
+        "sell_price": 29,
+        "buy_price": 10,
+        "difference": -19,
+        "free_transfer": true
+    },
+    {
+        "date": "12.07.2026 14:04",
+        "type": "TRANSFER",
+        "out": "De Luca",
+        "in": "Nkunku",
+        "sell_price": 8,
+        "buy_price": 18,
+        "difference": 10
+    },
+    {
+        "date": "12.07.2026 14:04",
+        "type": "TRANSFER",
+        "out": "De Luca",
+        "in": "Nkunku",
+        "sell_price": 8,
+        "buy_price": 18,
+        "difference": 10
+    },
+    {
+        "date": "12.07.2026 14:31",
+        "type": "TRANSFER",
+        "out": "Tramoni M.",
+        "in": "Neres",
+        "sell_price": 12,
+        "buy_price": 10,
+        "difference": 2,
+        "transfers_left": 2
+    }
+]

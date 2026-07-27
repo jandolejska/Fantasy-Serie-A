@@ -1,0 +1,30 @@
+{
+    "formation": "4-5-1",
+
+    "starting11": [
+        {"name":"Falcone","role":"P"},
+
+        {"name":"Vasquez","role":"D"},
+        {"name":"Kalulu","role":"D"},
+        {"name":"Estupinan","role":"D"},
+        {"name":"Wesley","role":"D"},
+
+        {"name":"Stanciu","role":"C"},
+        {"name":"Thuram K.","role":"C"},
+        {"name":"Paz N.","role":"C"},
+        {"name":"Modric","role":"C"},
+        {"name":"Zambo Anguissa","role":"C"},
+
+        {"name":"Piccoli","role":"A"}
+    ],
+
+    "bench": [
+        {"name":"Israel","role":"P"},
+        {"name":"Baschirotto","role":"D"},
+        {"name":"Cuadrado","role":"D"},
+        {"name":"Cristante","role":"C"},
+        {"name":"Tramoni M.","role":"C"},
+        {"name":"Laurientè","role":"A"},
+        {"name":"Immobile","role":"A"}
+    ]
+}
