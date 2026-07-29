@@ -1,6 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyc
 *$py.class
 
 # Virtual environments
@@ -36,3 +37,5 @@ backups/
 *.sqlite
 *.db-shm
 *.db-wal
+
+.env

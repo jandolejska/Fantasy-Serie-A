@@ -1,3 +1,7 @@
+import os
+
+from dotenv import load_dotenv
+
 from flask import (
     Flask,
     render_template,
@@ -87,13 +91,13 @@ from players.routes import player_route
 
 from datetime import timedelta
 
+load_dotenv()
+
 app = Flask(__name__)
 
 app.jinja_env.globals["display_name"] = display_name
 
-app.secret_key = "fantasy-serie-a-secret"
-
-app.permanent_session_lifetime = timedelta(days=365)
+app.config.from_object("config.Config")
 
 
 # =========================
