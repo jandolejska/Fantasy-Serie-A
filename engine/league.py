@@ -343,6 +343,9 @@ def check_round_ready():
             continue
 
         for home, away in fixture["matches"]:
+            
+            print(f"Kontrola: {home} vs {away}")
+            print(f"Aktuální kolo: {current_round}")
 
             if not has_round(home, current_round):
                 return False, home
