@@ -8,6 +8,8 @@ from pathlib import Path
 
 def load_squad(manager_name):
 
+    manager_name = manager_name.lower()
+
     with open(
         f"data/{manager_name}/squad.json",
         encoding="utf-8"
@@ -17,6 +19,8 @@ def load_squad(manager_name):
 
 
 def load_round(manager_name, round_number):
+
+    manager_name = manager_name.lower()
 
     with open(
         f"data/{manager_name}/lineups/round_{round_number:02d}.json",
@@ -80,6 +84,8 @@ def find_latest_round(manager_name, round_number):
     Vrátí číslo posledního kola, pro které existuje uložená sestava.
     """
 
+    manager_name = manager_name.lower()
+
     for rnd in range(round_number, 0, -1):
 
         path = Path(
@@ -97,6 +103,8 @@ def find_latest_round(manager_name, round_number):
 # =========================
 
 def build_team(manager_name, round_number, players):
+
+    manager_name = manager_name.lower()
 
     manager = load_manager(manager_name)
     latest_round = find_latest_round(

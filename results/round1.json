@@ -10,7 +10,7 @@
             "home_team": {
                 "manager": {
                     "name": "Johnny",
-                    "coach": "Pioli",
+                    "coach": "Gilardino",
                     "squad": [
                         {
                             "name": "Israel",
@@ -20,7 +20,18 @@
                             "qa": 1,
                             "qi": 9,
                             "id": 7179,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         },
                         {
                             "name": "Falcone",
@@ -30,7 +41,18 @@
                             "qa": 15,
                             "qi": 6,
                             "id": 2134,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lecce",
+                                "short": "LEC",
+                                "logo": "lecce.png"
+                            },
+                            "fixture": {
+                                "opponent": "Venezia FC",
+                                "home": false,
+                                "short": "VEN",
+                                "logo": "venezia.png"
+                            }
                         },
                         {
                             "name": "Furlanetto",
@@ -40,17 +62,39 @@
                             "qa": 3,
                             "qi": 1,
                             "id": 6417,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
-                            "name": "Veroli",
+                            "name": "Akanji",
                             "role": "D",
-                            "buy_price": 1,
-                            "team": "Cagliari",
-                            "qa": 1,
-                            "qi": 1,
-                            "id": 6636,
-                            "active": false
+                            "buy_price": 13,
+                            "team": "Inter",
+                            "qa": 13,
+                            "qi": 9,
+                            "id": 4159,
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Baschirotto",
@@ -60,7 +104,13 @@
                             "qa": 9,
                             "qi": 8,
                             "id": 5835,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "cremonese",
+                                "short": "CRE",
+                                "logo": "cremonese.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Vasquez",
@@ -70,7 +120,18 @@
                             "qa": 11,
                             "qi": 9,
                             "id": 5514,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "genoa",
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            },
+                            "fixture": {
+                                "opponent": "Napoli",
+                                "home": true,
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            }
                         },
                         {
                             "name": "Kalulu",
@@ -80,7 +141,18 @@
                             "qa": 14,
                             "qi": 9,
                             "id": 4976,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
                             "name": "Estupinan",
@@ -90,7 +162,18 @@
                             "qa": 2,
                             "qi": 11,
                             "id": 5273,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Cuadrado",
@@ -100,7 +183,13 @@
                             "qa": 5,
                             "qi": 7,
                             "id": 697,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "pisa",
+                                "short": "PIS",
+                                "logo": "pisa.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Wesley",
@@ -110,7 +199,18 @@
                             "qa": 14,
                             "qi": 14,
                             "id": 7181,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Palma",
@@ -120,7 +220,18 @@
                             "qa": 2,
                             "qi": 1,
                             "id": 6925,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "udinese",
+                                "short": "UDI",
+                                "logo": "udinese.png"
+                            },
+                            "fixture": {
+                                "opponent": "Como 1907",
+                                "home": true,
+                                "short": "COM",
+                                "logo": "como.png"
+                            }
                         },
                         {
                             "name": "Paz N.",
@@ -130,7 +241,13 @@
                             "qa": 26,
                             "qi": 20,
                             "id": 6875,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Stanciu",
@@ -140,7 +257,18 @@
                             "qa": 1,
                             "qi": 8,
                             "id": 7135,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "genoa",
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            },
+                            "fixture": {
+                                "opponent": "Napoli",
+                                "home": true,
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            }
                         },
                         {
                             "name": "Thuram K.",
@@ -150,7 +278,18 @@
                             "qa": 14,
                             "qi": 16,
                             "id": 5562,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
                             "name": "Cristante",
@@ -160,7 +299,18 @@
                             "qa": 13,
                             "qi": 9,
                             "id": 779,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Modric",
@@ -170,7 +320,18 @@
                             "qa": 18,
                             "qi": 12,
                             "id": 2606,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Zambo Anguissa",
@@ -180,7 +341,18 @@
                             "qa": 15,
                             "qi": 15,
                             "id": 4220,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Tramoni M.",
@@ -190,17 +362,34 @@
                             "qa": 6,
                             "qi": 12,
                             "id": 5318,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "pisa",
+                                "short": "PIS",
+                                "logo": "pisa.png"
+                            },
+                            "fixture": null
                         },
                         {
-                            "name": "Pafundi",
+                            "name": "Atta",
                             "role": "C",
-                            "buy_price": 1,
+                            "buy_price": 20,
                             "team": "Udinese",
-                            "qa": 1,
-                            "qi": 1,
-                            "id": 5824,
-                            "active": false
+                            "qa": 20,
+                            "qi": 6,
+                            "id": 6908,
+                            "active": true,
+                            "team_info": {
+                                "id": "udinese",
+                                "short": "UDI",
+                                "logo": "udinese.png"
+                            },
+                            "fixture": {
+                                "opponent": "Como 1907",
+                                "home": true,
+                                "short": "COM",
+                                "logo": "como.png"
+                            }
                         },
                         {
                             "name": "Durosinmi",
@@ -210,7 +399,13 @@
                             "qa": 10,
                             "qi": 15,
                             "id": 7316,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "pisa",
+                                "short": "PIS",
+                                "logo": "pisa.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Immobile",
@@ -220,7 +415,18 @@
                             "qa": 4,
                             "qi": 19,
                             "id": 785,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Piccoli",
@@ -230,7 +436,18 @@
                             "team": "Fiorentina",
                             "qa": 9,
                             "qi": 17,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Nkunku",
@@ -240,7 +457,18 @@
                             "qa": 18,
                             "qi": 20,
                             "id": 4728,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Lukaku",
@@ -250,7 +478,18 @@
                             "qa": 15,
                             "qi": 31,
                             "id": 2531,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Laurientè",
@@ -260,12 +499,22 @@
                             "qa": 21,
                             "qi": 15,
                             "id": 6060,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "sassuolo",
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            },
+                            "fixture": {
+                                "opponent": "Atalanta",
+                                "home": false,
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            }
                         }
                     ],
-                    "transfers_left": 2,
-                    "budget": 68,
-                    "slug": "johnny"
+                    "transfers_left": 0,
+                    "budget": 37
                 },
                 "starting": [
                     {
@@ -281,17 +530,17 @@
                     {
                         "name": "Estupinan",
                         "role": "D",
-                        "grade": "6"
+                        "grade": "6",
+                        "replaced_player": {
+                            "name": "Akanji",
+                            "role": "D",
+                            "grade": null
+                        }
                     },
                     {
-                        "name": "Kalulu",
+                        "name": "Baschirotto",
                         "role": "D",
-                        "grade": "6"
-                    },
-                    {
-                        "name": "Vasquez",
-                        "role": "D",
-                        "grade": "6,5"
+                        "grade": "8"
                     },
                     {
                         "name": "Paz N.",
@@ -299,7 +548,7 @@
                         "grade": "8"
                     },
                     {
-                        "name": "Stanciu",
+                        "name": "Atta",
                         "role": "C",
                         "grade": "6"
                     },
@@ -323,10 +572,15 @@
                         "role": "A",
                         "grade": "5,5",
                         "replaced_player": {
-                            "name": "Piccoli",
+                            "name": "Durosinmi",
                             "role": "A",
                             "grade": null
                         }
+                    },
+                    {
+                        "name": "Nkunku",
+                        "role": "A",
+                        "grade": null
                     }
                 ],
                 "bench": [
@@ -336,14 +590,9 @@
                         "grade": "5"
                     },
                     {
-                        "name": "Baschirotto",
+                        "name": "Vasquez",
                         "role": "D",
-                        "grade": "8"
-                    },
-                    {
-                        "name": "Cuadrado",
-                        "role": "D",
-                        "grade": "6"
+                        "grade": "6,5"
                     },
                     {
                         "name": "Cristante",
@@ -356,7 +605,7 @@
                         "grade": "6"
                     },
                     {
-                        "name": "Durosinmi",
+                        "name": "Piccoli",
                         "role": "A",
                         "grade": null
                     }
@@ -364,7 +613,19 @@
                 "substitutions": [
                     {
                         "out": {
-                            "name": "Piccoli",
+                            "name": "Akanji",
+                            "role": "D",
+                            "grade": null
+                        },
+                        "in": {
+                            "name": "Estupinan",
+                            "role": "D",
+                            "grade": "6"
+                        }
+                    },
+                    {
+                        "out": {
+                            "name": "Durosinmi",
                             "role": "A",
                             "grade": null
                         },
@@ -375,8 +636,8 @@
                         }
                     }
                 ],
-                "score": 73.5,
-                "goals": 4
+                "score": 69.0,
+                "goals": 2
             },
             "away_team": {
                 "manager": {
@@ -650,9 +911,9 @@
                         "grade": "6"
                     },
                     {
-                        "name": "Valeri",
+                        "name": "Delprato",
                         "role": "D",
-                        "grade": "5,5"
+                        "grade": "6"
                     },
                     {
                         "name": "Comuzzo",
@@ -663,11 +924,6 @@
                         "name": "Bellanova",
                         "role": "D",
                         "grade": "5,5"
-                    },
-                    {
-                        "name": "Cambiaso",
-                        "role": "D",
-                        "grade": "4,5"
                     },
                     {
                         "name": "McTominay",
@@ -685,19 +941,19 @@
                         "grade": "5,5"
                     },
                     {
+                        "name": "Odgaard",
+                        "role": "C",
+                        "grade": "5"
+                    },
+                    {
                         "name": "Thuram",
                         "role": "A",
                         "grade": "8"
                     },
                     {
-                        "name": "Davis K.",
+                        "name": "Castro S.",
                         "role": "A",
-                        "grade": "5,5",
-                        "replaced_player": {
-                            "name": "Dzeko",
-                            "role": "A",
-                            "grade": null
-                        }
+                        "grade": "6,5"
                     }
                 ],
                 "bench": [
@@ -707,14 +963,14 @@
                         "grade": null
                     },
                     {
+                        "name": "Valeri",
+                        "role": "D",
+                        "grade": "5,5"
+                    },
+                    {
                         "name": "Gila",
                         "role": "D",
                         "grade": "5"
-                    },
-                    {
-                        "name": "Delprato",
-                        "role": "D",
-                        "grade": "6"
                     },
                     {
                         "name": "Prati",
@@ -722,49 +978,53 @@
                         "grade": "6"
                     },
                     {
-                        "name": "Odgaard",
+                        "name": "Samardzic",
                         "role": "C",
-                        "grade": "5"
+                        "grade": null
                     },
                     {
-                        "name": "Castro S.",
+                        "name": "Davis K.",
                         "role": "A",
-                        "grade": "6,5"
-                    }
-                ],
-                "substitutions": [
+                        "grade": "5,5"
+                    },
                     {
-                        "out": {
-                            "name": "Dzeko",
-                            "role": "A",
-                            "grade": null
-                        },
-                        "in": {
-                            "name": "Davis K.",
-                            "role": "A",
-                            "grade": "5,5"
-                        }
+                        "name": "Vardy",
+                        "role": "A",
+                        "grade": null
                     }
                 ],
-                "score": 67.5,
-                "goals": 1
+                "substitutions": [],
+                "score": 69.5,
+                "goals": 2
             },
-            "home_score": 73.5,
-            "away_score": 67.5,
-            "home_goals": 4,
-            "away_goals": 1,
-            "home_coach_grade": "6",
-            "away_coach_grade": "7,5",
+            "home_score": 69.0,
+            "away_score": 69.5,
+            "home_goals": 2,
+            "away_goals": 2,
+            "home_coach_grade": 6.5,
+            "away_coach_grade": 7.5,
             "home_bonus": 0,
             "away_bonus": 0.5,
-            "home_raw_score": 71.5,
-            "away_raw_score": 67.0,
+            "home_raw_score": 67.0,
+            "away_raw_score": 69.0,
             "home_home_bonus": 2,
             "away_home_bonus": 0,
             "home_substitutions": [
                 {
                     "out": {
-                        "name": "Piccoli",
+                        "name": "Akanji",
+                        "role": "D",
+                        "grade": null
+                    },
+                    "in": {
+                        "name": "Estupinan",
+                        "role": "D",
+                        "grade": "6"
+                    }
+                },
+                {
+                    "out": {
+                        "name": "Durosinmi",
                         "role": "A",
                         "grade": null
                     },
@@ -775,20 +1035,7 @@
                     }
                 }
             ],
-            "away_substitutions": [
-                {
-                    "out": {
-                        "name": "Dzeko",
-                        "role": "A",
-                        "grade": null
-                    },
-                    "in": {
-                        "name": "Davis K.",
-                        "role": "A",
-                        "grade": "5,5"
-                    }
-                }
-            ]
+            "away_substitutions": []
         },
         {
             "home": "Goran",
@@ -808,7 +1055,18 @@
                             "team": "Fiorentina",
                             "qa": 12,
                             "qi": 14,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Martinelli T.",
@@ -818,17 +1076,23 @@
                             "team": "Fiorentina",
                             "qa": 1,
                             "qi": 1,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
-                            "name": "Ciocci",
+                            "name": "Calligaris",
                             "role": "P",
-                            "buy_price": 1,
-                            "id": 4929,
-                            "team": "Cagliari",
-                            "qa": 1,
-                            "qi": 1,
-                            "active": true
+                            "buy_price": 1
                         },
                         {
                             "name": "Bastoni",
@@ -838,7 +1102,18 @@
                             "team": "Inter",
                             "qa": 13,
                             "qi": 16,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Gosens",
@@ -848,7 +1123,18 @@
                             "team": "Fiorentina",
                             "qa": 11,
                             "qi": 18,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Mancini",
@@ -858,7 +1144,18 @@
                             "team": "Roma",
                             "qa": 15,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Romagnoli",
@@ -868,7 +1165,18 @@
                             "team": "Lazio",
                             "qa": 8,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
                             "name": "Luperto",
@@ -878,7 +1186,13 @@
                             "team": "Cremonese",
                             "qa": 8,
                             "qi": 7,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "cremonese",
+                                "short": "CRE",
+                                "logo": "cremonese.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Gutierrez",
@@ -888,7 +1202,18 @@
                             "team": "Napoli",
                             "qa": 10,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Zappa",
@@ -898,7 +1223,18 @@
                             "team": "Cagliari",
                             "qa": 6,
                             "qi": 6,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "cagliari",
+                                "short": "CAG",
+                                "logo": "cagliari.png"
+                            },
+                            "fixture": {
+                                "opponent": "Parma",
+                                "home": false,
+                                "short": "PAR",
+                                "logo": "parma.png"
+                            }
                         },
                         {
                             "name": "Van Der Brempt",
@@ -908,7 +1244,13 @@
                             "team": "Como",
                             "qa": 5,
                             "qi": 4,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Pulisic",
@@ -918,7 +1260,18 @@
                             "team": "Milan",
                             "qa": 24,
                             "qi": 28,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Orsolini",
@@ -928,7 +1281,18 @@
                             "team": "Bologna",
                             "qa": 19,
                             "qi": 30,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Politano",
@@ -938,7 +1302,18 @@
                             "team": "Napoli",
                             "qa": 13,
                             "qi": 15,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Isaksen",
@@ -948,7 +1323,18 @@
                             "team": "Lazio",
                             "qa": 16,
                             "qi": 14,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
                             "name": "Mandragora",
@@ -958,7 +1344,18 @@
                             "team": "Fiorentina",
                             "qa": 17,
                             "qi": 14,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Koopmeiners",
@@ -968,7 +1365,18 @@
                             "team": "Juventus",
                             "qa": 4,
                             "qi": 14,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
                             "name": "Da Cunha",
@@ -978,7 +1386,13 @@
                             "team": "Como",
                             "qa": 20,
                             "qi": 12,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Pasalic",
@@ -988,7 +1402,18 @@
                             "team": "Atalanta",
                             "qa": 12,
                             "qi": 9,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Leao",
@@ -998,7 +1423,18 @@
                             "team": "Milan",
                             "qa": 20,
                             "qi": 24,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Castellanos",
@@ -1008,7 +1444,18 @@
                             "team": "Lazio",
                             "qa": 18,
                             "qi": 21,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
                             "name": "Dovbyk",
@@ -1018,7 +1465,18 @@
                             "team": "Roma",
                             "qa": 10,
                             "qi": 21,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Addai",
@@ -1028,7 +1486,13 @@
                             "team": "Como",
                             "qa": 6,
                             "qi": 7,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Ferguson E.",
@@ -1038,7 +1502,18 @@
                             "team": "Roma",
                             "qa": 10,
                             "qi": 19,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Ngonge",
@@ -1048,10 +1523,22 @@
                             "team": "Torino",
                             "qa": 9,
                             "qi": 9,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         }
                     ],
-                    "transfers_left": 4
+                    "transfers_left": 2,
+                    "budget": 2
                 },
                 "starting": [
                     {
@@ -1159,12 +1646,23 @@
                         {
                             "name": "Sommer",
                             "role": "P",
-                            "buy_price": 16,
-                            "id": 2428,
+                            "buy_price": 13,
                             "team": "Inter",
                             "qa": 13,
                             "qi": 16,
-                            "active": true
+                            "id": 2428,
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Suzuki",
@@ -1174,17 +1672,39 @@
                             "team": "Parma",
                             "qa": 11,
                             "qi": 7,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "parma",
+                                "short": "PAR",
+                                "logo": "parma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Cagliari",
+                                "home": true,
+                                "short": "CAG",
+                                "logo": "cagliari.png"
+                            }
                         },
                         {
                             "name": "Martinez Jo.",
                             "role": "P",
-                            "buy_price": 2,
-                            "id": 5116,
+                            "buy_price": 5,
                             "team": "Inter",
                             "qa": 5,
                             "qi": 2,
-                            "active": true
+                            "id": 5116,
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Dumfries",
@@ -1194,7 +1714,18 @@
                             "team": "Inter",
                             "qa": 12,
                             "qi": 20,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "N'Dicka",
@@ -1204,7 +1735,18 @@
                             "team": "Roma",
                             "qa": 12,
                             "qi": 10,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Kossounou",
@@ -1214,7 +1756,18 @@
                             "team": "Atalanta",
                             "qa": 6,
                             "qi": 9,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Tavares N.",
@@ -1224,7 +1777,18 @@
                             "team": "Lazio",
                             "qa": 6,
                             "qi": 12,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
                             "name": "Mina",
@@ -1234,7 +1798,18 @@
                             "team": "Cagliari",
                             "qa": 9,
                             "qi": 7,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "cagliari",
+                                "short": "CAG",
+                                "logo": "cagliari.png"
+                            },
+                            "fixture": {
+                                "opponent": "Parma",
+                                "home": false,
+                                "short": "PAR",
+                                "logo": "parma.png"
+                            }
                         },
                         {
                             "name": "Dodò",
@@ -1244,7 +1819,18 @@
                             "team": "Fiorentina",
                             "qa": 10,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Pezzella Giu.",
@@ -1254,7 +1840,13 @@
                             "team": "Cremonese",
                             "qa": 4,
                             "qi": 5,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "cremonese",
+                                "short": "CRE",
+                                "logo": "cremonese.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Ostigard",
@@ -1264,7 +1856,18 @@
                             "team": "Genoa",
                             "qa": 15,
                             "qi": 5,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "genoa",
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            },
+                            "fixture": {
+                                "opponent": "Napoli",
+                                "home": true,
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            }
                         },
                         {
                             "name": "Calhanoglu",
@@ -1274,7 +1877,18 @@
                             "team": "Inter",
                             "qa": 24,
                             "qi": 23,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Conceicao",
@@ -1284,7 +1898,18 @@
                             "team": "Juventus",
                             "qa": 18,
                             "qi": 18,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
                             "name": "Vlasic",
@@ -1294,7 +1919,18 @@
                             "team": "Torino",
                             "qa": 17,
                             "qi": 15,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         },
                         {
                             "name": "Perrone",
@@ -1304,7 +1940,13 @@
                             "team": "Como",
                             "qa": 16,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Rovella",
@@ -1314,7 +1956,18 @@
                             "team": "Lazio",
                             "qa": 2,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
                             "name": "Fagioli",
@@ -1324,7 +1977,18 @@
                             "team": "Fiorentina",
                             "qa": 11,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Vazquez",
@@ -1334,7 +1998,13 @@
                             "team": "Cremonese",
                             "qa": 13,
                             "qi": 10,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "cremonese",
+                                "short": "CRE",
+                                "logo": "cremonese.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Asllani",
@@ -1344,7 +2014,18 @@
                             "team": "Torino",
                             "qa": 2,
                             "qi": 4,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         },
                         {
                             "name": "Martinez L.",
@@ -1354,7 +2035,18 @@
                             "team": "Inter",
                             "qa": 33,
                             "qi": 34,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Dybala",
@@ -1364,7 +2056,18 @@
                             "team": "Roma",
                             "qa": 13,
                             "qi": 26,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Diao",
@@ -1374,7 +2077,13 @@
                             "team": "Como",
                             "qa": 12,
                             "qi": 17,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Scamacca",
@@ -1384,30 +2093,49 @@
                             "team": "Atalanta",
                             "qa": 23,
                             "qi": 19,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Pinamonti",
                             "role": "A",
                             "buy_price": 16,
-                            "id": 2038,
                             "team": "Sassuolo",
                             "qa": 16,
                             "qi": 16,
-                            "active": true
+                            "id": 2038,
+                            "active": true,
+                            "team_info": {
+                                "id": "sassuolo",
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            },
+                            "fixture": {
+                                "opponent": "Atalanta",
+                                "home": false,
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            }
                         },
                         {
                             "name": "Adams C.",
                             "role": "A",
-                            "buy_price": 14,
-                            "id": 6646,
-                            "team": "Torino",
-                            "qa": 16,
-                            "qi": 14,
-                            "active": true
+                            "buy_price": 16
                         }
                     ],
-                    "transfers_left": 4
+                    "transfers_left": 0,
+                    "budget": 5,
+                    "slug": "kuba"
                 },
                 "starting": [
                     {
@@ -1426,9 +2154,9 @@
                         "grade": "5"
                     },
                     {
-                        "name": "Mina",
+                        "name": "Pezzella Giu.",
                         "role": "D",
-                        "grade": "6",
+                        "grade": "6,5",
                         "replaced_player": {
                             "name": "Kossounou",
                             "role": "D",
@@ -1456,41 +2184,14 @@
                         "grade": "6,5"
                     },
                     {
-                        "name": "Fagioli",
-                        "role": "C",
-                        "grade": "6"
-                    },
-                    {
-                        "name": "Scamacca",
-                        "role": "A",
-                        "grade": "7"
-                    },
-                    {
-                        "name": "Martinez L.",
-                        "role": "A",
-                        "grade": "7,5"
-                    }
-                ],
-                "bench": [
-                    {
-                        "name": "Suzuki",
-                        "role": "P",
-                        "grade": "6,5"
-                    },
-                    {
-                        "name": "Pezzella Giu.",
-                        "role": "D",
-                        "grade": "6,5"
-                    },
-                    {
                         "name": "Vlasic",
                         "role": "C",
-                        "grade": "5"
-                    },
-                    {
-                        "name": "Perrone",
-                        "role": "C",
-                        "grade": "6,5"
+                        "grade": "5",
+                        "replaced_player": {
+                            "name": "Calhanoglu",
+                            "role": "C",
+                            "grade": null
+                        }
                     },
                     {
                         "name": "Pinamonti",
@@ -1503,6 +2204,33 @@
                         "grade": "5,5"
                     }
                 ],
+                "bench": [
+                    {
+                        "name": "Suzuki",
+                        "role": "P",
+                        "grade": "6,5"
+                    },
+                    {
+                        "name": "Mina",
+                        "role": "D",
+                        "grade": "6"
+                    },
+                    {
+                        "name": "Perrone",
+                        "role": "C",
+                        "grade": "6,5"
+                    },
+                    {
+                        "name": "Scamacca",
+                        "role": "A",
+                        "grade": "7"
+                    },
+                    {
+                        "name": "Martinez L.",
+                        "role": "A",
+                        "grade": "7,5"
+                    }
+                ],
                 "substitutions": [
                     {
                         "out": {
@@ -1511,25 +2239,37 @@
                             "grade": null
                         },
                         "in": {
-                            "name": "Mina",
+                            "name": "Pezzella Giu.",
                             "role": "D",
-                            "grade": "6"
+                            "grade": "6,5"
+                        }
+                    },
+                    {
+                        "out": {
+                            "name": "Calhanoglu",
+                            "role": "C",
+                            "grade": null
+                        },
+                        "in": {
+                            "name": "Vlasic",
+                            "role": "C",
+                            "grade": "5"
                         }
                     }
                 ],
-                "score": 70.0,
-                "goals": 2
+                "score": 66.0,
+                "goals": 1
             },
             "home_score": 70.0,
-            "away_score": 70.0,
+            "away_score": 66.0,
             "home_goals": 2,
-            "away_goals": 2,
-            "home_coach_grade": "5",
-            "away_coach_grade": "7",
+            "away_goals": 1,
+            "home_coach_grade": 5.0,
+            "away_coach_grade": 7.0,
             "home_bonus": 0,
             "away_bonus": 0.5,
             "home_raw_score": 68.0,
-            "away_raw_score": 69.5,
+            "away_raw_score": 65.5,
             "home_home_bonus": 2,
             "away_home_bonus": 0,
             "home_substitutions": [],
@@ -1541,9 +2281,21 @@
                         "grade": null
                     },
                     "in": {
-                        "name": "Mina",
+                        "name": "Pezzella Giu.",
                         "role": "D",
-                        "grade": "6"
+                        "grade": "6,5"
+                    }
+                },
+                {
+                    "out": {
+                        "name": "Calhanoglu",
+                        "role": "C",
+                        "grade": null
+                    },
+                    "in": {
+                        "name": "Vlasic",
+                        "role": "C",
+                        "grade": "5"
                     }
                 }
             ]
@@ -1566,7 +2318,18 @@
                             "team": "Roma",
                             "qa": 17,
                             "qi": 15,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Gollini",
@@ -1576,7 +2339,18 @@
                             "team": "Roma",
                             "qa": 1,
                             "qi": 1,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Vasquez D.",
@@ -1586,7 +2360,18 @@
                             "team": "Roma",
                             "qa": 1,
                             "qi": 1,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Bremer",
@@ -1596,7 +2381,18 @@
                             "team": "Juventus",
                             "qa": 20,
                             "qi": 13,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
                             "name": "Buongiorno",
@@ -1606,7 +2402,18 @@
                             "team": "Napoli",
                             "qa": 8,
                             "qi": 13,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Hien",
@@ -1616,7 +2423,18 @@
                             "team": "Atalanta",
                             "qa": 6,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Di Lorenzo",
@@ -1626,7 +2444,18 @@
                             "team": "Napoli",
                             "qa": 10,
                             "qi": 14,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Joao Mario",
@@ -1636,7 +2465,18 @@
                             "team": "Bologna",
                             "qa": 6,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Martin",
@@ -1646,7 +2486,18 @@
                             "team": "Genoa",
                             "qa": 10,
                             "qi": 10,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "genoa",
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            },
+                            "fixture": {
+                                "opponent": "Napoli",
+                                "home": true,
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            }
                         },
                         {
                             "name": "Valle",
@@ -1656,7 +2507,13 @@
                             "team": "Como",
                             "qa": 10,
                             "qi": 6,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Lykogiannis",
@@ -1666,7 +2523,18 @@
                             "team": "Bologna",
                             "qa": 2,
                             "qi": 5,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Zaccagni",
@@ -1676,7 +2544,18 @@
                             "team": "Lazio",
                             "qa": 13,
                             "qi": 26,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lazio",
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            },
+                            "fixture": {
+                                "opponent": "Bologna",
+                                "home": false,
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            }
                         },
                         {
                             "name": "Gudmundsson A.",
@@ -1686,7 +2565,18 @@
                             "team": "Fiorentina",
                             "qa": 13,
                             "qi": 24,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Caqueret",
@@ -1696,7 +2586,13 @@
                             "team": "Como",
                             "qa": 13,
                             "qi": 12,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Saelemaekers",
@@ -1706,7 +2602,18 @@
                             "team": "Milan",
                             "qa": 15,
                             "qi": 12,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Fazzini",
@@ -1716,7 +2623,18 @@
                             "team": "Fiorentina",
                             "qa": 3,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "Casadei",
@@ -1726,7 +2644,18 @@
                             "team": "Torino",
                             "qa": 13,
                             "qi": 12,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         },
                         {
                             "name": "Carboni V.",
@@ -1736,7 +2665,18 @@
                             "team": "Genoa",
                             "qa": 4,
                             "qi": 11,
-                            "active": false
+                            "active": false,
+                            "team_info": {
+                                "id": "genoa",
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            },
+                            "fixture": {
+                                "opponent": "Napoli",
+                                "home": true,
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            }
                         },
                         {
                             "name": "Ferguson",
@@ -1746,7 +2686,18 @@
                             "team": "Bologna",
                             "qa": 5,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Kean",
@@ -1756,7 +2707,18 @@
                             "team": "Fiorentina",
                             "qa": 16,
                             "qi": 33,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "fiorentina",
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            },
+                            "fixture": {
+                                "opponent": "Roma",
+                                "home": false,
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            }
                         },
                         {
                             "name": "David",
@@ -1766,17 +2728,33 @@
                             "team": "Juventus",
                             "qa": 13,
                             "qi": 27,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
-                            "name": "Lucca",
+                            "id": 2678,
+                            "name": "Fullkrug",
+                            "team": "Milan",
                             "role": "A",
-                            "buy_price": 15,
-                            "id": 6215,
-                            "team": "Napoli",
-                            "qa": 5,
-                            "qi": 15,
-                            "active": false
+                            "qi": 13,
+                            "qa": 10,
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "buy_price": 10
                         },
                         {
                             "name": "Soulè",
@@ -1786,17 +2764,39 @@
                             "team": "Roma",
                             "qa": 20,
                             "qi": 20,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
-                            "name": "Lang",
+                            "name": "Bonny",
                             "role": "A",
-                            "buy_price": 19,
-                            "id": 7120,
-                            "team": "Napoli",
-                            "qa": 13,
-                            "qi": 19,
-                            "active": false
+                            "buy_price": 20,
+                            "team": "Inter",
+                            "qa": 20,
+                            "qi": 5,
+                            "id": 6669,
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "fixture": {
+                                "opponent": "Monza",
+                                "home": true,
+                                "short": "MON",
+                                "logo": "monza.png"
+                            }
                         },
                         {
                             "name": "Bonazzoli",
@@ -1806,10 +2806,17 @@
                             "team": "Cremonese",
                             "qa": 22,
                             "qi": 1,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "cremonese",
+                                "short": "CRE",
+                                "logo": "cremonese.png"
+                            },
+                            "fixture": null
                         }
                     ],
-                    "transfers_left": 4
+                    "transfers_left": 1,
+                    "budget": 6
                 },
                 "starting": [
                     {
@@ -1818,9 +2825,9 @@
                         "grade": "6"
                     },
                     {
-                        "name": "Lykogiannis",
+                        "name": "Joao Mario",
                         "role": "D",
-                        "grade": "5",
+                        "grade": "6",
                         "replaced_player": {
                             "name": "Buongiorno",
                             "role": "D",
@@ -1868,9 +2875,14 @@
                         "grade": "5"
                     },
                     {
-                        "name": "Lucca",
+                        "name": "Soulè",
                         "role": "A",
-                        "grade": "5,5"
+                        "grade": "5,5",
+                        "replaced_player": {
+                            "name": "Fullkrug",
+                            "role": "A",
+                            "grade": null
+                        }
                     }
                 ],
                 "bench": [
@@ -1895,14 +2907,9 @@
                         "grade": "5"
                     },
                     {
-                        "name": "Soulè",
+                        "name": "Bonny",
                         "role": "A",
-                        "grade": "5,5"
-                    },
-                    {
-                        "name": "Lang",
-                        "role": "A",
-                        "grade": null
+                        "grade": "7"
                     }
                 ],
                 "substitutions": [
@@ -1913,19 +2920,31 @@
                             "grade": null
                         },
                         "in": {
-                            "name": "Lykogiannis",
+                            "name": "Joao Mario",
                             "role": "D",
-                            "grade": "5"
+                            "grade": "6"
+                        }
+                    },
+                    {
+                        "out": {
+                            "name": "Fullkrug",
+                            "role": "A",
+                            "grade": null
+                        },
+                        "in": {
+                            "name": "Soulè",
+                            "role": "A",
+                            "grade": "5,5"
                         }
                     }
                 ],
-                "score": 65.5,
-                "goals": 0
+                "score": 66.5,
+                "goals": 1
             },
             "away_team": {
                 "manager": {
                     "name": "Matěj",
-                    "coach": "Chivu",
+                    "coach": "Di Francesco",
                     "squad": [
                         {
                             "name": "Maignan",
@@ -1935,7 +2954,18 @@
                             "team": "Milan",
                             "qa": 16,
                             "qi": 16,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Terracciano",
@@ -1945,27 +2975,49 @@
                             "team": "Milan",
                             "qa": 1,
                             "qi": 1,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
-                            "name": "Torriani",
-                            "role": "P",
-                            "buy_price": 1,
-                            "id": 6813,
-                            "team": "Milan",
-                            "qa": 1,
-                            "qi": 1,
-                            "active": true
-                        },
-                        {
-                            "name": "Dimarco",
-                            "role": "D",
-                            "buy_price": 19,
-                            "id": 254,
+                            "id": 1926,
+                            "name": "Di Gennaro",
                             "team": "Inter",
-                            "qa": 30,
-                            "qi": 19,
-                            "active": true
+                            "role": "P",
+                            "qi": 1,
+                            "qa": 1,
+                            "active": true,
+                            "team_info": {
+                                "id": "inter",
+                                "short": "INT",
+                                "logo": "inter.png"
+                            },
+                            "buy_price": 1
+                        },
+                        {
+                            "name": "Ceccherini",
+                            "role": "D",
+                            "buy_price": 1,
+                            "team": "Cremonese",
+                            "qa": 1,
+                            "qi": 4,
+                            "id": 1891,
+                            "active": true,
+                            "team_info": {
+                                "id": "cremonese",
+                                "short": "CRE",
+                                "logo": "cremonese.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Zortea",
@@ -1975,7 +3027,18 @@
                             "team": "Bologna",
                             "qa": 8,
                             "qi": 16,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Vitik",
@@ -1985,7 +3048,18 @@
                             "team": "Bologna",
                             "qa": 4,
                             "qi": 8,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Zappacosta",
@@ -1995,7 +3069,18 @@
                             "team": "Atalanta",
                             "qa": 12,
                             "qi": 13,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Miranda J.",
@@ -2005,7 +3090,18 @@
                             "team": "Bologna",
                             "qa": 10,
                             "qi": 9,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Vojvoda",
@@ -2015,7 +3111,13 @@
                             "team": "Como",
                             "qa": 10,
                             "qi": 6,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Lazaro",
@@ -2025,7 +3127,18 @@
                             "team": "Torino",
                             "qa": 4,
                             "qi": 7,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         },
                         {
                             "name": "Rrahmani",
@@ -2035,7 +3148,18 @@
                             "team": "Napoli",
                             "qa": 11,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "De Bruyne",
@@ -2045,7 +3169,18 @@
                             "team": "Napoli",
                             "qa": 21,
                             "qi": 23,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "napoli",
+                                "short": "NAP",
+                                "logo": "napoli.png"
+                            },
+                            "fixture": {
+                                "opponent": "Genoa",
+                                "home": false,
+                                "short": "GEN",
+                                "logo": "genoa.png"
+                            }
                         },
                         {
                             "name": "Ederson D.S.",
@@ -2055,7 +3190,18 @@
                             "team": "Atalanta",
                             "qa": 13,
                             "qi": 15,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Konè M.",
@@ -2065,7 +3211,18 @@
                             "team": "Roma",
                             "qa": 13,
                             "qi": 14,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "roma",
+                                "short": "ROM",
+                                "logo": "roma.png"
+                            },
+                            "fixture": {
+                                "opponent": "Fiorentina",
+                                "home": true,
+                                "short": "FIO",
+                                "logo": "fiorentina.png"
+                            }
                         },
                         {
                             "name": "Jashari",
@@ -2075,7 +3232,18 @@
                             "team": "Milan",
                             "qa": 4,
                             "qi": 13,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
                             "name": "Sottil",
@@ -2085,7 +3253,18 @@
                             "team": "Lecce",
                             "qa": 8,
                             "qi": 11,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "lecce",
+                                "short": "LEC",
+                                "logo": "lecce.png"
+                            },
+                            "fixture": {
+                                "opponent": "Venezia FC",
+                                "home": false,
+                                "short": "VEN",
+                                "logo": "venezia.png"
+                            }
                         },
                         {
                             "name": "Baturina",
@@ -2095,7 +3274,13 @@
                             "team": "Como",
                             "qa": 24,
                             "qi": 9,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "como",
+                                "short": "COM",
+                                "logo": "como.png"
+                            },
+                            "fixture": null
                         },
                         {
                             "name": "Ekkelenkamp",
@@ -2105,7 +3290,18 @@
                             "team": "Udinese",
                             "qa": 14,
                             "qi": 10,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "udinese",
+                                "short": "UDI",
+                                "logo": "udinese.png"
+                            },
+                            "fixture": {
+                                "opponent": "Como 1907",
+                                "home": true,
+                                "short": "COM",
+                                "logo": "como.png"
+                            }
                         },
                         {
                             "name": "Bernardeschi",
@@ -2115,7 +3311,18 @@
                             "team": "Bologna",
                             "qa": 13,
                             "qi": 9,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "bologna",
+                                "short": "BOL",
+                                "logo": "bologna.png"
+                            },
+                            "fixture": {
+                                "opponent": "Lazio",
+                                "home": true,
+                                "short": "LAZ",
+                                "logo": "lazio.png"
+                            }
                         },
                         {
                             "name": "Yildiz",
@@ -2125,7 +3332,18 @@
                             "team": "Juventus",
                             "qa": 26,
                             "qi": 24,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "juventus",
+                                "short": "JUV",
+                                "logo": "juventus.png"
+                            },
+                            "fixture": {
+                                "opponent": "Frosinone",
+                                "home": false,
+                                "short": "FRO",
+                                "logo": "frosinone.png"
+                            }
                         },
                         {
                             "name": "De Ketelaere",
@@ -2135,7 +3353,18 @@
                             "team": "Atalanta",
                             "qa": 16,
                             "qi": 22,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         },
                         {
                             "name": "Berardi",
@@ -2145,7 +3374,18 @@
                             "team": "Sassuolo",
                             "qa": 25,
                             "qi": 21,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "sassuolo",
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            },
+                            "fixture": {
+                                "opponent": "Atalanta",
+                                "home": false,
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            }
                         },
                         {
                             "name": "Zapata D.",
@@ -2155,7 +3395,18 @@
                             "team": "Torino",
                             "qa": 8,
                             "qi": 20,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "torino",
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            },
+                            "fixture": {
+                                "opponent": "Milan",
+                                "home": true,
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            }
                         },
                         {
                             "name": "Gimenez",
@@ -2165,20 +3416,43 @@
                             "team": "Milan",
                             "qa": 12,
                             "qi": 25,
-                            "active": true
+                            "active": true,
+                            "team_info": {
+                                "id": "milan",
+                                "short": "MIL",
+                                "logo": "milan.png"
+                            },
+                            "fixture": {
+                                "opponent": "Torino",
+                                "home": false,
+                                "short": "TOR",
+                                "logo": "torino.png"
+                            }
                         },
                         {
-                            "name": "Sarr A.",
+                            "name": "Krstovic",
                             "role": "A",
-                            "buy_price": 8,
-                            "id": 6159,
-                            "team": "Verona",
-                            "qa": 4,
-                            "qi": 8,
-                            "active": true
+                            "buy_price": 24,
+                            "team": "Atalanta",
+                            "qa": 24,
+                            "qi": 20,
+                            "id": 6435,
+                            "active": true,
+                            "team_info": {
+                                "id": "atalanta",
+                                "short": "ATA",
+                                "logo": "atalanta.png"
+                            },
+                            "fixture": {
+                                "opponent": "Sassuolo",
+                                "home": true,
+                                "short": "SAS",
+                                "logo": "sassuolo.png"
+                            }
                         }
                     ],
-                    "transfers_left": 4
+                    "transfers_left": 0,
+                    "budget": 4
                 },
                 "starting": [
                     {
@@ -2187,24 +3461,29 @@
                         "grade": "6"
                     },
                     {
-                        "name": "Dimarco",
-                        "role": "D",
-                        "grade": "6,5"
-                    },
-                    {
                         "name": "Vitik",
                         "role": "D",
                         "grade": "5,5",
                         "replaced_player": {
-                            "name": "Zappacosta",
+                            "name": "Ceccherini",
                             "role": "D",
                             "grade": null
                         }
                     },
                     {
+                        "name": "Zortea",
+                        "role": "D",
+                        "grade": "5,5"
+                    },
+                    {
                         "name": "Vojvoda",
                         "role": "D",
                         "grade": "7"
+                    },
+                    {
+                        "name": "Rrahmani",
+                        "role": "D",
+                        "grade": "6,5"
                     },
                     {
                         "name": "De Bruyne",
@@ -2217,16 +3496,6 @@
                         "grade": "6"
                     },
                     {
-                        "name": "Sottil",
-                        "role": "C",
-                        "grade": "5,5",
-                        "replaced_player": {
-                            "name": "Baturina",
-                            "role": "C",
-                            "grade": null
-                        }
-                    },
-                    {
                         "name": "Konè M.",
                         "role": "C",
                         "grade": "6,5"
@@ -2237,12 +3506,12 @@
                         "grade": "7,5"
                     },
                     {
-                        "name": "Gimenez",
+                        "name": "De Ketelaere",
                         "role": "A",
-                        "grade": "5"
+                        "grade": "5,5"
                     },
                     {
-                        "name": "De Ketelaere",
+                        "name": "Berardi",
                         "role": "A",
                         "grade": "5,5"
                     }
@@ -2254,22 +3523,27 @@
                         "grade": null
                     },
                     {
-                        "name": "Rrahmani",
+                        "name": "Miranda J.",
                         "role": "D",
-                        "grade": "6,5"
+                        "grade": null
                     },
                     {
-                        "name": "Jashari",
+                        "name": "Sottil",
                         "role": "C",
                         "grade": "5,5"
                     },
                     {
-                        "name": "Berardi",
-                        "role": "A",
-                        "grade": "5,5"
+                        "name": "Bernardeschi",
+                        "role": "C",
+                        "grade": "6"
                     },
                     {
-                        "name": "Sarr A.",
+                        "name": "Gimenez",
+                        "role": "A",
+                        "grade": "5"
+                    },
+                    {
+                        "name": "Krstovic",
                         "role": "A",
                         "grade": "5,5"
                     }
@@ -2277,7 +3551,7 @@
                 "substitutions": [
                     {
                         "out": {
-                            "name": "Zappacosta",
+                            "name": "Ceccherini",
                             "role": "D",
                             "grade": null
                         },
@@ -2286,33 +3560,21 @@
                             "role": "D",
                             "grade": "5,5"
                         }
-                    },
-                    {
-                        "out": {
-                            "name": "Baturina",
-                            "role": "C",
-                            "grade": null
-                        },
-                        "in": {
-                            "name": "Sottil",
-                            "role": "C",
-                            "grade": "5,5"
-                        }
                     }
                 ],
-                "score": 68.5,
+                "score": 69.0,
                 "goals": 2
             },
-            "home_score": 65.5,
-            "away_score": 68.5,
-            "home_goals": 0,
+            "home_score": 66.5,
+            "away_score": 69.0,
+            "home_goals": 1,
             "away_goals": 2,
-            "home_coach_grade": "5",
-            "away_coach_grade": "8",
+            "home_coach_grade": 5.0,
+            "away_coach_grade": 6.0,
             "home_bonus": 0,
             "away_bonus": 0.5,
-            "home_raw_score": 63.5,
-            "away_raw_score": 68.0,
+            "home_raw_score": 64.5,
+            "away_raw_score": 68.5,
             "home_home_bonus": 2,
             "away_home_bonus": 0,
             "home_substitutions": [
@@ -2323,16 +3585,28 @@
                         "grade": null
                     },
                     "in": {
-                        "name": "Lykogiannis",
+                        "name": "Joao Mario",
                         "role": "D",
-                        "grade": "5"
+                        "grade": "6"
+                    }
+                },
+                {
+                    "out": {
+                        "name": "Fullkrug",
+                        "role": "A",
+                        "grade": null
+                    },
+                    "in": {
+                        "name": "Soulè",
+                        "role": "A",
+                        "grade": "5,5"
                     }
                 }
             ],
             "away_substitutions": [
                 {
                     "out": {
-                        "name": "Zappacosta",
+                        "name": "Ceccherini",
                         "role": "D",
                         "grade": null
                     },
@@ -2341,23 +3615,116 @@
                         "role": "D",
                         "grade": "5,5"
                     }
-                },
-                {
-                    "out": {
-                        "name": "Baturina",
-                        "role": "C",
-                        "grade": null
-                    },
-                    "in": {
-                        "name": "Sottil",
-                        "role": "C",
-                        "grade": "5,5"
-                    }
                 }
             ]
         }
     ],
     "lineups": {},
-    "table": [],
-    "awards": {}
+    "table": {
+        "Johnny": {
+            "points": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 2
+        },
+        "Paulie": {
+            "points": 1,
+            "wins": 0,
+            "draws": 1,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 2
+        },
+        "Goran": {
+            "points": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 1
+        },
+        "Kuba": {
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 2
+        },
+        "Francesco": {
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 1,
+            "goals_against": 2
+        },
+        "Matej": {
+            "points": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 0,
+            "goals_for": 2,
+            "goals_against": 1
+        }
+    },
+    "awards": {
+        "manager_of_round": {
+            "manager": "Goran",
+            "score": 70.0
+        },
+        "player_of_round": {
+            "name": "Paz N.",
+            "team": "Como",
+            "grade": 8.0
+        },
+        "team_of_round": [
+            {
+                "name": "Falcone",
+                "grade": 7.0
+            },
+            {
+                "name": "Baschirotto",
+                "grade": 8.0
+            },
+            {
+                "name": "Bastoni",
+                "grade": 7.5
+            },
+            {
+                "name": "Luperto",
+                "grade": 7.0
+            },
+            {
+                "name": "Vojvoda",
+                "grade": 7.0
+            },
+            {
+                "name": "Paz N.",
+                "grade": 8.0
+            },
+            {
+                "name": "Sucic P.",
+                "grade": 7.5
+            },
+            {
+                "name": "McTominay",
+                "grade": 7.5
+            },
+            {
+                "name": "Thuram",
+                "grade": 8.0
+            },
+            {
+                "name": "Douvikas",
+                "grade": 7.5
+            },
+            {
+                "name": "Bonazzoli",
+                "grade": 7.5
+            }
+        ]
+    }
 }
