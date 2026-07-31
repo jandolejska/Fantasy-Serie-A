@@ -15,14 +15,20 @@ def download_grades():
     with sync_playwright() as p:
 
         browser = p.chromium.launch(
-            headless=False
+            headless=True,
+            args=[
+                "--no-sandbox",
+                "--disable-dev-shm-usage"
+            ]
         )
 
         page = browser.new_page()
 
         page.goto(url)
 
-        page.wait_for_timeout(5000)
+        page.goto(url, wait_until="networkidle")
+
+        page.wait_for_timeout(1000)
 
         html = page.content()
 
