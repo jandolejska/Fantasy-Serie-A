@@ -255,9 +255,21 @@ function selectPlayer(button) {
 
         }
 
-players = squad.filter(
-    player => player.role === role
-);
+players = squad.filter(player => {
+
+    if (player.role !== role) {
+        return false;
+    }
+
+    const isAlreadyStarting =
+        currentLineup.goalkeeper.some(p => p && p.id === player.id) ||
+        currentLineup.defenders.some(p => p && p.id === player.id) ||
+        currentLineup.midfielders.some(p => p && p.id === player.id) ||
+        currentLineup.forwards.some(p => p && p.id === player.id);
+
+    return !isAlreadyStarting;
+
+});
 
     }
 

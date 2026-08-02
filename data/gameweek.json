@@ -1,6 +1,6 @@
 {
     "current_round": 2,
-    "completed_rounds": 1,
+    "completed_rounds": 2,
     "deadline": "2026-08-01T09:08",
-    "locked": false
+    "locked": true
 }
