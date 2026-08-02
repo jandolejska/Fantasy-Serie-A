@@ -131,6 +131,58 @@
 
 </div>
 
+<!-- IMPORT DRAFT -->
+
+<div class="card mb-4">
+
+    <div class="card-body text-center">
+
+        <h4>
+
+            📄 Import draftu
+
+        </h4>
+
+        <hr>
+
+        <form
+            method="POST"
+            enctype="multipart/form-data"
+        >
+
+            <input
+                type="hidden"
+                name="action"
+                value="import_draft"
+            >
+
+            <div class="mb-3">
+
+                <input
+                    class="form-control"
+                    type="file"
+                    name="draft_file"
+                    accept=".xlsx"
+                    required
+                >
+
+            </div>
+
+            <button
+                class="btn btn-primary"
+                type="submit"
+            >
+
+                📄 Importovat Draft
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
 
 <!-- NOVÉ KOLO -->
 

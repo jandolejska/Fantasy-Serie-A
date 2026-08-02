@@ -91,6 +91,8 @@ from players.routes import player_route
 
 from datetime import timedelta
 
+from engine.import_draft import import_draft
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -180,6 +182,51 @@ def index():
             return redirect(
                 url_for("index")
             )
+
+        elif action == "import_draft":
+
+    file = request.files.get("draft_file")
+
+    if not file or file.filename == "":
+
+        flash(
+            "❌ Nebyl vybrán žádný soubor.",
+            "danger"
+        )
+
+        return redirect(url_for("index"))
+
+    upload_path = "Draft.xlsx"
+
+    file.save(upload_path)
+
+    try:
+
+        report = import_draft(upload_path)
+
+        flash(
+            "✅ Draft byl úspěšně importován.",
+            "success"
+        )
+
+        for row in report:
+
+            flash(
+                f"{row['manager']}: "
+                f"{row['players']} hráčů | "
+                f"{row['coach']} | "
+                f"{row['budget']} M",
+                "info"
+            )
+
+    except Exception as e:
+
+        flash(
+            str(e),
+            "danger"
+        )
+
+    return redirect(url_for("index"))
 
         elif action == "play_round":
 
