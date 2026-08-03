@@ -788,6 +788,22 @@ def profile():
 
 
 # =========================
+# MATCH PREVIEW
+# =========================
+
+@app.route("/match-preview/<int:round_number>/<int:match_index>")
+def match_preview():
+
+    if "username" not in session:
+
+        return redirect(
+            url_for("login")
+        )
+
+    return "Match Preview"
+
+
+# =========================
 # PLAYER
 # =========================
 
