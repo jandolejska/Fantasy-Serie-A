@@ -792,15 +792,12 @@ def profile():
 # =========================
 
 @app.route("/match-preview/<int:round_number>/<int:match_index>")
-def match_preview():
+def match_preview(round_number, match_index):
 
     if "username" not in session:
+        return redirect(url_for("login"))
 
-        return redirect(
-            url_for("login")
-        )
-
-    return "Match Preview"
+    return f"Match Preview {round_number} - {match_index}"
 
 
 # =========================
