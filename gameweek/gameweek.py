@@ -170,6 +170,8 @@ def set_lineup_locked(locked):
 
 def auto_lock_lineups():
 
+    raise Exception("AUTO LOCK SE SPUSTIL")
+
     gameweek = load_gameweek()
 
     print("===== AUTO LOCK =====")
