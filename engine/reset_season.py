@@ -22,7 +22,7 @@ def reset_gameweek():
     path = Path("data/gameweek.json")
 
     data = {
-        "current_round": 1,
+        "current_round": 0,
         "completed_rounds": 0,
         "deadline": "",
         "locked": False

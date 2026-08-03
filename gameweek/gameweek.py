@@ -172,17 +172,30 @@ def auto_lock_lineups():
 
     gameweek = load_gameweek()
 
+    print("===== AUTO LOCK =====")
+    print("Locked:", gameweek["locked"])
+    print("Deadline:", gameweek["deadline"])
+
     if gameweek["locked"]:
+        print("Už zamčeno")
         return
 
     if not gameweek["deadline"]:
+        print("Deadline není nastaven")
         return
 
     deadline = datetime.fromisoformat(
         gameweek["deadline"]
     )
 
-    if datetime.now() >= deadline:
+    now = datetime.now()
+
+    print("NOW:", now)
+    print("DEADLINE:", deadline)
+
+    if now >= deadline:
+
+        print(">>> ZAMYKÁM <<<")
 
         gameweek["locked"] = True
 
