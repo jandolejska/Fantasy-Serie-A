@@ -9,7 +9,7 @@ from pathlib import Path
 def load_season():
 
     path = Path(
-        "data/season.json"
+        "data/league.json"
     )
 
     with open(
@@ -36,7 +36,7 @@ def get_season():
 def set_season(season):
 
     path = Path(
-        "data/season.json"
+        "data/league.json"
     )
 
     data = {
