@@ -84,10 +84,6 @@ from engine.results import (
     load_fixture
 )
 
-from gameweek.fixtures import (
-    load_round_fixtures
-)
-
 from transfers.routes import (
     transfers_route
 )
@@ -799,16 +795,9 @@ def profile():
 def match_preview(round_number, match_index):
 
     if "username" not in session:
-
         return redirect(url_for("login"))
 
-    fixtures = load_round_fixtures(round_number)
-
-    fixture = fixtures[match_index]
-
-    return (
-        f"{fixture['home']} vs {fixture['away']}"
-    )
+    return "Match Preview"
 
 
 # =========================
