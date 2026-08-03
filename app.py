@@ -93,6 +93,8 @@ from datetime import timedelta
 
 from engine.import_draft import import_draft
 
+from engine.start_new_season import start_new_season
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -227,6 +229,28 @@ def index():
                 )
 
             return redirect(url_for("index"))
+
+        elif action == "start_new_season":
+
+            try:
+
+                start_new_season()
+
+                flash(
+                    "🏁 Nová sezóna byla úspěšně zahájena.",
+                    "success"
+                )
+
+            except Exception as e:
+
+                flash(
+                    str(e),
+                    "danger"
+                )
+
+            return redirect(
+                url_for("index")
+            )
 
         elif action == "play_round":
 
