@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 # =========================
 # PATHS
@@ -176,30 +177,23 @@ def auto_lock_lineups():
 
     gameweek = load_gameweek()
 
-    print("===== AUTO LOCK =====")
-    print("Locked:", gameweek["locked"])
-    print("Deadline:", gameweek["deadline"])
-
     if gameweek["locked"]:
-        print("Už zamčeno")
         return
 
     if not gameweek["deadline"]:
-        print("Deadline není nastaven")
         return
+
+    prague = ZoneInfo("Europe/Prague")
 
     deadline = datetime.fromisoformat(
         gameweek["deadline"]
+    ).replace(
+        tzinfo=prague
     )
 
-    now = datetime.now()
-
-    print("NOW:", now)
-    print("DEADLINE:", deadline)
+    now = datetime.now(prague)
 
     if now >= deadline:
-
-        print(">>> ZAMYKÁM <<<")
 
         gameweek["locked"] = True
 
