@@ -84,6 +84,10 @@ from engine.results import (
     load_fixture
 )
 
+from gameweek.fixtures import (
+    load_round_fixtures
+)
+
 from transfers.routes import (
     transfers_route
 )
@@ -795,9 +799,23 @@ def profile():
 def match_preview(round_number, match_index):
 
     if "username" not in session:
-        return redirect(url_for("login"))
 
-    return "Match Preview"
+        return redirect(
+            url_for("login")
+        )
+
+    matches = load_round_fixtures(
+        round_number
+    )
+
+    if match_index >= len(matches):
+
+        return "Zápas nebyl nalezen."
+
+    home = matches[match_index][0]
+    away = matches[match_index][1]
+
+    return f"{home} vs {away}"
 
 
 # =========================
