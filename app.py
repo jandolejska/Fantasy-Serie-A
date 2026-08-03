@@ -134,6 +134,8 @@ def index():
                 "deadline"
             )
 
+            print("DEADLINE:", deadline)
+
             if admin_open_new_round(
                 deadline
             ):
