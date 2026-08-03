@@ -185,48 +185,48 @@ def index():
 
         elif action == "import_draft":
 
-    file = request.files.get("draft_file")
+            file = request.files.get("draft_file")
 
-    if not file or file.filename == "":
+            if not file or file.filename == "":
 
-        flash(
-            "❌ Nebyl vybrán žádný soubor.",
-            "danger"
-        )
+                flash(
+                    "❌ Nebyl vybrán žádný soubor.",
+                    "danger"
+                )
 
-        return redirect(url_for("index"))
+                return redirect(url_for("index"))
 
-    upload_path = "Draft.xlsx"
+            upload_path = "Draft.xlsx"
 
-    file.save(upload_path)
+            file.save(upload_path)
 
-    try:
+            try:
 
-        report = import_draft(upload_path)
+                report = import_draft(upload_path)
 
-        flash(
-            "✅ Draft byl úspěšně importován.",
-            "success"
-        )
+                flash(
+                    "✅ Draft byl úspěšně importován.",
+                    "success"
+                )
 
-        for row in report:
+                for row in report:
 
-            flash(
-                f"{row['manager']}: "
-                f"{row['players']} hráčů | "
-                f"{row['coach']} | "
-                f"{row['budget']} M",
-                "info"
-            )
+                    flash(
+                        f"{row['manager']}: "
+                        f"{row['players']} hráčů | "
+                        f"{row['coach']} | "
+                        f"{row['budget']} M",
+                        "info"
+                    )
 
-    except Exception as e:
+            except Exception as e:
 
-        flash(
-            str(e),
-            "danger"
-        )
+                flash(
+                    str(e),
+                    "danger"
+                )
 
-    return redirect(url_for("index"))
+            return redirect(url_for("index"))
 
         elif action == "play_round":
 
