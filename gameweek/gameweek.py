@@ -134,6 +134,8 @@ def save_gameweek(data):
 
 def open_new_round(deadline):
 
+    print("OPEN_NEW_ROUND DEADLINE =", repr(deadline))
+
     gameweek = load_gameweek()
 
     fixtures = load_fixtures()
@@ -145,6 +147,8 @@ def open_new_round(deadline):
     gameweek["current_round"] += 1
     gameweek["deadline"] = deadline
     gameweek["locked"] = False
+
+    print(gameweek)
 
     save_gameweek(gameweek)
 
