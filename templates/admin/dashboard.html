@@ -192,7 +192,7 @@
 
         <h4>
 
-            🏁 Zahájit novou sezónu
+            🔄 Reset aktuální sezóny
 
         </h4>
 
@@ -214,11 +214,63 @@
             <input
                 type="hidden"
                 name="action"
-                value="start_new_season"
+                value="reset_current_season"
             >
 
             <button
                 class="btn btn-danger"
+                type="submit"
+            >
+
+                🔄 Reset aktuální sezóny
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<div class="card mb-4">
+
+    <div class="card-body text-center">
+
+        <h4>🏁 Přechod na novou sezónu</h4>
+
+        <hr>
+
+        <form
+            method="POST"
+            onsubmit="return confirm('Opravdu chcete zahájit novou sezónu?');"
+        >
+
+            <input
+                type="hidden"
+                name="action"
+                value="change_season"
+            >
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Nová sezóna
+
+                </label>
+
+                <input
+                    class="form-control"
+                    name="new_season"
+                    placeholder="např. 2026/27"
+                    required
+                >
+
+            </div>
+
+            <button
+                class="btn btn-success"
                 type="submit"
             >
 

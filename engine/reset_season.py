@@ -185,7 +185,7 @@ def reset_transfers():
 # START NEW SEASON
 # =========================
 
-def start_new_season():
+def reset_current_season():
 
     reset_gameweek()
 
@@ -206,7 +206,7 @@ def start_new_season():
 
 if __name__ == "__main__":
 
-    start_new_season()
+    reset_current_season()
 
     print()
 

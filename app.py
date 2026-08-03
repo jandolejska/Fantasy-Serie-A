@@ -93,7 +93,9 @@ from datetime import timedelta
 
 from engine.import_draft import import_draft
 
-from engine.start_new_season import start_new_season
+from engine.reset_season import reset_current_season
+
+from engine.change_season import change_season
 
 load_dotenv()
 
@@ -230,14 +232,14 @@ def index():
 
             return redirect(url_for("index"))
 
-        elif action == "start_new_season":
+        elif action == "reset_current_season":
 
             try:
 
-                start_new_season()
+                reset_current_season()
 
                 flash(
-                    "🏁 Nová sezóna byla úspěšně zahájena.",
+                    "🔄 Aktuální sezóna byla úspěšně resetována.",
                     "success"
                 )
 
@@ -251,6 +253,37 @@ def index():
             return redirect(
                 url_for("index")
             )
+
+        elif action == "change_season":
+
+            new_season = request.form.get("new_season")
+
+            if not new_season:
+
+                flash(
+                    "❌ Zadejte název nové sezóny.",
+                    "danger"
+                )
+
+                return redirect(url_for("index"))
+
+            try:
+
+                change_season(new_season)
+
+                flash(
+                    f"🏁 Nová sezóna {new_season} byla úspěšně zahájena.",
+                    "success"
+                )
+
+            except Exception as e:
+
+                flash(
+                    str(e),
+                    "danger"
+                )
+
+            return redirect(url_for("index"))
 
         elif action == "play_round":
 
