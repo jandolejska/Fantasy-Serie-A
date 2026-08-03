@@ -41,7 +41,8 @@ from lineups.lineup import (
 from gameweek.gameweek import (
     is_lineup_locked,
     open_new_round,
-    set_lineup_locked
+    set_lineup_locked,
+    auto_lock_lineups
 )
 
 from dashboard.dashboard import (
@@ -100,6 +101,11 @@ from engine.change_season import change_season
 load_dotenv()
 
 app = Flask(__name__)
+
+@app.before_request
+def check_deadline():
+
+    auto_lock_lineups()
 
 app.jinja_env.globals["display_name"] = display_name
 

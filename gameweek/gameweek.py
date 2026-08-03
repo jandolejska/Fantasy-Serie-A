@@ -2,6 +2,7 @@ import json
 
 from pathlib import Path
 
+from datetime import datetime
 
 # =========================
 # PATHS
@@ -161,6 +162,31 @@ def set_lineup_locked(locked):
     gameweek["locked"] = locked
 
     save_gameweek(gameweek)
+
+
+# =========================
+# AUTO LOCK
+# =========================
+
+def auto_lock_lineups():
+
+    gameweek = load_gameweek()
+
+    if gameweek["locked"]:
+        return
+
+    if not gameweek["deadline"]:
+        return
+
+    deadline = datetime.fromisoformat(
+        gameweek["deadline"]
+    )
+
+    if datetime.now() >= deadline:
+
+        gameweek["locked"] = True
+
+        save_gameweek(gameweek)
 
 
 # =========================
