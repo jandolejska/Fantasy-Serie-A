@@ -97,6 +97,8 @@ from engine.reset_season import reset_current_season
 
 from engine.change_season import change_season
 
+from engine.season import get_season
+
 load_dotenv()
 
 app = Flask(__name__)
@@ -368,6 +370,7 @@ def index():
         "index.html",
         managers=managers,
         summary=summary,
+        season=get_season(),
         active_page="home"
     )
 
@@ -773,6 +776,7 @@ def profile():
     return render_template(
         "profile.html",
         manager=manager,
+        season=get_season(),
         active_page="profile"
     )
 
