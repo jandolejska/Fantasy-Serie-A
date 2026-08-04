@@ -1,0 +1,145 @@
+<div class="table-responsive">
+
+    <table class="table table-dark table-borderless align-middle text-center">
+
+        <thead>
+
+            <tr>
+
+                <th class="text-end">
+
+                    {{ home }}
+
+                </th>
+
+                <th width="60">
+
+                    ⚽
+
+                </th>
+
+                <th class="text-start">
+
+                    {{ away }}
+
+                </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <!-- Brankář -->
+
+            <tr>
+
+                <td class="text-end">
+
+                    {{ home_lineup.goalkeeper[0].name }}
+
+                </td>
+
+                <td>
+
+                    🧤
+
+                </td>
+
+                <td class="text-start">
+
+                    {{ away_lineup.goalkeeper[0].name }}
+
+                </td>
+
+            </tr>
+
+            <!-- Obránci -->
+
+            {% for i in range(home_lineup.defenders|length) %}
+
+            <tr>
+
+                <td class="text-end">
+
+                    {{ home_lineup.defenders[i].name }}
+
+                </td>
+
+                <td>
+
+                    🛡
+
+                </td>
+
+                <td class="text-start">
+
+                    {{ away_lineup.defenders[i].name }}
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+            <!-- Záložníci -->
+
+            {% for i in range(home_lineup.midfielders|length) %}
+
+            <tr>
+
+                <td class="text-end">
+
+                    {{ home_lineup.midfielders[i].name }}
+
+                </td>
+
+                <td>
+
+                    ⚙
+
+                </td>
+
+                <td class="text-start">
+
+                    {{ away_lineup.midfielders[i].name }}
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+            <!-- Útočníci -->
+
+            {% for i in range(home_lineup.forwards|length) %}
+
+            <tr>
+
+                <td class="text-end">
+
+                    {{ home_lineup.forwards[i].name }}
+
+                </td>
+
+                <td>
+
+                    🎯
+
+                </td>
+
+                <td class="text-start">
+
+                    {{ away_lineup.forwards[i].name }}
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>

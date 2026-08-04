@@ -1,120 +1,110 @@
 {% extends "base.html" %}
 
+{% block extra_css %}
+<link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/match.css') }}"
+>
+{% endblock %}
+
 {% block content %}
 
-<div class="container mt-4">
+<div class="container">
 
-    <div class="card">
+    <a
+        href="{{ url_for('index') }}"
+        class="btn btn-outline-light mb-4"
+    >
+        ← Zpět
+    </a>
 
-        <div class="card-body text-white">
+    <div class="card shadow-lg border-0 mb-4">
 
-            <h2 class="text-center">
+        <div class="card-body text-center py-4">
 
-                ⚽ Match Preview
+            <div class="text-uppercase text-secondary fw-bold mb-4">
 
-            </h2>
+                ⚽ MATCH PREVIEW
 
-            <h4 class="text-center mb-4">
+            </div>
 
-                {{ home }} vs {{ away }}
+            <div class="text-uppercase text-secondary fw-bold mb-4">
 
-            </h4>
+                {{ round_number }}. KOLO
 
-            <div class="row">
+            </div>
 
-                <div class="col-md-6">
+            <div class="row align-items-center text-center">
 
-                    <h5>{{ home }}</h5>
+                <!-- DOMÁCÍ -->
 
-                    <hr>
+                <div class="col-5">
 
-                    <strong>Brankář</strong>
+                    <h3 class="match-team-name fw-bold mb-2 text-truncate">
 
-                    {% for player in home_lineup.goalkeeper %}
+                        {{ home }}
 
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
-
-                    <br>
-
-                    <strong>Obránci</strong>
-
-                    {% for player in home_lineup.defenders %}
-
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
-
-                    <br>
-
-                    <strong>Záložníci</strong>
-
-                    {% for player in home_lineup.midfielders %}
-
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
-
-                    <br>
-
-                    <strong>Útočníci</strong>
-
-                    {% for player in home_lineup.forwards %}
-
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
+                    </h3>
 
                 </div>
 
-                <div class="col-md-6">
+                <!-- VS -->
 
-                    <h5>{{ away }}</h5>
+                <div class="col-2">
 
-                    <hr>
+                    <h2 class="fw-bold">
 
-                    <strong>Brankář</strong>
+                        VS
 
-                    {% for player in away_lineup.goalkeeper %}
+                    </h2>
 
-                        <div>{{ player.name }}</div>
+                </div>
 
-                    {% endfor %}
+                <!-- HOSTÉ -->
 
-                    <br>
+                <div class="col-5">
 
-                    <strong>Obránci</strong>
+                    <h3 class="match-team-name fw-bold mb-2 text-truncate">
 
-                    {% for player in away_lineup.defenders %}
+                        {{ away }}
 
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
-
-                    <br>
-
-                    <strong>Záložníci</strong>
-
-                    {% for player in away_lineup.midfielders %}
-
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
-
-                    <br>
-
-                    <strong>Útočníci</strong>
-
-                    {% for player in away_lineup.forwards %}
-
-                        <div>{{ player.name }}</div>
-
-                    {% endfor %}
+                    </h3>
 
                 </div>
 
             </div>
+
+        </div>
+
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+
+        <div class="card-header fw-bold">
+
+            📋 Základní sestavy
+
+        </div>
+
+        <div class="card-body">
+
+            {% include "partials/_preview_lineups.html" %}
+
+        </div>
+
+    </div>
+
+    <div class="card mb-5 shadow-sm">
+
+        <div class="card-header fw-bold">
+
+            🪑 Lavička
+
+        </div>
+
+        <div class="card-body">
+
+            {% include "partials/_preview_bench.html" %}
 
         </div>
 
