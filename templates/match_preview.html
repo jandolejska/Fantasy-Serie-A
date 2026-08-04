@@ -110,22 +110,35 @@
 
         <div class="card shadow-sm border-0 mt-3">
 
-            <div class="card-header">
+            <div class="card-header p-0">
 
-                🪑 Lavička
+                <button
+                    class="btn btn-link text-decoration-none text-white w-100 text-start px-3 py-3 fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#benchCollapse"
+                    aria-expanded="false"
+                >
+
+                    🪑 Lavička
+
+                </button>
 
             </div>
 
-            <div class="card-body p-2">
+            <div
+                id="benchCollapse"
+                class="collapse"
+            >
 
-                {% include "partials/_preview_bench.html" %}
+                <div class="card-body p-2">
+
+                    {% include "partials/_preview_bench.html" %}
+
+                </div>
 
             </div>
 
         </div>
-
-    </div>
-
-</div>
 
 {% endblock %}
