@@ -524,45 +524,68 @@
 
             {% for match in dashboard.next_round %}
 
-            <div class="row align-items-center py-2">
+                {% if dashboard.locked %}
 
-                <div class="col-5 text-end pe-3">
+                <a
+                    href="{{ url_for(
+                        'match_preview',
+                        round_number=dashboard.completed_rounds + 1,
+                        match_index=loop.index0
+                    ) }}"
+                    class="row align-items-center py-2 text-decoration-none text-reset rounded dashboard-match-link"
+                >
 
-                    <strong class="fs-6">
+                {% else %}
 
-                        {{ display_name(match.home) }}
+                <div class="row align-items-center py-2">
 
-                    </strong>
+                {% endif %}
+
+                    <div class="col-5 text-end pe-3">
+
+                        <strong class="fs-6">
+
+                            {{ display_name(match.home) }}
+
+                        </strong>
+
+                    </div>
+
+                    <div class="col-2 text-center">
+
+                        <span class="badge bg-secondary rounded-pill px-2 py-1">
+
+                            VS
+
+                        </span>
+
+                    </div>
+
+                    <div class="col-5 text-start ps-3">
+
+                        <strong class="fs-6">
+
+                            {{ display_name(match.away) }}
+
+                        </strong>
+
+                    </div>
+
+                {% if dashboard.locked %}
+
+                </a>
+
+                {% else %}
 
                 </div>
 
-                <div class="col-2 text-center">
+                {% endif %}
 
-                    <span class="badge bg-secondary rounded-pill px-2 py-1">
+                {% if not loop.last %}
 
-                        VS
+                    <hr class="my-1 opacity-25">
 
-                    </span>
-
-                </div>
-
-                <div class="col-5 text-start ps-3">
-
-                    <strong class="fs-6">
-
-                        {{ display_name(match.away) }}
-
-                    </strong>
-
-                </div>
-
-            </div>
-
-            {% if not loop.last %}
-
-                <hr class="my-1 opacity-25">
-
-            {% endif %}
+                {% endif %}
 
             {% endfor %}
 
