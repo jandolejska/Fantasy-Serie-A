@@ -815,7 +815,23 @@ def match_preview(round_number, match_index):
     home = matches[match_index][0]
     away = matches[match_index][1]
 
-    return f"{home} vs {away}"
+    home_lineup = group_lineup(
+        expand_lineup(
+            get_current_lineup(
+                home.lower()
+            )
+        )
+    )
+
+    away_lineup = group_lineup(
+        expand_lineup(
+            get_current_lineup(
+                away.lower()
+            )
+        )
+    )
+
+return str(home_lineup)
 
 
 # =========================
