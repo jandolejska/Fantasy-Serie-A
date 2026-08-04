@@ -831,7 +831,7 @@ def match_preview(round_number, match_index):
         )
     )
 
-return str(home_lineup)
+    return str(home_lineup)
 
 
 # =========================
