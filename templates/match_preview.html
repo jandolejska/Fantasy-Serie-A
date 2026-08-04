@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <div class="card">
+
+        <div class="card-body">
+
+            <h2 class="text-center">
+
+                ⚽ Match Preview
+
+            </h2>
+
+            <h4 class="text-center mb-4">
+
+                {{ home }} vs {{ away }}
+
+            </h4>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <h5>{{ home }}</h5>
+
+                    <hr>
+
+                    <strong>Brankář</strong>
+
+                    {% for player in home_lineup.goalkeeper %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                    <br>
+
+                    <strong>Obránci</strong>
+
+                    {% for player in home_lineup.defenders %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                    <br>
+
+                    <strong>Záložníci</strong>
+
+                    {% for player in home_lineup.midfielders %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                    <br>
+
+                    <strong>Útočníci</strong>
+
+                    {% for player in home_lineup.forwards %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <h5>{{ away }}</h5>
+
+                    <hr>
+
+                    <strong>Brankář</strong>
+
+                    {% for player in away_lineup.goalkeeper %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                    <br>
+
+                    <strong>Obránci</strong>
+
+                    {% for player in away_lineup.defenders %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                    <br>
+
+                    <strong>Záložníci</strong>
+
+                    {% for player in away_lineup.midfielders %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                    <br>
+
+                    <strong>Útočníci</strong>
+
+                    {% for player in away_lineup.forwards %}
+
+                        <div>{{ player.name }}</div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

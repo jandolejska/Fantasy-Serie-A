@@ -833,7 +833,14 @@ def match_preview(round_number, match_index):
         )
     )
 
-    return str(home_lineup)
+    return render_template(
+        "match_preview.html",
+        home=home,
+        away=away,
+        home_lineup=home_lineup,
+        away_lineup=away_lineup,
+        round_number=round_number
+    )
 
 
 # =========================
