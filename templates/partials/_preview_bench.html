@@ -1,3 +1,25 @@
-<p class="text-center text-muted">
-Lavička se připravuje...
-</p>
+{% set max_bench = [home_lineup.bench|length, away_lineup.bench|length] | max %}
+
+{% for i in range(max_bench) %}
+
+<div class="player-row">
+
+    <div class="player-left">
+
+        {% if i < home_lineup.bench|length %}
+            {{ home_lineup.bench[i].name }}
+        {% endif %}
+
+    </div>
+
+    <div class="player-right">
+
+        {% if i < away_lineup.bench|length %}
+            {{ away_lineup.bench[i].name }}
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endfor %}
