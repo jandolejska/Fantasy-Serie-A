@@ -3,7 +3,7 @@
 {% block extra_css %}
 <link
     rel="stylesheet"
-    href="{{ url_for('static', filename='css/match.css') }}"
+    href="{{ url_for('static', filename='css/match_preview.css') }}"
 >
 {% endblock %}
 
@@ -15,62 +15,74 @@
 
         <a
             href="{{ url_for('index') }}"
-            class="btn btn-outline-light mb-4"
+            class="btn btn-outline-light btn-sm mb-3"
         >
             ← Zpět
         </a>
 
-        <div class="card shadow-lg border-0 mb-4">
+        <div class="card shadow border-0 mb-3">
 
-            <div class="card-body text-center py-4">
+            <div class="card-body text-center py-3">
 
-                <div class="text-uppercase text-secondary fw-bold mb-4">
+                <div class="small text-uppercase text-secondary fw-bold mb-2">
 
-                    ⚽ MATCH PREVIEW
+                    ⚽ Match Preview
 
                 </div>
 
-                <div class="text-uppercase text-secondary small mb-3">
+                <div class="text-secondary small mb-3">
 
                     {{ round_number }}. KOLO
 
                 </div>
 
-                <div class="row align-items-center text-center">
+                <div class="row align-items-center">
 
                     <!-- DOMÁCÍ -->
 
-                    <div class="col-5">
+                    <div class="col-5 text-end">
 
-                        <h4 class="match-team-name fw-bold mb-1 text-truncate">
+                        <div class="manager-name">
 
                             {{ home }}
 
-                        </h4>
+                        </div>
+
+                        <div class="formation">
+
+                            {{ home_lineup.formation }}
+
+                        </div>
 
                     </div>
 
                     <!-- VS -->
 
-                    <div class="col-2">
+                    <div class="col-2 text-center">
 
-                        <h4 class="fw-bold text-secondary">
+                        <div class="vs">
 
                             VS
 
-                        </h4>
+                        </div>
 
                     </div>
 
                     <!-- HOSTÉ -->
 
-                    <div class="col-5">
+                    <div class="col-5 text-start">
 
-                        <h4 class="match-team-name fw-bold mb-1 text-truncate">
+                        <div class="manager-name">
 
                             {{ away }}
 
-                        </h4>
+                        </div>
+
+                        <div class="formation">
+
+                            {{ away_lineup.formation }}
+
+                        </div>
 
                     </div>
 
@@ -80,15 +92,15 @@
 
         </div>
 
-        <div class="card mb-4 shadow-sm">
+        <div class="card shadow-sm border-0">
 
-            <div class="card-header fw-bold">
+            <div class="card-header">
 
                 📋 Základní sestavy
 
             </div>
 
-            <div class="card-body">
+            <div class="card-body p-2">
 
                 {% include "partials/_preview_lineups.html" %}
 
@@ -96,15 +108,15 @@
 
         </div>
 
-        <div class="card mb-5 shadow-sm">
+        <div class="card shadow-sm border-0 mt-3">
 
-            <div class="card-header fw-bold">
+            <div class="card-header">
 
                 🪑 Lavička
 
             </div>
 
-            <div class="card-body">
+            <div class="card-body p-2">
 
                 {% include "partials/_preview_bench.html" %}
 

@@ -1,13 +1,141 @@
-.match-preview table td {
+.match-preview .container {
+
+    max-width: 700px;
+
+}
+
+.match-preview .card {
+
+    border-radius: 14px;
+
+}
+
+.match-preview .card-header {
+
     font-size: 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    font-weight: 700;
+
 }
 
-.match-preview table th {
-    font-size: 18px;
+.manager-name {
+
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+
 }
 
-.match-preview h4 {
-    margin-bottom: 0;
+.formation {
+
+    font-size: 13px;
+    color: #9ca3af;
+    margin-top: 2px;
+
+}
+
+.vs {
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #6c757d;
+
+}
+
+.position-title {
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #cfcfcf;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.player-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    padding: 3px 0;
+
+}
+
+.player-left {
+
+    text-align: right;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: white;
+
+}
+
+.player-right {
+
+    text-align: left;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: white;
+
+}
+
+.match-preview hr {
+
+    margin: 10px 0;
+
+    opacity: .15;
+
+}
+
+@media (max-width: 768px) {
+
+    .match-preview .container {
+
+        max-width: 100%;
+
+    }
+
+    .manager-name {
+
+        font-size: 18px;
+
+    }
+
+    .formation {
+
+        font-size: 12px;
+
+    }
+
+    .vs {
+
+        font-size: 18px;
+
+    }
+
+    .player-row {
+
+        gap: 30px;
+
+    }
+
+    .player-left,
+    .player-right {
+
+        font-size: 14px;
+
+    }
+
 }

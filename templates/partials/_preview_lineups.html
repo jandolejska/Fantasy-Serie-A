@@ -1,176 +1,134 @@
-<div class="table-responsive">
+<!-- BRANKÁŘ -->
 
-    <table class="table table-dark table-borderless table-sm align-middle mb-0">
+<div class="position-title">
 
-        <thead>
-
-            <tr>
-
-                <th class="text-end w-50">
-
-                    {{ home }}
-
-                </th>
-
-                <th class="text-start w-50">
-
-                    {{ away }}
-
-                </th>
-
-            </tr>
-
-        </thead>
-
-        <tbody>
-
-            <!-- BRANKÁŘ -->
-
-            <tr>
-
-                <td colspan="2" class="text-center fw-bold py-2">
-
-                    🧤 BRANKÁŘ
-
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td class="text-end">
-
-                    {{ home_lineup.goalkeeper[0].name }}
-
-                </td>
-
-                <td class="text-start">
-
-                    {{ away_lineup.goalkeeper[0].name }}
-
-                </td>
-
-            </tr>
-
-
-            <!-- OBRÁNCI -->
-
-            <tr>
-
-                <td colspan="2" class="text-center fw-bold py-2">
-
-                    🛡 OBRÁNCI
-
-                </td>
-
-            </tr>
-
-            {% set max_def = [home_lineup.defenders|length, away_lineup.defenders|length] | max %}
-
-            {% for i in range(max_def) %}
-
-            <tr>
-
-                <td class="text-end">
-
-                    {% if i < home_lineup.defenders|length %}
-                        {{ home_lineup.defenders[i].name }}
-                    {% endif %}
-
-                </td>
-
-                <td class="text-start">
-
-                    {% if i < away_lineup.defenders|length %}
-                        {{ away_lineup.defenders[i].name }}
-                    {% endif %}
-
-                </td>
-
-            </tr>
-
-            {% endfor %}
-
-
-            <!-- ZÁLOŽNÍCI -->
-
-            <tr>
-
-                <td colspan="2" class="text-center fw-bold py-2">
-
-                    ⚙ ZÁLOŽNÍCI
-
-                </td>
-
-            </tr>
-
-            {% set max_mid = [home_lineup.midfielders|length, away_lineup.midfielders|length] | max %}
-
-            {% for i in range(max_mid) %}
-
-            <tr>
-
-                <td class="text-end">
-
-                    {% if i < home_lineup.midfielders|length %}
-                        {{ home_lineup.midfielders[i].name }}
-                    {% endif %}
-
-                </td>
-
-                <td class="text-start">
-
-                    {% if i < away_lineup.midfielders|length %}
-                        {{ away_lineup.midfielders[i].name }}
-                    {% endif %}
-
-                </td>
-
-            </tr>
-
-            {% endfor %}
-
-
-            <!-- ÚTOČNÍCI -->
-
-            <tr>
-
-                <td colspan="2" class="text-center fw-bold py-2">
-
-                    🎯 ÚTOČNÍCI
-
-                </td>
-
-            </tr>
-
-            {% set max_att = [home_lineup.forwards|length, away_lineup.forwards|length] | max %}
-
-            {% for i in range(max_att) %}
-
-            <tr>
-
-                <td class="text-end">
-
-                    {% if i < home_lineup.forwards|length %}
-                        {{ home_lineup.forwards[i].name }}
-                    {% endif %}
-
-                </td>
-
-                <td class="text-start">
-
-                    {% if i < away_lineup.forwards|length %}
-                        {{ away_lineup.forwards[i].name }}
-                    {% endif %}
-
-                </td>
-
-            </tr>
-
-            {% endfor %}
-
-        </tbody>
-
-    </table>
+    🧤 Brankář
 
 </div>
+
+<div class="player-row">
+
+    <div class="player-left">
+
+        {{ home_lineup.goalkeeper[0].name }}
+
+    </div>
+
+    <div class="player-right">
+
+        {{ away_lineup.goalkeeper[0].name }}
+
+    </div>
+
+</div>
+
+<hr>
+
+
+<!-- OBRÁNCI -->
+
+<div class="position-title">
+
+    🛡 Obránci
+
+</div>
+
+{% set max_def = [home_lineup.defenders|length, away_lineup.defenders|length] | max %}
+
+{% for i in range(max_def) %}
+
+<div class="player-row">
+
+    <div class="player-left">
+
+        {% if i < home_lineup.defenders|length %}
+            {{ home_lineup.defenders[i].name }}
+        {% endif %}
+
+    </div>
+
+    <div class="player-right">
+
+        {% if i < away_lineup.defenders|length %}
+            {{ away_lineup.defenders[i].name }}
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endfor %}
+
+<hr>
+
+
+<!-- ZÁLOŽNÍCI -->
+
+<div class="position-title">
+
+    ⚙ Záložníci
+
+</div>
+
+{% set max_mid = [home_lineup.midfielders|length, away_lineup.midfielders|length] | max %}
+
+{% for i in range(max_mid) %}
+
+<div class="player-row">
+
+    <div class="player-left">
+
+        {% if i < home_lineup.midfielders|length %}
+            {{ home_lineup.midfielders[i].name }}
+        {% endif %}
+
+    </div>
+
+    <div class="player-right">
+
+        {% if i < away_lineup.midfielders|length %}
+            {{ away_lineup.midfielders[i].name }}
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endfor %}
+
+<hr>
+
+
+<!-- ÚTOČNÍCI -->
+
+<div class="position-title">
+
+    🎯 Útočníci
+
+</div>
+
+{% set max_att = [home_lineup.forwards|length, away_lineup.forwards|length] | max %}
+
+{% for i in range(max_att) %}
+
+<div class="player-row">
+
+    <div class="player-left">
+
+        {% if i < home_lineup.forwards|length %}
+            {{ home_lineup.forwards[i].name }}
+        {% endif %}
+
+    </div>
+
+    <div class="player-right">
+
+        {% if i < away_lineup.forwards|length %}
+            {{ away_lineup.forwards[i].name }}
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endfor %}
