@@ -122,6 +122,13 @@
 
                     🪑 Lavička
 
+                    <span
+                        class="float-end"
+                        id="benchArrow"
+                    >
+                        ▼
+                    </span>
+
                 </button>
 
             </div>
@@ -140,5 +147,28 @@
             </div>
 
         </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const bench = document.getElementById("benchCollapse");
+    const arrow = document.getElementById("benchArrow");
+
+    bench.addEventListener("show.bs.collapse", function () {
+
+        arrow.textContent = "▲";
+
+    });
+
+    bench.addEventListener("hide.bs.collapse", function () {
+
+        arrow.textContent = "▼";
+
+    });
+
+});
+
+</script>
 
 {% endblock %}
