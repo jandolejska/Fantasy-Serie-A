@@ -817,6 +817,7 @@ def match_preview(round_number, match_index):
 
     home_lineup = group_lineup(
         expand_lineup(
+            home.lower(),
             get_current_lineup(
                 home.lower()
             )
@@ -825,6 +826,7 @@ def match_preview(round_number, match_index):
 
     away_lineup = group_lineup(
         expand_lineup(
+            away.lower(),
             get_current_lineup(
                 away.lower()
             )
