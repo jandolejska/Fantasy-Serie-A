@@ -9,66 +9,70 @@
 
 {% block content %}
 
-<div class="container">
+<div class="match-preview">
 
-    <a
-        href="{{ url_for('index') }}"
-        class="btn btn-outline-light mb-4"
-    >
-        ← Zpět
-    </a>
+    <div class="container">
 
-    <div class="card shadow-lg border-0 mb-4">
+        <a
+            href="{{ url_for('index') }}"
+            class="btn btn-outline-light mb-4"
+        >
+            ← Zpět
+        </a>
 
-        <div class="card-body text-center py-4">
+        <div class="card shadow-lg border-0 mb-4">
 
-            <div class="text-uppercase text-secondary fw-bold mb-4">
+            <div class="card-body text-center py-4">
 
-                ⚽ MATCH PREVIEW
+                <div class="text-uppercase text-secondary fw-bold mb-4">
 
-            </div>
-
-            <div class="text-uppercase text-secondary fw-bold mb-4">
-
-                {{ round_number }}. KOLO
-
-            </div>
-
-            <div class="row align-items-center text-center">
-
-                <!-- DOMÁCÍ -->
-
-                <div class="col-5">
-
-                    <h3 class="match-team-name fw-bold mb-2 text-truncate">
-
-                        {{ home }}
-
-                    </h3>
+                    ⚽ MATCH PREVIEW
 
                 </div>
 
-                <!-- VS -->
+                <div class="text-uppercase text-secondary small mb-3">
 
-                <div class="col-2">
-
-                    <h2 class="fw-bold">
-
-                        VS
-
-                    </h2>
+                    {{ round_number }}. KOLO
 
                 </div>
 
-                <!-- HOSTÉ -->
+                <div class="row align-items-center text-center">
 
-                <div class="col-5">
+                    <!-- DOMÁCÍ -->
 
-                    <h3 class="match-team-name fw-bold mb-2 text-truncate">
+                    <div class="col-5">
 
-                        {{ away }}
+                        <h4 class="match-team-name fw-bold mb-1 text-truncate">
 
-                    </h3>
+                            {{ home }}
+
+                        </h4>
+
+                    </div>
+
+                    <!-- VS -->
+
+                    <div class="col-2">
+
+                        <h4 class="fw-bold text-secondary">
+
+                            VS
+
+                        </h4>
+
+                    </div>
+
+                    <!-- HOSTÉ -->
+
+                    <div class="col-5">
+
+                        <h4 class="match-team-name fw-bold mb-1 text-truncate">
+
+                            {{ away }}
+
+                        </h4>
+
+                    </div>
 
                 </div>
 
@@ -76,35 +80,35 @@
 
         </div>
 
-    </div>
+        <div class="card mb-4 shadow-sm">
 
-    <div class="card mb-4 shadow-sm">
+            <div class="card-header fw-bold">
 
-        <div class="card-header fw-bold">
+                📋 Základní sestavy
 
-            📋 Základní sestavy
+            </div>
 
-        </div>
+            <div class="card-body">
 
-        <div class="card-body">
+                {% include "partials/_preview_lineups.html" %}
 
-            {% include "partials/_preview_lineups.html" %}
-
-        </div>
-
-    </div>
-
-    <div class="card mb-5 shadow-sm">
-
-        <div class="card-header fw-bold">
-
-            🪑 Lavička
+            </div>
 
         </div>
 
-        <div class="card-body">
+        <div class="card mb-5 shadow-sm">
 
-            {% include "partials/_preview_bench.html" %}
+            <div class="card-header fw-bold">
+
+                🪑 Lavička
+
+            </div>
+
+            <div class="card-body">
+
+                {% include "partials/_preview_bench.html" %}
+
+            </div>
 
         </div>
 

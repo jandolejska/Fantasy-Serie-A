@@ -1,0 +1,13 @@
+.match-preview table td {
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.match-preview table th {
+    font-size: 18px;
+}
+
+.match-preview h4 {
+    margin-bottom: 0;
+}
