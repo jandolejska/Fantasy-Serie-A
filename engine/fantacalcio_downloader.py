@@ -1,15 +1,19 @@
 from playwright.sync_api import sync_playwright
 
-from gameweek.gameweek import get_current_round
+from gameweek.gameweek import (
+    get_current_round,
+    get_current_season
+)
 
 
 def download_grades():
 
     round_number = get_current_round()
+    season = get_current_season()
 
     url = (
         "https://www.fantacalcio.it/"
-        f"voti-fantacalcio-serie-a/2025-26/{round_number}"
+        f"voti-fantacalcio-serie-a/{season}/{round_number}"
     )
 
     with sync_playwright() as p:

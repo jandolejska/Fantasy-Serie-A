@@ -222,3 +222,14 @@ def set_completed_round(round_number):
     gameweek["completed_rounds"] = round_number
 
     save_gameweek(gameweek)
+
+
+# =========================
+# CURRENT SEASON
+# =========================
+
+def get_current_season():
+
+    gameweek = load_gameweek()
+
+    return gameweek["season"]
