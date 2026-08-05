@@ -233,3 +233,16 @@ def get_current_season():
     gameweek = load_gameweek()
 
     return gameweek["season"]
+
+
+# =========================
+# SET SEASON
+# =========================
+
+def set_current_season(season):
+
+    gameweek = load_gameweek()
+
+    gameweek["season"] = season
+
+    save_gameweek(gameweek)
