@@ -1,118 +1,167 @@
 <!DOCTYPE html>
 <html lang="cs">
 
-<head>
+	<head>
 
-    <meta charset="UTF-8">
+		<meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
+			<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1"
     >
 
-    <title>Fantasy Serie A</title>
+				<title>Fantasy Serie A</title>
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-        rel="stylesheet"
+				<!-- PWA -->
+
+				<link
+					rel="manifest"
+					href="{{ url_for('static', filename='manifest.json') }}"
     >
 
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}"
+					<meta
+						name="theme-color"
+						content="#198754"
     >
 
-    <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename='css/player.css') }}"
+						<link
+							rel="apple-touch-icon"
+							href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}"
     >
 
-{% block extra_css %}
+							<link
+								rel="icon"
+								type="image/png"
+								sizes="32x32"
+								href="{{ url_for('static', filename='icons/favicon-32.png') }}"
+    >
 
-{% endblock %}
+								<link
+									rel="icon"
+									type="image/png"
+									sizes="16x16"
+									href="{{ url_for('static', filename='icons/favicon-16.png') }}"
+    >
 
-</head>
+									<link
+										href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+										rel="stylesheet"
+    >
 
-<body class="bg-dark text-light">
+										<link
+											rel="stylesheet"
+											href="{{ url_for('static', filename='css/style.css') }}"
+    >
 
-<nav class="navbar navbar-dark">
+											<link
+												rel="stylesheet"
+												href="{{ url_for('static', filename='css/player.css') }}"
+    >
 
-<div class="container">
+												{% block extra_css %}
 
-<a
-    class="navbar-brand"
-    href="/"
+												{% endblock %}
+
+											</head>
+
+	<body class="bg-dark text-light">
+
+		<nav class="navbar navbar-dark">
+
+			<div class="container">
+
+				<a
+					class="navbar-brand"
+					href="/"
 >
 
-    ⚽ Fantasy Serie A
+					⚽ Fantasy Serie A
 
-</a>
+				</a>
 
-{% if session.username %}
+				{% if session.username %}
 
-<div>
+				<div>
 
-<span class="text-light me-3">
+					<span class="text-light me-3">
 
-{{ session.username }}
+						{{ session.username }}
 
-</span>
+					</span>
 
-<a
-    href="/logout"
-    class="btn btn-outline-light btn-sm"
+					<a
+						href="/logout"
+						class="btn btn-outline-light btn-sm"
 >
 
-Odhlásit
+						Odhlásit
 
-</a>
+					</a>
 
-</div>
+				</div>
 
-{% endif %}
+				{% endif %}
 
-</div>
+			</div>
 
-</nav>
+		</nav>
 
-<div class="container mt-4">
+		<div class="container mt-4">
 
-    <!-- FLASH ZPRÁVY -->
+			<!-- FLASH ZPRÁVY -->
 
-    {% with messages = get_flashed_messages(with_categories=true) %}
+			{% with messages = get_flashed_messages(with_categories=true) %}
 
-        {% if messages %}
+			{% if messages %}
 
-            {% for category, message in messages %}
+			{% for category, message in messages %}
 
-                <div class="alert alert-{{ category }} alert-dismissible fade show">
+			<div class="alert alert-{{ category }} alert-dismissible fade show">
 
-                    {{ message }}
+				{{ message }}
 
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="alert">
-                    </button>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="alert">
+				</button>
 
-                </div>
+			</div>
 
-            {% endfor %}
+			{% endfor %}
 
-        {% endif %}
+			{% endif %}
 
-    {% endwith %}
+			{% endwith %}
 
-    {% block content %}
+			{% block content %}
 
-    {% endblock %}
+			{% endblock %}
 
-    {% include "components/bottom_nav.html" %}
+			{% include "components/bottom_nav.html" %}
 
-</div>
+		</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+		<!-- PWA -->
+
+		<script>
+
+			if ("serviceWorker" in navigator) {
+
+			window.addEventListener("load", function () {
+
+			navigator.serviceWorker.register(
+			"{{ url_for('static', filename='service-worker.js') }}"
+			);
+
+			});
+
+			}
+
+		</script>
+
+	</body>
 
 </html>
