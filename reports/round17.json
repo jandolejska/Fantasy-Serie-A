@@ -1,0 +1,19 @@
+{
+    "round": 17,
+    "headline": "Goran se po 17. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "17. kolo nabídlo 3 zápasy, ve kterých padlo celkem 5 branek.",
+            "Průměr 1.67 gólu na utkání ukázal, že tentokrát dominovaly především obrany."
+        ],
+        "Ocenění pro hráče kola putuje Hojlund z Napoli, který obdržel známku 8.0.",
+        "Ocenění pro manažera kola získává Goran, který dosáhl na 70.0 bodů.",
+        "Do čela tabulky se dostal Goran, který vystřídal Paulie.",
+        "Matej vyhrál už 3 zápasy v řadě."
+    ],
+    "player": {
+        "name": "Hojlund",
+        "team": "Napoli",
+        "grade": 8.0
+    }
+}

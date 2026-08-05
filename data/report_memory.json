@@ -1,0 +1,14 @@
+{
+    "BIGGEST_WIN": 0,
+    "LEADER_CHANGE": -1,
+    "PLAYER_OF_ROUND": 0,
+    "MANAGER_OF_ROUND": 0,
+    "LEADER_STATUS": 0,
+    "SUMMARY_INTRO": 0,
+    "SUMMARY_ATTACK": -1,
+    "SUMMARY_BALANCED": -1,
+    "SUMMARY_DEFENSE": 0,
+    "STREAK_WIN": 0,
+    "STREAK_WITHOUT_WIN": -1,
+    "TABLE_JUMP": -1
+}

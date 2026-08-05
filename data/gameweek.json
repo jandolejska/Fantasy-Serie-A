@@ -1,6 +1,7 @@
 {
-    "current_round": 1,
-    "completed_rounds": 0,
-    "deadline": "",
-    "locked": false
+    "season": "2026-27",
+    "current_round": 31,
+    "completed_rounds": 31,
+    "deadline": "2026-08-25T20:00",
+    "locked": true
 }

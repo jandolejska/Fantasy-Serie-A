@@ -1,30 +1,81 @@
 import json
 import os
-import random
 
 from engine.results import load_round
 from engine.standings import get_ranking
+from engine.report_memory import get_template
 
 
 # =========================
 # MANAGER NAME (CASE)
 # =========================
 
-def manager_accusative(name):
+# =========================
+# MANAGER NAME FORMS
+# =========================
 
-    names = {
+MANAGER_FORMS = {
 
-        "Johnny": "Johnnyho",
-        "Goran": "Gorana",
-        "Kuba": "Kubu",
-        "Matěj": "Matěje",
-        "Matej": "Matěje",
-        "Paulie": "Paulieho",
-        "Francesco": "Francesca"
+    "Johnny": {
+        "nom": "Johnny",
+        "acc": "Johnnyho",
+        "dat": "Johnnymu",
+        "ins": "Johnnym"
+    },
 
+    "Goran": {
+        "nom": "Goran",
+        "acc": "Gorana",
+        "dat": "Goranovi",
+        "ins": "Goranem"
+    },
+
+    "Kuba": {
+        "nom": "Kuba",
+        "acc": "Kubu",
+        "dat": "Kubovi",
+        "ins": "Kubou"
+    },
+
+    "Matěj": {
+        "nom": "Matěj",
+        "acc": "Matěje",
+        "dat": "Matějovi",
+        "ins": "Matějem"
+    },
+
+    "Matej": {
+        "nom": "Matěj",
+        "acc": "Matěje",
+        "dat": "Matějovi",
+        "ins": "Matějem"
+    },
+
+    "Paulie": {
+        "nom": "Paulie",
+        "acc": "Paulieho",
+        "dat": "Pauliemu",
+        "ins": "Pau­liem"
+    },
+
+    "Francesco": {
+        "nom": "Francesco",
+        "acc": "Francesca",
+        "dat": "Francescovi",
+        "ins": "Francescem"
     }
 
-    return names.get(name, name)
+}
+
+
+def manager_case(name, case="nom"):
+
+    forms = MANAGER_FORMS.get(name)
+
+    if not forms:
+        return name
+
+    return forms.get(case, forms["nom"])
 
 
 # =========================
@@ -93,7 +144,7 @@ def generate_round_report(round_number):
         generate_player_section(round_data),
         generate_manager_section(round_data),
         generate_leader_section(round_data),
-        generate_streak_section(round_data)
+        generate_special_event(round_data)
     ]
 
     report = {
@@ -158,8 +209,12 @@ def generate_headline(round_data):
 
                 events.append({
                     "priority": 100,
-                    "headline":
-                        f"{ranking[0][0]} se po {round_data['round']}. kole dostal do čela soutěže."
+                    "headline": get_template(
+                        "LEADER_CHANGE",
+                        manager=manager_case(ranking[0][0]),
+                        manager_dat=manager_case(ranking[0][0], "dat"),
+                        round=round_data["round"]
+                    )
                 })
 
     # =====================
@@ -206,8 +261,10 @@ def generate_headline(round_data):
 
         if best_match["home_goals"] > best_match["away_goals"]:
 
-            winner = best_match["home"]
-            loser = manager_accusative(best_match["away"])
+            winner = manager_case(best_match["home"])
+            loser_acc = manager_case(best_match["away"], "acc")
+            loser_dat = manager_case(best_match["away"], "dat")
+            loser_ins = manager_case(best_match["away"], "ins")
             goals = (
                 f"{best_match['home_goals']}:"
                 f"{best_match['away_goals']}"
@@ -215,28 +272,26 @@ def generate_headline(round_data):
 
         else:
 
-            winner = best_match["away"]
-            loser = manager_accusative(best_match["home"])
+            winner = manager_case(best_match["away"])
+            loser_acc = manager_case(best_match["home"], "acc")
+            loser_dat = manager_case(best_match["home"], "dat")
+            loser_ins = manager_case(best_match["home"], "ins")
             goals = (
                 f"{best_match['away_goals']}:"
                 f"{best_match['home_goals']}"
             )
 
-        templates = [
-
-            f"{winner} porazil {loser} {goals} a zaznamenal nejvyšší výhru {round_data['round']}. kola.",
-
-            f"Nejvyšší výhru {round_data['round']}. kola zaznamenal {winner}, který porazil {loser} {goals}.",
-
-            f"{winner} předvedl nejpřesvědčivější výkon kola po výhře {goals} nad {loser}.",
-
-            f"{winner} si připsal nejvyšší vítězství kola výsledkem {goals} proti {loser}."
-
-        ]
-
         events.append({
             "priority": 50,
-            "headline": random.choice(templates)
+            "headline": get_template(
+                "BIGGEST_WIN",
+                winner=winner,
+                loser_acc=loser_acc,
+                loser_dat=loser_dat,
+                loser_ins=loser_ins,
+                score=goals,
+                round=round_data["round"]
+            )
         })
 
     # =====================
@@ -283,32 +338,36 @@ def generate_summary(round_data):
     summary = []
 
     summary.append(
-        f"{round_data['round']}. kolo nabídlo {matches} zápasy, "
-        f"ve kterých padlo celkem {total_goals} branek."
+        get_template(
+            "SUMMARY_INTRO",
+            round=round_data["round"],
+            matches=matches,
+            goals=total_goals
+        )
     )
 
     if average >= 4:
 
         summary.append(
-            f"Průměr {average} gólu na utkání potvrdil velmi ofenzivní průběh kola."
+            get_template("SUMMARY_ATTACK")
         )
 
     elif average >= 2.5:
 
         summary.append(
-            f"Průměr {average} gólu na utkání nabídl vyrovnanou podívanou s několika zajímavými zápasy."
+            get_template("SUMMARY_BALANCED")
         )
 
     else:
 
         summary.append(
-            f"Průměr {average} gólu na utkání ukázal, že tentokrát dominovaly především obrany."
+            get_template("SUMMARY_DEFENSE")
         )
 
     if biggest_difference == 0:
 
         summary.append(
-            "Všechna utkání skončila nerozhodně."
+            "🤝 Všechna utkání tohoto kola skončila remízou."
         )
 
     return summary
@@ -322,28 +381,12 @@ def generate_player_section(round_data):
 
     player = round_data["awards"]["player_of_round"]
 
-    templates = [
-
-        (
-            f"Hráčem kola se stal {player['name']} "
-            f"z {player['team']}, který získal známku {player['grade']}."
-        ),
-
-        (
-            f"Nejlepší individuální výkon předvedl "
-            f"{player['name']} ({player['team']}) "
-            f"se známkou {player['grade']}."
-        ),
-
-        (
-            f"Ocenění pro hráče kola putuje "
-            f"{player['name']} z {player['team']}, "
-            f"který obdržel známku {player['grade']}."
-        )
-
-    ]
-
-    return random.choice(templates)
+    return get_template(
+        "PLAYER_OF_ROUND",
+        player=player["name"],
+        team=player["team"],
+        grade=player["grade"]
+    )
 
 
 # =========================
@@ -354,26 +397,11 @@ def generate_manager_section(round_data):
 
     manager = round_data["awards"]["manager_of_round"]
 
-    templates = [
-
-        (
-            f"Manažerem kola se stal {manager['manager']}, "
-            f"který nasbíral {manager['score']} bodů."
-        ),
-
-        (
-            f"Nejlepší manažerský výkon předvedl {manager['manager']} "
-            f"se ziskem {manager['score']} bodů."
-        ),
-
-        (
-            f"Ocenění pro manažera kola získává {manager['manager']}, "
-            f"který dosáhl na {manager['score']} bodů."
-        )
-
-    ]
-
-    return random.choice(templates)
+    return get_template(
+        "MANAGER_OF_ROUND",
+        manager=manager_case(manager["manager"]),
+        score=manager["score"]
+    )
 
 
 # =========================
@@ -393,8 +421,11 @@ def generate_leader_section(round_data):
 
     if previous is None:
 
-        return (
-            f"Po úvodním kole vede soutěž {leader_name}."
+        return get_template(
+            "LEADER_CHANGE",
+            manager=manager_case(leader_name),
+            manager_dat=manager_case(leader_name, "dat"),
+            round=round_data["round"]
         )
 
     previous_ranking = get_ranking(previous["table"])
@@ -403,14 +434,87 @@ def generate_leader_section(round_data):
 
     if leader_name == previous_leader:
 
-        return (
-            f"V čele tabulky zůstává {leader_name}."
+        return get_template(
+            "LEADER_STATUS",
+            leader=manager_case(leader_name)
         )
 
-    return (
-        f"Do čela tabulky se dostal {leader_name}, "
-        f"který vystřídal {previous_leader}."
+    return get_template(
+        "LEADER_CHANGE",
+        manager=manager_case(leader_name),
+        manager_dat=manager_case(leader_name, "dat"),
+        round=round_data["round"]
     )
+
+
+# =========================
+# GENERATE TABLE JUMP
+# =========================
+
+def generate_table_jump(round_data):
+
+    current_round = round_data["round"]
+
+    if current_round <= 1:
+        return None
+
+    previous = load_round(current_round - 1)
+
+    if previous is None:
+        return None
+
+    current_ranking = get_ranking(round_data["table"])
+    previous_ranking = get_ranking(previous["table"])
+
+    current_positions = {}
+    previous_positions = {}
+
+    for i, team in enumerate(current_ranking):
+        current_positions[team[0]] = i + 1
+
+    for i, team in enumerate(previous_ranking):
+        previous_positions[team[0]] = i + 1
+
+    best_manager = None
+    best_jump = 0
+
+    for manager in current_positions:
+
+        if manager not in previous_positions:
+            continue
+
+        jump = previous_positions[manager] - current_positions[manager]
+
+        if jump > best_jump:
+            best_jump = jump
+            best_manager = manager
+
+    if best_jump < 2:
+        return None
+
+    return get_template(
+        "TABLE_JUMP",
+        manager=manager_case(best_manager),
+        jump=best_jump,
+        position=current_positions[best_manager]
+    )
+
+
+# =========================
+# GENERATE SPECIAL EVENT
+# =========================
+
+
+def generate_special_event(round_data):
+
+    # sem budeme postupně přidávat zajímavosti
+
+    event = generate_table_jump(round_data)
+
+    if event:
+        return event
+
+    return generate_streak_section(round_data)
 
 
 # =========================
@@ -491,14 +595,19 @@ def generate_streak_section(round_data):
             longest_without_count = values["without_win"]
 
     if best_win_count >= 3:
-        return (
-            f"{best_win} vyhrál už {best_win_count} zápasy v řadě."
+
+        return get_template(
+            "STREAK_WIN",
+            manager=manager_case(best_win),
+            count=best_win_count
         )
 
     if longest_without_count >= 4:
-        return (
-            f"{longest_without} čeká na vítězství už "
-            f"{longest_without_count} kol."
+    
+        return get_template(
+            "STREAK_WITHOUT_WIN",
+            manager=manager_case(longest_without),
+            count=longest_without_count
         )
 
     return None

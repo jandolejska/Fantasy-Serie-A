@@ -1,6 +1,6 @@
 {
     "name": "Johnny",
-    "coach": "Gilardino",
+    "coach": "Pioli",
     "squad": [
         {
             "name": "Israel",
@@ -24,25 +24,19 @@
             }
         },
         {
-            "name": "Falcone",
-            "role": "P",
-            "buy_price": 6,
-            "team": "Lecce",
-            "qa": 15,
-            "qi": 6,
             "id": 2134,
+            "name": "Falcone",
+            "team": "Lecce",
+            "role": "P",
+            "qi": 6,
+            "qa": 15,
             "active": true,
             "team_info": {
                 "id": "lecce",
                 "short": "LEC",
                 "logo": "lecce.png"
             },
-            "fixture": {
-                "opponent": "Venezia FC",
-                "home": false,
-                "short": "VEN",
-                "logo": "venezia.png"
-            }
+            "buy_price": 15
         },
         {
             "name": "Furlanetto",
@@ -124,24 +118,24 @@
             }
         },
         {
-            "name": "Kalulu",
+            "id": 4772,
+            "name": "Angelino",
+            "team": "Roma",
             "role": "D",
-            "buy_price": 9,
-            "team": "Juventus",
-            "qa": 14,
-            "qi": 9,
-            "id": 4976,
+            "qi": 15,
+            "qa": 7,
             "active": true,
             "team_info": {
-                "id": "juventus",
-                "short": "JUV",
-                "logo": "juventus.png"
+                "id": "roma",
+                "short": "ROM",
+                "logo": "roma.png"
             },
+            "buy_price": 7,
             "fixture": {
-                "opponent": "Frosinone",
-                "home": false,
-                "short": "FRO",
-                "logo": "frosinone.png"
+                "opponent": "Fiorentina",
+                "home": true,
+                "short": "FIO",
+                "logo": "fiorentina.png"
             }
         },
         {
@@ -503,6 +497,6 @@
             }
         }
     ],
-    "transfers_left": 4,
-    "budget": 37
+    "transfers_left": 2,
+    "budget": 30
 }

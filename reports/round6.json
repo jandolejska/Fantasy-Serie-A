@@ -1,0 +1,20 @@
+{
+    "round": 6,
+    "headline": "6. kolo skončilo bez jediného vítěze.",
+    "sections": [
+        [
+            "6. kolo nabídlo 3 zápasy, ve kterých padlo celkem 4 branek.",
+            "Průměr 1.33 gólu na utkání ukázal, že tentokrát dominovaly především obrany.",
+            "Všechna utkání skončila nerozhodně."
+        ],
+        "Nejlepší individuální výkon předvedl Bonny (Inter) se známkou 8.5.",
+        "Manažerem kola se stal Paulie, který nasbíral 70.0 bodů.",
+        "V čele tabulky zůstává Johnny.",
+        "Matej čeká na vítězství už 6 kol."
+    ],
+    "player": {
+        "name": "Bonny",
+        "team": "Inter",
+        "grade": 8.5
+    }
+}

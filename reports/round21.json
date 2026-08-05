@@ -1,0 +1,19 @@
+{
+    "round": 21,
+    "headline": "🏆 Nejvyšší výhru 21. kola zaznamenal Johnny, který porazil Paulieho 1:0.",
+    "sections": [
+        [
+            "21. kolo nabídlo 3 zápasy, ve kterých padlo celkem 8 branek.",
+            "Průměr 2.67 gólu na utkání nabídl vyrovnanou podívanou s několika zajímavými zápasy."
+        ],
+        "Hráčem kola se stal Baturina z Como, který získal známku 8.0.",
+        "Manažerem kola se stal Goran, který nasbíral 70.5 bodů.",
+        "V čele tabulky zůstává Matej.",
+        "Matej vyhrál už 3 zápasy v řadě."
+    ],
+    "player": {
+        "name": "Baturina",
+        "team": "Como",
+        "grade": 8.0
+    }
+}

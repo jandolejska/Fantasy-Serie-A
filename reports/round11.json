@@ -1,0 +1,20 @@
+{
+    "round": 11,
+    "headline": "Johnny se po 11. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "11. kolo nabídlo 3 zápasy, ve kterých padlo celkem 4 branek.",
+            "Průměr 1.33 gólu na utkání ukázal, že tentokrát dominovaly především obrany.",
+            "Všechna utkání skončila nerozhodně."
+        ],
+        "Ocenění pro hráče kola putuje Berardi z Sassuolo, který obdržel známku 8.5.",
+        "Nejlepší manažerský výkon předvedl Paulie se ziskem 68.0 bodů.",
+        "Do čela tabulky se dostal Johnny, který vystřídal Paulie.",
+        "Francesco čeká na vítězství už 10 kol."
+    ],
+    "player": {
+        "name": "Berardi",
+        "team": "Sassuolo",
+        "grade": 8.5
+    }
+}

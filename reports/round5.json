@@ -1,0 +1,19 @@
+{
+    "round": 5,
+    "headline": "Johnny se po 5. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "5. kolo nabídlo 3 zápasy, ve kterých padlo celkem 9 branek.",
+            "Průměr 3.0 gólu na utkání nabídl vyrovnanou podívanou s několika zajímavými zápasy."
+        ],
+        "Ocenění pro hráče kola putuje Pulisic z Milan, který obdržel známku 8.0.",
+        "Manažerem kola se stal Johnny, který nasbíral 71.5 bodů.",
+        "Do čela tabulky se dostal Johnny, který vystřídal Paulie.",
+        "Matej čeká na vítězství už 5 kol."
+    ],
+    "player": {
+        "name": "Pulisic",
+        "team": "Milan",
+        "grade": 8.0
+    }
+}

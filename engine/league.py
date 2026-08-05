@@ -387,7 +387,13 @@ def play_current_round():
             if away not in managers:
                 managers.append(away)
 
-    table = create_table(managers)
+    previous_round = load_round(current_round - 1)
+
+    if previous_round is not None:
+        table = previous_round["table"]
+    else:
+        table = create_table(managers)
+
     stats = create_statistics(managers)
 
     played = False

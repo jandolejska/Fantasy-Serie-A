@@ -1,0 +1,18 @@
+{
+    "round": 2,
+    "headline": "Kuba se po 2. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "2. kolo nabídlo 3 zápasy, ve kterých padlo celkem 3 branek.",
+            "Průměr 1.0 gólu na utkání ukázal, že tentokrát dominovaly především obrany."
+        ],
+        "Ocenění pro hráče kola putuje Castellanos z Lazio, který obdržel známku 8.5.",
+        "Manažerem kola se stal Kuba, který nasbíral 72.0 bodů.",
+        "Do čela tabulky se dostal Kuba, který vystřídal Francesco."
+    ],
+    "player": {
+        "name": "Castellanos",
+        "team": "Lazio",
+        "grade": 8.5
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "round": 3,
+    "headline": "Johnny se po 3. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "3. kolo nabídlo 3 zápasy, ve kterých padlo celkem 0 branek.",
+            "Průměr 0.0 gólu na utkání ukázal, že tentokrát dominovaly především obrany.",
+            "Všechna utkání skončila nerozhodně."
+        ],
+        "Ocenění pro hráče kola putuje De Ketelaere z Atalanta, který obdržel známku 8.0.",
+        "Nejlepší manažerský výkon předvedl Francesco se ziskem 65.0 bodů.",
+        "Do čela tabulky se dostal Johnny, který vystřídal Kuba."
+    ],
+    "player": {
+        "name": "De Ketelaere",
+        "team": "Atalanta",
+        "grade": 8.0
+    }
+}

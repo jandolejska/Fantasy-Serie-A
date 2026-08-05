@@ -1,0 +1,19 @@
+{
+    "round": 15,
+    "headline": "Matej se po 15. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "15. kolo nabídlo 3 zápasy, ve kterých padlo celkem 3 branek.",
+            "Průměr 1.0 gólu na utkání ukázal, že tentokrát dominovaly především obrany."
+        ],
+        "Ocenění pro hráče kola putuje Scamacca z Atalanta, který obdržel známku 7.5.",
+        "Manažerem kola se stal Matej, který nasbíral 70.0 bodů.",
+        "Do čela tabulky se dostal Matej, který vystřídal Paulie.",
+        "Paulie vyhrál už 3 zápasy v řadě."
+    ],
+    "player": {
+        "name": "Scamacca",
+        "team": "Atalanta",
+        "grade": 7.5
+    }
+}

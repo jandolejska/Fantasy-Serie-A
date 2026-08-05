@@ -1,37 +1,29 @@
 {
-    "season": "2025/26",
-
+    "season": "2026/27",
     "standings": [
-
         {
-            "team":"Francesco",
-            "points":0
+            "team": "Francesco",
+            "points": 0
         },
-
         {
-            "team":"Johnny",
-            "points":0
+            "team": "Johnny",
+            "points": 0
         },
-
         {
-            "team":"Matej",
-            "points":0
+            "team": "Matej",
+            "points": 0
         },
-
         {
-            "team":"Kuba",
-            "points":0
+            "team": "Kuba",
+            "points": 0
         },
-
         {
-            "team":"Goran",
-            "points":0
+            "team": "Goran",
+            "points": 0
         },
-
         {
-            "team":"Paulie",
-            "points":0
+            "team": "Paulie",
+            "points": 0
         }
-
     ]
 }

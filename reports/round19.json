@@ -1,0 +1,19 @@
+{
+    "round": 19,
+    "headline": "Matej se po 19. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "19. kolo nabídlo 3 zápasy, ve kterých padlo celkem 8 branek.",
+            "Průměr 2.67 gólu na utkání nabídl vyrovnanou podívanou s několika zajímavými zápasy."
+        ],
+        "Ocenění pro hráče kola putuje Krstovic z Atalanta, který obdržel známku 7.5.",
+        "Manažerem kola se stal Johnny, který nasbíral 70.0 bodů.",
+        "Do čela tabulky se dostal Matej, který vystřídal Goran.",
+        "Francesco čeká na vítězství už 18 kol."
+    ],
+    "player": {
+        "name": "Krstovic",
+        "team": "Atalanta",
+        "grade": 7.5
+    }
+}

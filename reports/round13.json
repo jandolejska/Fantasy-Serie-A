@@ -1,0 +1,19 @@
+{
+    "round": 13,
+    "headline": "Kuba se po 13. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "13. kolo nabídlo 3 zápasy, ve kterých padlo celkem 10 branek.",
+            "Průměr 3.33 gólu na utkání nabídl vyrovnanou podívanou s několika zajímavými zápasy."
+        ],
+        "Hráčem kola se stal Vardy z Cremonese, který získal známku 8.0.",
+        "Ocenění pro manažera kola získává Kuba, který dosáhl na 71.5 bodů.",
+        "Do čela tabulky se dostal Kuba, který vystřídal Goran.",
+        "Francesco čeká na vítězství už 12 kol."
+    ],
+    "player": {
+        "name": "Vardy",
+        "team": "Cremonese",
+        "grade": 8.0
+    }
+}

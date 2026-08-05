@@ -1,0 +1,19 @@
+{
+    "round": 10,
+    "headline": "Paulie se po 10. kole dostal do čela soutěže.",
+    "sections": [
+        [
+            "10. kolo nabídlo 3 zápasy, ve kterých padlo celkem 5 branek.",
+            "Průměr 1.67 gólu na utkání ukázal, že tentokrát dominovaly především obrany."
+        ],
+        "Hráčem kola se stal Castro S. z Bologna, který získal známku 8.0.",
+        "Manažerem kola se stal Paulie, který nasbíral 72.5 bodů.",
+        "Do čela tabulky se dostal Paulie, který vystřídal Johnny.",
+        "Francesco čeká na vítězství už 9 kol."
+    ],
+    "player": {
+        "name": "Castro S.",
+        "team": "Bologna",
+        "grade": 8.0
+    }
+}

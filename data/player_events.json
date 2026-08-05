@@ -1,1 +1,38 @@
-[]
+[
+    {
+        "id": 1,
+        "type": "transfer",
+        "player_id": 761,
+        "replaced_player_id": 2134,
+        "season": 1,
+        "round": 1,
+        "date": "2026-08-03T19:54:53.409679",
+        "from_manager": null,
+        "to_manager": "Johnny",
+        "transfer_type": "free"
+    },
+    {
+        "id": 2,
+        "type": "transfer",
+        "player_id": 4772,
+        "replaced_player_id": 4976,
+        "season": 1,
+        "round": 1,
+        "date": "2026-08-03T19:55:28.882670",
+        "from_manager": null,
+        "to_manager": "Johnny",
+        "transfer_type": "normal"
+    },
+    {
+        "id": 3,
+        "type": "transfer",
+        "player_id": 2134,
+        "replaced_player_id": 761,
+        "season": 1,
+        "round": 1,
+        "date": "2026-08-05T05:58:04.558042",
+        "from_manager": null,
+        "to_manager": "Johnny",
+        "transfer_type": "normal"
+    }
+]
