@@ -1,4 +1,4 @@
-# Fantasy Serie A Beta
+# Fantacalcio Beta
 
 ## Otevřené
 

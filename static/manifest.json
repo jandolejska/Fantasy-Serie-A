@@ -1,7 +1,7 @@
 {
-  "name": "Fantasy Serie A",
+  "name": "Fantacalcio",
   "short_name": "Fantasy",
-  "description": "Fantasy Serie A Draft League",
+  "description": "Fantacalcio Draft League",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

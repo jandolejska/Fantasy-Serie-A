@@ -3,7 +3,7 @@ self.addEventListener("install", event => {
 });
 
 self.addEventListener("activate", event => {
-    console.log("Fantasy Serie A ready");
+    console.log("Fantacalcio ready");
 });
 
 self.addEventListener("fetch", event => {
