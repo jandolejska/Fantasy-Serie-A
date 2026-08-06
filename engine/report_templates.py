@@ -117,7 +117,7 @@ SUMMARY_INTRO = [
 
     "Ve {round}. kole se odehrály {matches} zápasy s celkovým počtem {goals} gólů.",
 
-    "Další kolo Fantasy Serie A přineslo {matches} utkání a {goals} vstřelených branek.",
+    "Další kolo Fantacalcio přineslo {matches} utkání a {goals} vstřelených branek.",
 
     "{round}. kolo bylo ve znamení {goals} gólů ve {matches} zápasech.",
 
@@ -127,7 +127,7 @@ SUMMARY_INTRO = [
 
     "{round}. kolo nabídlo další porci napínavých soubojů. Ve {matches} zápasech padlo {goals} gólů.",
 
-    "Fantasy Serie A pokračovala {round}. kolem, které přineslo {goals} branek."
+    "Fantacalcio pokračovala {round}. kolem, které přineslo {goals} branek."
 
 ]
 
